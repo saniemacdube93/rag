@@ -1,0 +1,3281 @@
+
+========================================
+  HEAT Pipeline — Dataset: ICEWS18
+========================================
+[1/3] Training ICEWS18...
+
+============================================================
+  HEAT Training — Dataset: ICEWS18
+  Device: cpu
+============================================================
+
+  [data] ICEWS18: 23,033 entities, 256 relations
+  [data] Loading quadruples...
+  [data] Train: 373,018  Valid: 45,995  Test: 49,545
+  [data] Building train history...
+  [data] Train history done.
+  [data] Building test history...
+  [data] Test history done. Dataset ready.
+
+  Entities: 23,033  |  Relations: 256  |  Train: 373,018
+
+  Batch 10/365 | Loss 19.3091 | 323s elapsed
+  Batch 20/365 | Loss 17.6978 | 670s elapsed
+  Batch 30/365 | Loss 16.8767 | 1613s elapsed
+  Batch 40/365 | Loss 16.3964 | 1937s elapsed
+  Batch 50/365 | Loss 16.0443 | 2261s elapsed
+  Batch 60/365 | Loss 15.7457 | 2586s elapsed
+  Batch 70/365 | Loss 15.4930 | 2910s elapsed
+  Batch 80/365 | Loss 15.2620 | 3235s elapsed
+  Batch 90/365 | Loss 15.0674 | 3561s elapsed
+  Batch 100/365 | Loss 14.8818 | 3890s elapsed
+  Batch 110/365 | Loss 14.7182 | 4218s elapsed
+  Batch 120/365 | Loss 14.5788 | 4546s elapsed
+  Batch 130/365 | Loss 14.4550 | 4873s elapsed
+  Batch 140/365 | Loss 14.3337 | 5200s elapsed
+  Batch 150/365 | Loss 14.2243 | 5528s elapsed
+  Batch 160/365 | Loss 14.1255 | 5855s elapsed
+  Batch 170/365 | Loss 14.0331 | 6183s elapsed
+  Batch 180/365 | Loss 13.9441 | 6511s elapsed
+  Batch 190/365 | Loss 13.8601 | 6835s elapsed
+  Batch 200/365 | Loss 13.7845 | 7162s elapsed
+  Batch 210/365 | Loss 13.7094 | 7489s elapsed
+  Batch 220/365 | Loss 13.6322 | 7815s elapsed
+  Batch 230/365 | Loss 13.5631 | 8140s elapsed
+  Batch 240/365 | Loss 13.4929 | 8467s elapsed
+  Batch 250/365 | Loss 13.4269 | 8794s elapsed
+  Batch 260/365 | Loss 13.3642 | 9120s elapsed
+  Batch 270/365 | Loss 13.3014 | 9449s elapsed
+  Batch 280/365 | Loss 13.2437 | 9778s elapsed
+  Batch 290/365 | Loss 13.1884 | 10102s elapsed
+  Batch 300/365 | Loss 13.1359 | 10428s elapsed
+  Batch 310/365 | Loss 13.0844 | 10755s elapsed
+  Batch 320/365 | Loss 13.0326 | 11081s elapsed
+  Batch 330/365 | Loss 12.9825 | 11409s elapsed
+  Batch 340/365 | Loss 12.9366 | 11734s elapsed
+  Batch 350/365 | Loss 12.8897 | 12061s elapsed
+  Batch 360/365 | Loss 12.8427 | 12390s elapsed
+Epoch 001/5 | Loss 12.8195 | Time 12528.6s
+  ↳ Valid  MRR: 0.2076 | H@1: 0.1280 | H@3: 0.2295 | H@10: 0.3715
+  ✓ Best model saved (MRR=0.2076)
+  Batch 10/365 | Loss 10.9541 | 323s elapsed
+  Batch 20/365 | Loss 10.9638 | 646s elapsed
+  Batch 30/365 | Loss 10.9110 | 969s elapsed
+  Batch 40/365 | Loss 10.8893 | 1293s elapsed
+  Batch 50/365 | Loss 10.8725 | 1617s elapsed
+  Batch 60/365 | Loss 10.8569 | 1940s elapsed
+  Batch 70/365 | Loss 10.8338 | 2264s elapsed
+  Batch 80/365 | Loss 10.8129 | 2586s elapsed
+  Batch 90/365 | Loss 10.7977 | 2909s elapsed
+  Batch 100/365 | Loss 10.7823 | 3230s elapsed
+  Batch 110/365 | Loss 10.7652 | 3556s elapsed
+  Batch 120/365 | Loss 10.7446 | 3880s elapsed
+  Batch 130/365 | Loss 10.7287 | 4203s elapsed
+  Batch 140/365 | Loss 10.7134 | 4526s elapsed
+  Batch 150/365 | Loss 10.6954 | 4849s elapsed
+  Batch 160/365 | Loss 10.6768 | 5172s elapsed
+  Batch 170/365 | Loss 10.6577 | 5495s elapsed
+  Batch 180/365 | Loss 10.6425 | 5818s elapsed
+  Batch 190/365 | Loss 10.6291 | 6142s elapsed
+  Batch 200/365 | Loss 10.6140 | 6465s elapsed
+  Batch 210/365 | Loss 10.5972 | 6790s elapsed
+  Batch 220/365 | Loss 10.5808 | 7113s elapsed
+  Batch 230/365 | Loss 10.5653 | 7435s elapsed
+  Batch 240/365 | Loss 10.5502 | 7757s elapsed
+  Batch 250/365 | Loss 10.5381 | 8078s elapsed
+  Batch 260/365 | Loss 10.5218 | 8403s elapsed
+  Batch 270/365 | Loss 10.5070 | 8727s elapsed
+  Batch 280/365 | Loss 10.4938 | 9045s elapsed
+  Batch 290/365 | Loss 10.4804 | 9357s elapsed
+  Batch 300/365 | Loss 10.4671 | 9672s elapsed
+  Batch 310/365 | Loss 10.4537 | 9988s elapsed
+  Batch 320/365 | Loss 10.4408 | 10299s elapsed
+  Batch 330/365 | Loss 10.4296 | 10608s elapsed
+  Batch 340/365 | Loss 10.4166 | 10918s elapsed
+  Batch 350/365 | Loss 10.4028 | 11230s elapsed
+  Batch 360/365 | Loss 10.3876 | 11544s elapsed
+Epoch 002/5 | Loss 10.3810 | Time 11678.0s
+  ↳ Valid  MRR: 0.2304 | H@1: 0.1525 | H@3: 0.2520 | H@10: 0.3890
+  ✓ Best model saved (MRR=0.2304)
+  Batch 10/365 | Loss 9.6787 | 315s elapsed
+  Batch 20/365 | Loss 9.6507 | 630s elapsed
+  Batch 30/365 | Loss 9.6443 | 948s elapsed
+  Batch 40/365 | Loss 9.6302 | 1274s elapsed
+  Batch 50/365 | Loss 9.6212 | 1600s elapsed
+  Batch 60/365 | Loss 9.6058 | 1925s elapsed
+  Batch 70/365 | Loss 9.5998 | 2254s elapsed
+  Batch 80/365 | Loss 9.5940 | 2582s elapsed
+  Batch 90/365 | Loss 9.5937 | 2911s elapsed
+  Batch 100/365 | Loss 9.5950 | 3239s elapsed
+  Batch 110/365 | Loss 9.5949 | 3563s elapsed
+  Batch 120/365 | Loss 9.5893 | 3892s elapsed
+  Batch 130/365 | Loss 9.5791 | 4219s elapsed
+  Batch 140/365 | Loss 9.5740 | 4547s elapsed
+  Batch 150/365 | Loss 9.5680 | 4875s elapsed
+  Batch 160/365 | Loss 9.5630 | 5201s elapsed
+  Batch 170/365 | Loss 9.5563 | 5530s elapsed
+  Batch 180/365 | Loss 9.5512 | 5858s elapsed
+  Batch 190/365 | Loss 9.5441 | 6188s elapsed
+  Batch 200/365 | Loss 9.5388 | 6522s elapsed
+  Batch 210/365 | Loss 9.5347 | 6858s elapsed
+  Batch 220/365 | Loss 9.5344 | 7194s elapsed
+  Batch 230/365 | Loss 9.5317 | 7527s elapsed
+  Batch 240/365 | Loss 9.5277 | 7864s elapsed
+  Batch 250/365 | Loss 9.5212 | 8202s elapsed
+  Batch 260/365 | Loss 9.5171 | 8539s elapsed
+  Batch 270/365 | Loss 9.5119 | 9273s elapsed
+  Batch 280/365 | Loss 9.5083 | 9616s elapsed
+  Batch 290/365 | Loss 9.5059 | 9955s elapsed
+  Batch 300/365 | Loss 9.5043 | 10295s elapsed
+  Batch 310/365 | Loss 9.5008 | 10634s elapsed
+  Batch 320/365 | Loss 9.4951 | 10977s elapsed
+  Batch 330/365 | Loss 9.4933 | 11319s elapsed
+  Batch 340/365 | Loss 9.4906 | 11657s elapsed
+  Batch 350/365 | Loss 9.4875 | 11994s elapsed
+  Batch 360/365 | Loss 9.4849 | 12318s elapsed
+Epoch 003/5 | Loss 9.4840 | Time 12455.1s
+  ↳ Valid  MRR: 0.2392 | H@1: 0.1610 | H@3: 0.2630 | H@10: 0.3970
+  ✓ Best model saved (MRR=0.2392)
+  Batch 10/365 | Loss 9.1289 | 333s elapsed
+  Batch 20/365 | Loss 9.0835 | 670s elapsed
+  Batch 30/365 | Loss 9.1054 | 1002s elapsed
+  Batch 40/365 | Loss 9.0856 | 1339s elapsed
+  Batch 50/365 | Loss 9.0776 | 1682s elapsed
+  Batch 60/365 | Loss 9.0870 | 2034s elapsed
+  Batch 70/365 | Loss 9.0839 | 2388s elapsed
+  Batch 80/365 | Loss 9.0876 | 2739s elapsed
+  Batch 90/365 | Loss 9.0874 | 3095s elapsed
+  Batch 100/365 | Loss 9.0842 | 3449s elapsed
+  Batch 110/365 | Loss 9.0848 | 3802s elapsed
+  Batch 120/365 | Loss 9.0874 | 4149s elapsed
+  Batch 130/365 | Loss 9.0842 | 4495s elapsed
+  Batch 140/365 | Loss 9.0798 | 4844s elapsed
+  Batch 150/365 | Loss 9.0747 | 5305s elapsed
+  Batch 160/365 | Loss 9.0762 | 6160s elapsed
+  Batch 170/365 | Loss 9.0765 | 6500s elapsed
+  Batch 180/365 | Loss 9.0721 | 6852s elapsed
+  Batch 190/365 | Loss 9.0716 | 7217s elapsed
+  Batch 200/365 | Loss 9.0649 | 7582s elapsed
+  Batch 210/365 | Loss 9.0635 | 7944s elapsed
+  Batch 220/365 | Loss 9.0603 | 8310s elapsed
+  Batch 230/365 | Loss 9.0609 | 8671s elapsed
+  Batch 240/365 | Loss 9.0558 | 9027s elapsed
+  Batch 250/365 | Loss 9.0569 | 9381s elapsed
+  Batch 260/365 | Loss 9.0508 | 9735s elapsed
+  Batch 270/365 | Loss 9.0492 | 10084s elapsed
+  Batch 280/365 | Loss 9.0473 | 10432s elapsed
+  Batch 290/365 | Loss 9.0478 | 10773s elapsed
+  Batch 300/365 | Loss 9.0461 | 11136s elapsed
+  Batch 310/365 | Loss 9.0437 | 11499s elapsed
+  Batch 320/365 | Loss 9.0431 | 11854s elapsed
+  Batch 330/365 | Loss 9.0418 | 12210s elapsed
+  Batch 340/365 | Loss 9.0403 | 12569s elapsed
+  Batch 350/365 | Loss 9.0382 | 12931s elapsed
+  Batch 360/365 | Loss 9.0373 | 13281s elapsed
+Epoch 004/5 | Loss 9.0372 | Time 13434.9s
+  ↳ Valid  MRR: 0.2070 | H@1: 0.1295 | H@3: 0.2235 | H@10: 0.3650
+  Batch 10/365 | Loss 8.8286 | 356s elapsed
+  Batch 20/365 | Loss 8.8127 | 715s elapsed
+  Batch 30/365 | Loss 8.7969 | 1068s elapsed
+  Batch 40/365 | Loss 8.8076 | 1424s elapsed
+  Batch 50/365 | Loss 8.8226 | 1786s elapsed
+  Batch 60/365 | Loss 8.8075 | 2150s elapsed
+  Batch 70/365 | Loss 8.8045 | 2506s elapsed
+  Batch 80/365 | Loss 8.8037 | 2859s elapsed
+  Batch 90/365 | Loss 8.8036 | 3214s elapsed
+  Batch 100/365 | Loss 8.8043 | 3571s elapsed
+  Batch 110/365 | Loss 8.8080 | 3928s elapsed
+  Batch 120/365 | Loss 8.8035 | 4280s elapsed
+  Batch 130/365 | Loss 8.8051 | 4630s elapsed
+  Batch 140/365 | Loss 8.8086 | 4983s elapsed
+  Batch 150/365 | Loss 8.8074 | 5342s elapsed
+  Batch 160/365 | Loss 8.8083 | 5700s elapsed
+  Batch 170/365 | Loss 8.8057 | 6058s elapsed
+  Batch 180/365 | Loss 8.8047 | 6414s elapsed
+  Batch 190/365 | Loss 8.8009 | 6772s elapsed
+  Batch 200/365 | Loss 8.8009 | 7135s elapsed
+  Batch 210/365 | Loss 8.8022 | 7489s elapsed
+  Batch 220/365 | Loss 8.8014 | 7845s elapsed
+  Batch 230/365 | Loss 8.7998 | 8203s elapsed
+  Batch 240/365 | Loss 8.7996 | 8552s elapsed
+  Batch 250/365 | Loss 8.8024 | 8913s elapsed
+  Batch 260/365 | Loss 8.8020 | 9272s elapsed
+  Batch 270/365 | Loss 8.8011 | 9629s elapsed
+  Batch 280/365 | Loss 8.8008 | 9984s elapsed
+  Batch 290/365 | Loss 8.8017 | 10343s elapsed
+  Batch 300/365 | Loss 8.8003 | 10699s elapsed
+  Batch 310/365 | Loss 8.7993 | 11065s elapsed
+  Batch 320/365 | Loss 8.7999 | 11424s elapsed
+  Batch 330/365 | Loss 8.8006 | 11780s elapsed
+  Batch 340/365 | Loss 8.8024 | 12138s elapsed
+  Batch 350/365 | Loss 8.8008 | 12492s elapsed
+  Batch 360/365 | Loss 8.8008 | 12848s elapsed
+Epoch 005/5 | Loss 8.8010 | Time 13001.4s
+  ↳ Valid  MRR: 0.2103 | H@1: 0.1350 | H@3: 0.2270 | H@10: 0.3615
+
+Training done. Best valid MRR: 0.2392
+Results saved to results/ICEWS18/
+[2/3] Evaluating ICEWS18...
+
+============================================================
+  HEAT Evaluation — ICEWS18
+  Checkpoint epoch: 3
+============================================================
+
+Evaluating on 49545 test quadruples...
+  Processed 500/49545
+  Processed 1000/49545
+  Processed 1500/49545
+  Processed 2000/49545
+  Processed 2500/49545
+  Processed 3000/49545
+  Processed 3500/49545
+  Processed 4000/49545
+  Processed 4500/49545
+  Processed 5000/49545
+  Processed 5500/49545
+  Processed 6000/49545
+  Processed 6500/49545
+  Processed 7000/49545
+  Processed 7500/49545
+  Processed 8000/49545
+  Processed 8500/49545
+  Processed 9000/49545
+  Processed 9500/49545
+  Processed 10000/49545
+  Processed 10500/49545
+  Processed 11000/49545
+  Processed 11500/49545
+  Processed 12000/49545
+  Processed 12500/49545
+  Processed 13000/49545
+  Processed 13500/49545
+  Processed 14000/49545
+  Processed 14500/49545
+  Processed 15000/49545
+  Processed 15500/49545
+  Processed 16000/49545
+  Processed 16500/49545
+  Processed 17000/49545
+  Processed 17500/49545
+  Processed 18000/49545
+  Processed 18500/49545
+  Processed 19000/49545
+  Processed 19500/49545
+  Processed 20000/49545
+  Processed 20500/49545
+  Processed 21000/49545
+  Processed 21500/49545
+  Processed 22000/49545
+  Processed 22500/49545
+  Processed 23000/49545
+  Processed 23500/49545
+  Processed 24000/49545
+  Processed 24500/49545
+  Processed 25000/49545
+  Processed 25500/49545
+  Processed 26000/49545
+  Processed 26500/49545
+  Processed 27000/49545
+  Processed 27500/49545
+  Processed 28000/49545
+  Processed 28500/49545
+  Processed 29000/49545
+  Processed 29500/49545
+  Processed 30000/49545
+  Processed 30500/49545
+  Processed 31000/49545
+  Processed 31500/49545
+  Processed 32000/49545
+  Processed 32500/49545
+  Processed 33000/49545
+  Processed 33500/49545
+  Processed 34000/49545
+  Processed 34500/49545
+  Processed 35000/49545
+  Processed 35500/49545
+  Processed 36000/49545
+  Processed 36500/49545
+  Processed 37000/49545
+  Processed 37500/49545
+  Processed 38000/49545
+  Processed 38500/49545
+  Processed 39000/49545
+  Processed 39500/49545
+  Processed 40000/49545
+  Processed 40500/49545
+  Processed 41000/49545
+  Processed 41500/49545
+  Processed 42000/49545
+  Processed 42500/49545
+  Processed 43000/49545
+  Processed 43500/49545
+  Processed 44000/49545
+  Processed 44500/49545
+  Processed 45000/49545
+  Processed 45500/49545
+  Processed 46000/49545
+  Processed 46500/49545
+  Processed 47000/49545
+  Processed 47500/49545
+  Processed 48000/49545
+  Processed 48500/49545
+  Processed 49000/49545
+  Processed 49500/49545
+
+────────────────────────────────────────
+  Test Results — HEAT / ICEWS18
+────────────────────────────────────────
+  MRR   : 0.2048
+  MR    : 1129.3
+  Hits@1: 0.1282
+  Hits@3: 0.2260
+  Hits@10:0.3570
+────────────────────────────────────────
+
+Results saved to results/ICEWS18/
+[3/3] Visualizing ICEWS18...
+
+============================================================
+  HEAT Visualisation Suite
+  Dataset: ICEWS18
+============================================================
+
+Generating plots...
+  ✓ Saved 01_training_loss.png / 01_training_loss.pdf
+  ✓ Saved 02_mrr_progression.png / 02_mrr_progression.pdf
+  ✓ Saved 03_rank_distribution.png / 03_rank_distribution.pdf
+  ✓ Saved 04_confusion_matrix.png / 04_confusion_matrix.pdf
+  ✓ Saved 05_roc_curve.png / 05_roc_curve.pdf
+  ✓ Saved 08_calibration.png / 08_calibration.pdf
+  ✓ Saved 06_model_comparison.png / 06_model_comparison.pdf
+  ✓ Saved 10_ablation_study.png / 10_ablation_study.pdf
+  ✓ Saved 07_mrr_heatmap.png / 07_mrr_heatmap.pdf
+  ✓ Saved 11_summary_comparison.png / 11_summary_comparison.pdf
+  Running t-SNE on 500 entity embeddings...
+  ✓ Saved 09_tsne_embeddings.png / 09_tsne_embeddings.pdf
+
+✅ All figures saved to: results/ICEWS18/figures/
+   (PNG + PDF in publication quality 300 DPI)
+
+✅ ICEWS18 done!
+
+========================================
+  HEAT Pipeline — Dataset: ICEWS14
+========================================
+[1/3] Training ICEWS14...
+
+============================================================
+  HEAT Training — Dataset: ICEWS14
+  Device: cpu
+============================================================
+
+  [data] ICEWS14: 12,498 entities, 260 relations
+  [data] Loading quadruples...
+  [data] Train: 323,895  Valid: 341,409  Test: 341,409
+  [data] Building train history...
+  [data] Train history done.
+  [data] Building test history...
+  [data] Test history done. Dataset ready.
+
+  Entities: 12,498  |  Relations: 260  |  Train: 323,895
+
+  Batch 10/317 | Loss 17.6251 | 218s elapsed
+  Batch 20/317 | Loss 15.7730 | 438s elapsed
+  Batch 30/317 | Loss 14.8507 | 661s elapsed
+  Batch 40/317 | Loss 14.2894 | 884s elapsed
+  Batch 50/317 | Loss 13.9104 | 1111s elapsed
+  Batch 60/317 | Loss 13.6316 | 1333s elapsed
+  Batch 70/317 | Loss 13.4144 | 1556s elapsed
+  Batch 80/317 | Loss 13.2343 | 1776s elapsed
+  Batch 90/317 | Loss 13.0767 | 1994s elapsed
+  Batch 100/317 | Loss 12.9455 | 2209s elapsed
+  Batch 110/317 | Loss 12.8201 | 2430s elapsed
+  Batch 120/317 | Loss 12.7049 | 2651s elapsed
+  Batch 130/317 | Loss 12.6126 | 2875s elapsed
+  Batch 140/317 | Loss 12.5307 | 3095s elapsed
+  Batch 150/317 | Loss 12.4539 | 3318s elapsed
+  Batch 160/317 | Loss 12.3871 | 3536s elapsed
+  Batch 170/317 | Loss 12.3249 | 3753s elapsed
+  Batch 180/317 | Loss 12.2673 | 3973s elapsed
+  Batch 190/317 | Loss 12.2130 | 4194s elapsed
+  Batch 200/317 | Loss 12.1629 | 4408s elapsed
+  Batch 210/317 | Loss 12.1158 | 4626s elapsed
+  Batch 220/317 | Loss 12.0724 | 4849s elapsed
+  Batch 230/317 | Loss 12.0290 | 5070s elapsed
+  Batch 240/317 | Loss 11.9884 | 5293s elapsed
+  Batch 250/317 | Loss 11.9520 | 5514s elapsed
+  Batch 260/317 | Loss 11.9168 | 5742s elapsed
+  Batch 270/317 | Loss 11.8797 | 5967s elapsed
+  Batch 280/317 | Loss 11.8485 | 6191s elapsed
+  Batch 290/317 | Loss 11.8141 | 6417s elapsed
+  Batch 300/317 | Loss 11.7838 | 6639s elapsed
+  Batch 310/317 | Loss 11.7545 | 6862s elapsed
+Epoch 001/5 | Loss 11.7341 | Time 6997.1s
+  ↳ Valid  MRR: 0.1897 | H@1: 0.1255 | H@3: 0.2005 | H@10: 0.3145
+  ✓ Best model saved (MRR=0.1897)
+  Batch 10/317 | Loss 10.6630 | 215s elapsed
+  Batch 20/317 | Loss 10.6606 | 439s elapsed
+  Batch 30/317 | Loss 10.6376 | 662s elapsed
+  Batch 40/317 | Loss 10.6165 | 880s elapsed
+  Batch 50/317 | Loss 10.6149 | 1099s elapsed
+  Batch 60/317 | Loss 10.5917 | 1322s elapsed
+  Batch 70/317 | Loss 10.5803 | 1551s elapsed
+  Batch 80/317 | Loss 10.5658 | 1787s elapsed
+  Batch 90/317 | Loss 10.5543 | 2019s elapsed
+  Batch 100/317 | Loss 10.5445 | 5029s elapsed
+  Batch 110/317 | Loss 10.5320 | 14427s elapsed
+  Batch 120/317 | Loss 10.5204 | 14663s elapsed
+  Batch 130/317 | Loss 10.5143 | 14895s elapsed
+  Batch 140/317 | Loss 10.4992 | 15129s elapsed
+  Batch 150/317 | Loss 10.4854 | 15389s elapsed
+  Batch 160/317 | Loss 10.4739 | 15629s elapsed
+  Batch 170/317 | Loss 10.4626 | 15867s elapsed
+  Batch 180/317 | Loss 10.4516 | 16106s elapsed
+  Batch 190/317 | Loss 10.4390 | 16343s elapsed
+  Batch 200/317 | Loss 10.4298 | 16574s elapsed
+  Batch 210/317 | Loss 10.4195 | 16809s elapsed
+  Batch 220/317 | Loss 10.4119 | 17045s elapsed
+  Batch 230/317 | Loss 10.4041 | 17275s elapsed
+  Batch 240/317 | Loss 10.3927 | 17509s elapsed
+  Batch 250/317 | Loss 10.3839 | 17745s elapsed
+  Batch 260/317 | Loss 10.3746 | 17980s elapsed
+  Batch 270/317 | Loss 10.3652 | 18214s elapsed
+  Batch 280/317 | Loss 10.3581 | 18447s elapsed
+  Batch 290/317 | Loss 10.3480 | 18682s elapsed
+  Batch 300/317 | Loss 10.3377 | 18915s elapsed
+  Batch 310/317 | Loss 10.3283 | 19140s elapsed
+Epoch 002/5 | Loss 10.3220 | Time 19288.7s
+  ↳ Valid  MRR: 0.1848 | H@1: 0.1215 | H@3: 0.2055 | H@10: 0.3085
+  Batch 10/317 | Loss 9.9241 | 229s elapsed
+  Batch 20/317 | Loss 9.9013 | 461s elapsed
+  Batch 30/317 | Loss 9.8970 | 696s elapsed
+  Batch 40/317 | Loss 9.8847 | 931s elapsed
+  Batch 50/317 | Loss 9.8797 | 1163s elapsed
+  Batch 60/317 | Loss 9.8660 | 1393s elapsed
+  Batch 70/317 | Loss 9.8554 | 1626s elapsed
+  Batch 80/317 | Loss 9.8497 | 1855s elapsed
+  Batch 90/317 | Loss 9.8494 | 2096s elapsed
+  Batch 100/317 | Loss 9.8453 | 2336s elapsed
+  Batch 110/317 | Loss 9.8482 | 2582s elapsed
+  Batch 120/317 | Loss 9.8445 | 2816s elapsed
+  Batch 130/317 | Loss 9.8367 | 3066s elapsed
+  Batch 140/317 | Loss 9.8305 | 3299s elapsed
+  Batch 150/317 | Loss 9.8255 | 3579s elapsed
+  Batch 160/317 | Loss 9.8218 | 3809s elapsed
+  Batch 170/317 | Loss 9.8181 | 4038s elapsed
+  Batch 180/317 | Loss 9.8126 | 4265s elapsed
+  Batch 190/317 | Loss 9.8105 | 4491s elapsed
+  Batch 200/317 | Loss 9.8067 | 4718s elapsed
+  Batch 210/317 | Loss 9.8034 | 4947s elapsed
+  Batch 220/317 | Loss 9.7971 | 5174s elapsed
+  Batch 230/317 | Loss 9.7954 | 5405s elapsed
+  Batch 240/317 | Loss 9.7921 | 5632s elapsed
+  Batch 250/317 | Loss 9.7888 | 5861s elapsed
+  Batch 260/317 | Loss 9.7835 | 6090s elapsed
+  Batch 270/317 | Loss 9.7778 | 6317s elapsed
+  Batch 280/317 | Loss 9.7740 | 6545s elapsed
+  Batch 290/317 | Loss 9.7733 | 6783s elapsed
+  Batch 300/317 | Loss 9.7706 | 7018s elapsed
+  Batch 310/317 | Loss 9.7655 | 7257s elapsed
+Epoch 003/5 | Loss 9.7628 | Time 7405.5s
+  ↳ Valid  MRR: 0.1569 | H@1: 0.0945 | H@3: 0.1670 | H@10: 0.2790
+  Batch 10/317 | Loss 9.4745 | 231s elapsed
+  Batch 20/317 | Loss 9.4687 | 456s elapsed
+  Batch 30/317 | Loss 9.4864 | 680s elapsed
+  Batch 40/317 | Loss 9.4910 | 911s elapsed
+  Batch 50/317 | Loss 9.4944 | 1141s elapsed
+  Batch 60/317 | Loss 9.4928 | 1368s elapsed
+  Batch 70/317 | Loss 9.4946 | 1594s elapsed
+  Batch 80/317 | Loss 9.5038 | 1819s elapsed
+  Batch 90/317 | Loss 9.4924 | 2046s elapsed
+  Batch 100/317 | Loss 9.4895 | 2268s elapsed
+  Batch 110/317 | Loss 9.4873 | 2496s elapsed
+  Batch 120/317 | Loss 9.4887 | 2722s elapsed
+  Batch 130/317 | Loss 9.4880 | 2949s elapsed
+  Batch 140/317 | Loss 9.4887 | 3176s elapsed
+  Batch 150/317 | Loss 9.4888 | 3410s elapsed
+  Batch 160/317 | Loss 9.4882 | 3636s elapsed
+  Batch 170/317 | Loss 9.4854 | 3866s elapsed
+  Batch 180/317 | Loss 9.4864 | 4090s elapsed
+  Batch 190/317 | Loss 9.4878 | 4323s elapsed
+  Batch 200/317 | Loss 9.4842 | 4555s elapsed
+  Batch 210/317 | Loss 9.4811 | 4791s elapsed
+  Batch 220/317 | Loss 9.4794 | 5029s elapsed
+  Batch 230/317 | Loss 9.4787 | 5266s elapsed
+  Batch 240/317 | Loss 9.4770 | 5504s elapsed
+  Batch 250/317 | Loss 9.4758 | 5742s elapsed
+  Batch 260/317 | Loss 9.4777 | 5973s elapsed
+  Batch 270/317 | Loss 9.4753 | 6207s elapsed
+  Batch 280/317 | Loss 9.4738 | 6440s elapsed
+  Batch 290/317 | Loss 9.4740 | 6674s elapsed
+  Batch 300/317 | Loss 9.4713 | 6904s elapsed
+  Batch 310/317 | Loss 9.4698 | 7136s elapsed
+Epoch 004/5 | Loss 9.4693 | Time 7283.9s
+  ↳ Valid  MRR: 0.1622 | H@1: 0.0980 | H@3: 0.1705 | H@10: 0.2830
+  Batch 10/317 | Loss 9.3570 | 227s elapsed
+  Batch 20/317 | Loss 9.3481 | 455s elapsed
+  Batch 30/317 | Loss 9.3514 | 685s elapsed
+  Batch 40/317 | Loss 9.3433 | 916s elapsed
+  Batch 50/317 | Loss 9.3388 | 1148s elapsed
+  Batch 60/317 | Loss 9.3317 | 1379s elapsed
+  Batch 70/317 | Loss 9.3304 | 1609s elapsed
+  Batch 80/317 | Loss 9.3318 | 1842s elapsed
+  Batch 90/317 | Loss 9.3342 | 2072s elapsed
+  Batch 100/317 | Loss 9.3295 | 2303s elapsed
+  Batch 110/317 | Loss 9.3281 | 2542s elapsed
+  Batch 120/317 | Loss 9.3265 | 2784s elapsed
+  Batch 130/317 | Loss 9.3267 | 3028s elapsed
+  Batch 140/317 | Loss 9.3266 | 3260s elapsed
+  Batch 150/317 | Loss 9.3273 | 3491s elapsed
+  Batch 160/317 | Loss 9.3273 | 3724s elapsed
+  Batch 170/317 | Loss 9.3249 | 3961s elapsed
+  Batch 180/317 | Loss 9.3239 | 4202s elapsed
+  Batch 190/317 | Loss 9.3229 | 4437s elapsed
+  Batch 200/317 | Loss 9.3204 | 4673s elapsed
+  Batch 210/317 | Loss 9.3188 | 4902s elapsed
+  Batch 220/317 | Loss 9.3204 | 5131s elapsed
+  Batch 230/317 | Loss 9.3209 | 5360s elapsed
+  Batch 240/317 | Loss 9.3210 | 5592s elapsed
+  Batch 250/317 | Loss 9.3202 | 5820s elapsed
+  Batch 260/317 | Loss 9.3201 | 6049s elapsed
+  Batch 270/317 | Loss 9.3195 | 6282s elapsed
+  Batch 280/317 | Loss 9.3204 | 6514s elapsed
+  Batch 290/317 | Loss 9.3189 | 6748s elapsed
+  Batch 300/317 | Loss 9.3197 | 6981s elapsed
+  Batch 310/317 | Loss 9.3211 | 7204s elapsed
+Epoch 005/5 | Loss 9.3201 | Time 7342.8s
+  ↳ Valid  MRR: 0.1709 | H@1: 0.1085 | H@3: 0.1860 | H@10: 0.2825
+
+Training done. Best valid MRR: 0.1897
+Results saved to results/ICEWS14/
+[2/3] Evaluating ICEWS14...
+
+============================================================
+  HEAT Evaluation — ICEWS14
+  Checkpoint epoch: 1
+============================================================
+
+Evaluating on 341409 test quadruples...
+  Processed 500/341409
+  Processed 1000/341409
+  Processed 1500/341409
+  Processed 2000/341409
+  Processed 2500/341409
+  Processed 3000/341409
+  Processed 3500/341409
+  Processed 4000/341409
+  Processed 4500/341409
+  Processed 5000/341409
+  Processed 5500/341409
+  Processed 6000/341409
+  Processed 6500/341409
+  Processed 7000/341409
+  Processed 7500/341409
+  Processed 8000/341409
+  Processed 8500/341409
+  Processed 9000/341409
+  Processed 9500/341409
+  Processed 10000/341409
+  Processed 10500/341409
+  Processed 11000/341409
+  Processed 11500/341409
+  Processed 12000/341409
+  Processed 12500/341409
+  Processed 13000/341409
+  Processed 13500/341409
+  Processed 14000/341409
+  Processed 14500/341409
+  Processed 15000/341409
+  Processed 15500/341409
+  Processed 16000/341409
+  Processed 16500/341409
+  Processed 17000/341409
+  Processed 17500/341409
+  Processed 18000/341409
+  Processed 18500/341409
+  Processed 19000/341409
+  Processed 19500/341409
+  Processed 20000/341409
+  Processed 20500/341409
+  Processed 21000/341409
+  Processed 21500/341409
+  Processed 22000/341409
+  Processed 22500/341409
+  Processed 23000/341409
+  Processed 23500/341409
+  Processed 24000/341409
+  Processed 24500/341409
+  Processed 25000/341409
+  Processed 25500/341409
+  Processed 26000/341409
+  Processed 26500/341409
+  Processed 27000/341409
+  Processed 27500/341409
+  Processed 28000/341409
+  Processed 28500/341409
+  Processed 29000/341409
+  Processed 29500/341409
+  Processed 30000/341409
+  Processed 30500/341409
+  Processed 31000/341409
+  Processed 31500/341409
+  Processed 32000/341409
+  Processed 32500/341409
+  Processed 33000/341409
+  Processed 33500/341409
+  Processed 34000/341409
+  Processed 34500/341409
+  Processed 35000/341409
+  Processed 35500/341409
+  Processed 36000/341409
+  Processed 36500/341409
+  Processed 37000/341409
+  Processed 37500/341409
+  Processed 38000/341409
+  Processed 38500/341409
+  Processed 39000/341409
+  Processed 39500/341409
+  Processed 40000/341409
+  Processed 40500/341409
+  Processed 41000/341409
+  Processed 41500/341409
+  Processed 42000/341409
+  Processed 42500/341409
+  Processed 43000/341409
+  Processed 43500/341409
+  Processed 44000/341409
+  Processed 44500/341409
+  Processed 45000/341409
+  Processed 45500/341409
+  Processed 46000/341409
+  Processed 46500/341409
+  Processed 47000/341409
+  Processed 47500/341409
+  Processed 48000/341409
+  Processed 48500/341409
+  Processed 49000/341409
+  Processed 49500/341409
+  Processed 50000/341409
+  Processed 50500/341409
+  Processed 51000/341409
+  Processed 51500/341409
+  Processed 52000/341409
+  Processed 52500/341409
+  Processed 53000/341409
+  Processed 53500/341409
+  Processed 54000/341409
+  Processed 54500/341409
+  Processed 55000/341409
+  Processed 55500/341409
+  Processed 56000/341409
+  Processed 56500/341409
+  Processed 57000/341409
+  Processed 57500/341409
+  Processed 58000/341409
+  Processed 58500/341409
+  Processed 59000/341409
+  Processed 59500/341409
+  Processed 60000/341409
+  Processed 60500/341409
+  Processed 61000/341409
+  Processed 61500/341409
+  Processed 62000/341409
+  Processed 62500/341409
+  Processed 63000/341409
+  Processed 63500/341409
+  Processed 64000/341409
+  Processed 64500/341409
+  Processed 65000/341409
+  Processed 65500/341409
+  Processed 66000/341409
+  Processed 66500/341409
+  Processed 67000/341409
+  Processed 67500/341409
+  Processed 68000/341409
+  Processed 68500/341409
+  Processed 69000/341409
+  Processed 69500/341409
+  Processed 70000/341409
+  Processed 70500/341409
+  Processed 71000/341409
+  Processed 71500/341409
+  Processed 72000/341409
+  Processed 72500/341409
+  Processed 73000/341409
+  Processed 73500/341409
+  Processed 74000/341409
+  Processed 74500/341409
+  Processed 75000/341409
+  Processed 75500/341409
+  Processed 76000/341409
+  Processed 76500/341409
+  Processed 77000/341409
+  Processed 77500/341409
+  Processed 78000/341409
+  Processed 78500/341409
+  Processed 79000/341409
+  Processed 79500/341409
+  Processed 80000/341409
+  Processed 80500/341409
+  Processed 81000/341409
+  Processed 81500/341409
+  Processed 82000/341409
+  Processed 82500/341409
+  Processed 83000/341409
+  Processed 83500/341409
+  Processed 84000/341409
+  Processed 84500/341409
+  Processed 85000/341409
+  Processed 85500/341409
+  Processed 86000/341409
+  Processed 86500/341409
+  Processed 87000/341409
+  Processed 87500/341409
+  Processed 88000/341409
+  Processed 88500/341409
+  Processed 89000/341409
+  Processed 89500/341409
+  Processed 90000/341409
+  Processed 90500/341409
+  Processed 91000/341409
+  Processed 91500/341409
+  Processed 92000/341409
+  Processed 92500/341409
+  Processed 93000/341409
+  Processed 93500/341409
+  Processed 94000/341409
+  Processed 94500/341409
+  Processed 95000/341409
+  Processed 95500/341409
+  Processed 96000/341409
+  Processed 96500/341409
+  Processed 97000/341409
+  Processed 97500/341409
+  Processed 98000/341409
+  Processed 98500/341409
+  Processed 99000/341409
+  Processed 99500/341409
+  Processed 100000/341409
+  Processed 100500/341409
+  Processed 101000/341409
+  Processed 101500/341409
+  Processed 102000/341409
+  Processed 102500/341409
+  Processed 103000/341409
+  Processed 103500/341409
+  Processed 104000/341409
+  Processed 104500/341409
+  Processed 105000/341409
+  Processed 105500/341409
+  Processed 106000/341409
+  Processed 106500/341409
+  Processed 107000/341409
+  Processed 107500/341409
+  Processed 108000/341409
+  Processed 108500/341409
+  Processed 109000/341409
+  Processed 109500/341409
+  Processed 110000/341409
+  Processed 110500/341409
+  Processed 111000/341409
+  Processed 111500/341409
+  Processed 112000/341409
+  Processed 112500/341409
+  Processed 113000/341409
+  Processed 113500/341409
+  Processed 114000/341409
+  Processed 114500/341409
+  Processed 115000/341409
+  Processed 115500/341409
+  Processed 116000/341409
+  Processed 116500/341409
+  Processed 117000/341409
+  Processed 117500/341409
+  Processed 118000/341409
+  Processed 118500/341409
+  Processed 119000/341409
+  Processed 119500/341409
+  Processed 120000/341409
+  Processed 120500/341409
+  Processed 121000/341409
+  Processed 121500/341409
+  Processed 122000/341409
+  Processed 122500/341409
+  Processed 123000/341409
+  Processed 123500/341409
+  Processed 124000/341409
+  Processed 124500/341409
+  Processed 125000/341409
+  Processed 125500/341409
+  Processed 126000/341409
+  Processed 126500/341409
+  Processed 127000/341409
+  Processed 127500/341409
+  Processed 128000/341409
+  Processed 128500/341409
+  Processed 129000/341409
+  Processed 129500/341409
+  Processed 130000/341409
+  Processed 130500/341409
+  Processed 131000/341409
+  Processed 131500/341409
+  Processed 132000/341409
+  Processed 132500/341409
+  Processed 133000/341409
+  Processed 133500/341409
+  Processed 134000/341409
+  Processed 134500/341409
+  Processed 135000/341409
+  Processed 135500/341409
+  Processed 136000/341409
+  Processed 136500/341409
+  Processed 137000/341409
+  Processed 137500/341409
+  Processed 138000/341409
+  Processed 138500/341409
+  Processed 139000/341409
+  Processed 139500/341409
+  Processed 140000/341409
+  Processed 140500/341409
+  Processed 141000/341409
+  Processed 141500/341409
+  Processed 142000/341409
+  Processed 142500/341409
+  Processed 143000/341409
+  Processed 143500/341409
+  Processed 144000/341409
+  Processed 144500/341409
+  Processed 145000/341409
+  Processed 145500/341409
+  Processed 146000/341409
+  Processed 146500/341409
+  Processed 147000/341409
+  Processed 147500/341409
+  Processed 148000/341409
+  Processed 148500/341409
+  Processed 149000/341409
+  Processed 149500/341409
+  Processed 150000/341409
+  Processed 150500/341409
+  Processed 151000/341409
+  Processed 151500/341409
+  Processed 152000/341409
+  Processed 152500/341409
+  Processed 153000/341409
+  Processed 153500/341409
+  Processed 154000/341409
+  Processed 154500/341409
+  Processed 155000/341409
+  Processed 155500/341409
+  Processed 156000/341409
+  Processed 156500/341409
+  Processed 157000/341409
+  Processed 157500/341409
+  Processed 158000/341409
+  Processed 158500/341409
+  Processed 159000/341409
+  Processed 159500/341409
+  Processed 160000/341409
+  Processed 160500/341409
+  Processed 161000/341409
+  Processed 161500/341409
+  Processed 162000/341409
+  Processed 162500/341409
+  Processed 163000/341409
+  Processed 163500/341409
+  Processed 164000/341409
+  Processed 164500/341409
+  Processed 165000/341409
+  Processed 165500/341409
+  Processed 166000/341409
+  Processed 166500/341409
+  Processed 167000/341409
+  Processed 167500/341409
+  Processed 168000/341409
+  Processed 168500/341409
+  Processed 169000/341409
+  Processed 169500/341409
+  Processed 170000/341409
+  Processed 170500/341409
+  Processed 171000/341409
+  Processed 171500/341409
+  Processed 172000/341409
+  Processed 172500/341409
+  Processed 173000/341409
+  Processed 173500/341409
+  Processed 174000/341409
+  Processed 174500/341409
+  Processed 175000/341409
+  Processed 175500/341409
+  Processed 176000/341409
+  Processed 176500/341409
+  Processed 177000/341409
+  Processed 177500/341409
+  Processed 178000/341409
+  Processed 178500/341409
+  Processed 179000/341409
+  Processed 179500/341409
+  Processed 180000/341409
+  Processed 180500/341409
+  Processed 181000/341409
+  Processed 181500/341409
+  Processed 182000/341409
+  Processed 182500/341409
+  Processed 183000/341409
+  Processed 183500/341409
+  Processed 184000/341409
+  Processed 184500/341409
+  Processed 185000/341409
+  Processed 185500/341409
+  Processed 186000/341409
+  Processed 186500/341409
+  Processed 187000/341409
+  Processed 187500/341409
+  Processed 188000/341409
+  Processed 188500/341409
+  Processed 189000/341409
+  Processed 189500/341409
+  Processed 190000/341409
+  Processed 190500/341409
+  Processed 191000/341409
+  Processed 191500/341409
+  Processed 192000/341409
+  Processed 192500/341409
+  Processed 193000/341409
+  Processed 193500/341409
+  Processed 194000/341409
+  Processed 194500/341409
+  Processed 195000/341409
+  Processed 195500/341409
+  Processed 196000/341409
+  Processed 196500/341409
+  Processed 197000/341409
+  Processed 197500/341409
+  Processed 198000/341409
+  Processed 198500/341409
+  Processed 199000/341409
+  Processed 199500/341409
+  Processed 200000/341409
+  Processed 200500/341409
+  Processed 201000/341409
+  Processed 201500/341409
+  Processed 202000/341409
+  Processed 202500/341409
+  Processed 203000/341409
+  Processed 203500/341409
+  Processed 204000/341409
+  Processed 204500/341409
+  Processed 205000/341409
+  Processed 205500/341409
+  Processed 206000/341409
+  Processed 206500/341409
+  Processed 207000/341409
+  Processed 207500/341409
+  Processed 208000/341409
+  Processed 208500/341409
+  Processed 209000/341409
+  Processed 209500/341409
+  Processed 210000/341409
+  Processed 210500/341409
+  Processed 211000/341409
+  Processed 211500/341409
+  Processed 212000/341409
+  Processed 212500/341409
+  Processed 213000/341409
+  Processed 213500/341409
+  Processed 214000/341409
+  Processed 214500/341409
+  Processed 215000/341409
+  Processed 215500/341409
+  Processed 216000/341409
+  Processed 216500/341409
+  Processed 217000/341409
+  Processed 217500/341409
+  Processed 218000/341409
+  Processed 218500/341409
+  Processed 219000/341409
+  Processed 219500/341409
+  Processed 220000/341409
+  Processed 220500/341409
+  Processed 221000/341409
+  Processed 221500/341409
+  Processed 222000/341409
+  Processed 222500/341409
+  Processed 223000/341409
+  Processed 223500/341409
+  Processed 224000/341409
+  Processed 224500/341409
+  Processed 225000/341409
+  Processed 225500/341409
+  Processed 226000/341409
+  Processed 226500/341409
+  Processed 227000/341409
+  Processed 227500/341409
+  Processed 228000/341409
+  Processed 228500/341409
+  Processed 229000/341409
+  Processed 229500/341409
+  Processed 230000/341409
+  Processed 230500/341409
+  Processed 231000/341409
+  Processed 231500/341409
+  Processed 232000/341409
+  Processed 232500/341409
+  Processed 233000/341409
+  Processed 233500/341409
+  Processed 234000/341409
+  Processed 234500/341409
+  Processed 235000/341409
+  Processed 235500/341409
+  Processed 236000/341409
+  Processed 236500/341409
+  Processed 237000/341409
+  Processed 237500/341409
+  Processed 238000/341409
+  Processed 238500/341409
+  Processed 239000/341409
+  Processed 239500/341409
+  Processed 240000/341409
+  Processed 240500/341409
+  Processed 241000/341409
+  Processed 241500/341409
+  Processed 242000/341409
+  Processed 242500/341409
+  Processed 243000/341409
+  Processed 243500/341409
+  Processed 244000/341409
+  Processed 244500/341409
+  Processed 245000/341409
+  Processed 245500/341409
+  Processed 246000/341409
+  Processed 246500/341409
+  Processed 247000/341409
+  Processed 247500/341409
+  Processed 248000/341409
+  Processed 248500/341409
+  Processed 249000/341409
+  Processed 249500/341409
+  Processed 250000/341409
+  Processed 250500/341409
+  Processed 251000/341409
+  Processed 251500/341409
+  Processed 252000/341409
+  Processed 252500/341409
+  Processed 253000/341409
+  Processed 253500/341409
+  Processed 254000/341409
+  Processed 254500/341409
+  Processed 255000/341409
+  Processed 255500/341409
+  Processed 256000/341409
+  Processed 256500/341409
+  Processed 257000/341409
+  Processed 257500/341409
+  Processed 258000/341409
+  Processed 258500/341409
+  Processed 259000/341409
+  Processed 259500/341409
+  Processed 260000/341409
+  Processed 260500/341409
+  Processed 261000/341409
+  Processed 261500/341409
+  Processed 262000/341409
+  Processed 262500/341409
+  Processed 263000/341409
+  Processed 263500/341409
+  Processed 264000/341409
+  Processed 264500/341409
+  Processed 265000/341409
+  Processed 265500/341409
+  Processed 266000/341409
+  Processed 266500/341409
+  Processed 267000/341409
+  Processed 267500/341409
+  Processed 268000/341409
+  Processed 268500/341409
+  Processed 269000/341409
+  Processed 269500/341409
+  Processed 270000/341409
+  Processed 270500/341409
+  Processed 271000/341409
+  Processed 271500/341409
+  Processed 272000/341409
+  Processed 272500/341409
+  Processed 273000/341409
+  Processed 273500/341409
+  Processed 274000/341409
+  Processed 274500/341409
+  Processed 275000/341409
+  Processed 275500/341409
+  Processed 276000/341409
+  Processed 276500/341409
+  Processed 277000/341409
+  Processed 277500/341409
+  Processed 278000/341409
+  Processed 278500/341409
+  Processed 279000/341409
+  Processed 279500/341409
+  Processed 280000/341409
+  Processed 280500/341409
+  Processed 281000/341409
+  Processed 281500/341409
+  Processed 282000/341409
+  Processed 282500/341409
+  Processed 283000/341409
+  Processed 283500/341409
+  Processed 284000/341409
+  Processed 284500/341409
+  Processed 285000/341409
+  Processed 285500/341409
+  Processed 286000/341409
+  Processed 286500/341409
+  Processed 287000/341409
+  Processed 287500/341409
+  Processed 288000/341409
+  Processed 288500/341409
+  Processed 289000/341409
+  Processed 289500/341409
+  Processed 290000/341409
+  Processed 290500/341409
+  Processed 291000/341409
+  Processed 291500/341409
+  Processed 292000/341409
+  Processed 292500/341409
+  Processed 293000/341409
+  Processed 293500/341409
+  Processed 294000/341409
+  Processed 294500/341409
+  Processed 295000/341409
+  Processed 295500/341409
+  Processed 296000/341409
+  Processed 296500/341409
+  Processed 297000/341409
+  Processed 297500/341409
+  Processed 298000/341409
+  Processed 298500/341409
+  Processed 299000/341409
+  Processed 299500/341409
+  Processed 300000/341409
+  Processed 300500/341409
+  Processed 301000/341409
+  Processed 301500/341409
+  Processed 302000/341409
+  Processed 302500/341409
+  Processed 303000/341409
+  Processed 303500/341409
+  Processed 304000/341409
+  Processed 304500/341409
+  Processed 305000/341409
+  Processed 305500/341409
+  Processed 306000/341409
+  Processed 306500/341409
+  Processed 307000/341409
+  Processed 307500/341409
+  Processed 308000/341409
+  Processed 308500/341409
+  Processed 309000/341409
+  Processed 309500/341409
+  Processed 310000/341409
+  Processed 310500/341409
+  Processed 311000/341409
+  Processed 311500/341409
+  Processed 312000/341409
+  Processed 312500/341409
+  Processed 313000/341409
+  Processed 313500/341409
+  Processed 314000/341409
+  Processed 314500/341409
+  Processed 315000/341409
+  Processed 315500/341409
+  Processed 316000/341409
+  Processed 316500/341409
+  Processed 317000/341409
+  Processed 317500/341409
+  Processed 318000/341409
+  Processed 318500/341409
+  Processed 319000/341409
+  Processed 319500/341409
+  Processed 320000/341409
+  Processed 320500/341409
+  Processed 321000/341409
+  Processed 321500/341409
+  Processed 322000/341409
+  Processed 322500/341409
+  Processed 323000/341409
+  Processed 323500/341409
+  Processed 324000/341409
+  Processed 324500/341409
+  Processed 325000/341409
+  Processed 325500/341409
+  Processed 326000/341409
+  Processed 326500/341409
+  Processed 327000/341409
+  Processed 327500/341409
+  Processed 328000/341409
+  Processed 328500/341409
+  Processed 329000/341409
+  Processed 329500/341409
+  Processed 330000/341409
+  Processed 330500/341409
+  Processed 331000/341409
+  Processed 331500/341409
+  Processed 332000/341409
+  Processed 332500/341409
+  Processed 333000/341409
+  Processed 333500/341409
+  Processed 334000/341409
+  Processed 334500/341409
+  Processed 335000/341409
+  Processed 335500/341409
+  Processed 336000/341409
+  Processed 336500/341409
+  Processed 337000/341409
+  Processed 337500/341409
+  Processed 338000/341409
+  Processed 338500/341409
+  Processed 339000/341409
+  Processed 339500/341409
+  Processed 340000/341409
+  Processed 340500/341409
+  Processed 341000/341409
+
+────────────────────────────────────────
+  Test Results — HEAT / ICEWS14
+────────────────────────────────────────
+  MRR   : 0.2278
+  MR    : 547.2
+  Hits@1: 0.1493
+  Hits@3: 0.2476
+  Hits@10:0.3837
+────────────────────────────────────────
+
+Results saved to results/ICEWS14/
+[3/3] Visualizing ICEWS14...
+
+============================================================
+  HEAT Visualisation Suite
+  Dataset: ICEWS14
+============================================================
+
+Generating plots...
+  ✓ Saved 01_training_loss.png / 01_training_loss.pdf
+  ✓ Saved 02_mrr_progression.png / 02_mrr_progression.pdf
+  ✓ Saved 03_rank_distribution.png / 03_rank_distribution.pdf
+  ✓ Saved 04_confusion_matrix.png / 04_confusion_matrix.pdf
+  ✓ Saved 05_roc_curve.png / 05_roc_curve.pdf
+  ✓ Saved 08_calibration.png / 08_calibration.pdf
+  ✓ Saved 06_model_comparison.png / 06_model_comparison.pdf
+  ✓ Saved 10_ablation_study.png / 10_ablation_study.pdf
+  ✓ Saved 07_mrr_heatmap.png / 07_mrr_heatmap.pdf
+  ✓ Saved 11_summary_comparison.png / 11_summary_comparison.pdf
+  Running t-SNE on 500 entity embeddings...
+  ✓ Saved 09_tsne_embeddings.png / 09_tsne_embeddings.pdf
+
+✅ All figures saved to: results/ICEWS14/figures/
+   (PNG + PDF in publication quality 300 DPI)
+
+✅ ICEWS14 done!
+run_all.sh: line 59: unexpected EOF while looking for matching `"'
+
+========================================
+  HEAT Pipeline — Dataset: GDELT
+========================================
+[1/3] Training GDELT...
+
+============================================================
+  HEAT Training — Dataset: GDELT
+  Device: cpu
+============================================================
+
+  [data] GDELT: 7,691 entities, 240 relations
+  [data] Loading quadruples...
+  [data] Train: 1,734,399  Valid: 238,765  Test: 305,241
+  [data] Building train history...
+  [data] Train history done.
+  [data] Building test history...
+  [data] Test history done. Dataset ready.
+
+  Entities: 7,691  |  Relations: 240  |  Train: 1,734,399
+
+  Batch 10/1694 | Loss 16.5600 | 193s elapsed
+  Batch 20/1694 | Loss 14.9469 | 387s elapsed
+  Batch 30/1694 | Loss 14.1953 | 1030s elapsed
+  Batch 40/1694 | Loss 13.7770 | 10163s elapsed
+  Batch 50/1694 | Loss 13.5094 | 10358s elapsed
+  Batch 60/1694 | Loss 13.3271 | 10556s elapsed
+  Batch 70/1694 | Loss 13.1884 | 10757s elapsed
+  Batch 80/1694 | Loss 13.0819 | 10961s elapsed
+  Batch 90/1694 | Loss 13.0001 | 11156s elapsed
+  Batch 100/1694 | Loss 12.9280 | 11366s elapsed
+  Batch 110/1694 | Loss 12.8697 | 11597s elapsed
+  Batch 120/1694 | Loss 12.8196 | 11827s elapsed
+  Batch 130/1694 | Loss 12.7742 | 12050s elapsed
+  Batch 140/1694 | Loss 12.7343 | 12278s elapsed
+  Batch 150/1694 | Loss 12.6957 | 12520s elapsed
+  Batch 160/1694 | Loss 12.6627 | 12792s elapsed
+  Batch 170/1694 | Loss 12.6303 | 13027s elapsed
+  Batch 180/1694 | Loss 12.6010 | 13262s elapsed
+  Batch 190/1694 | Loss 12.5701 | 13475s elapsed
+  Batch 200/1694 | Loss 12.5406 | 13691s elapsed
+  Batch 210/1694 | Loss 12.5137 | 13904s elapsed
+  Batch 220/1694 | Loss 12.4862 | 14111s elapsed
+  Batch 230/1694 | Loss 12.4578 | 14321s elapsed
+  Batch 240/1694 | Loss 12.4306 | 14521s elapsed
+  Batch 250/1694 | Loss 12.4039 | 14738s elapsed
+  Batch 260/1694 | Loss 12.3774 | 14938s elapsed
+  Batch 270/1694 | Loss 12.3523 | 15145s elapsed
+  Batch 280/1694 | Loss 12.3310 | 15362s elapsed
+  Batch 290/1694 | Loss 12.3080 | 15571s elapsed
+  Batch 300/1694 | Loss 12.2855 | 15782s elapsed
+  Batch 310/1694 | Loss 12.2648 | 15993s elapsed
+  Batch 320/1694 | Loss 12.2445 | 16207s elapsed
+  Batch 330/1694 | Loss 12.2253 | 16426s elapsed
+  Batch 340/1694 | Loss 12.2086 | 16656s elapsed
+  Batch 350/1694 | Loss 12.1911 | 16879s elapsed
+  Batch 360/1694 | Loss 12.1747 | 17090s elapsed
+  Batch 370/1694 | Loss 12.1580 | 17295s elapsed
+  Batch 380/1694 | Loss 12.1410 | 17501s elapsed
+  Batch 390/1694 | Loss 12.1251 | 17716s elapsed
+  Batch 400/1694 | Loss 12.1097 | 17927s elapsed
+  Batch 410/1694 | Loss 12.0962 | 18137s elapsed
+  Batch 420/1694 | Loss 12.0805 | 18353s elapsed
+  Batch 430/1694 | Loss 12.0666 | 18549s elapsed
+  Batch 440/1694 | Loss 12.0521 | 18763s elapsed
+  Batch 450/1694 | Loss 12.0389 | 18971s elapsed
+  Batch 460/1694 | Loss 12.0252 | 19289s elapsed
+  Batch 470/1694 | Loss 12.0118 | 19523s elapsed
+  Batch 480/1694 | Loss 12.0000 | 19751s elapsed
+  Batch 490/1694 | Loss 11.9879 | 19991s elapsed
+  Batch 500/1694 | Loss 11.9759 | 20222s elapsed
+  Batch 510/1694 | Loss 11.9647 | 20458s elapsed
+  Batch 520/1694 | Loss 11.9541 | 20682s elapsed
+  Batch 530/1694 | Loss 11.9434 | 20917s elapsed
+  Batch 540/1694 | Loss 11.9328 | 21146s elapsed
+  Batch 550/1694 | Loss 11.9227 | 21928s elapsed
+  Batch 560/1694 | Loss 11.9122 | 22147s elapsed
+  Batch 570/1694 | Loss 11.9017 | 22368s elapsed
+  Batch 580/1694 | Loss 11.8913 | 22601s elapsed
+  Batch 590/1694 | Loss 11.8816 | 22827s elapsed
+  Batch 600/1694 | Loss 11.8712 | 23054s elapsed
+  Batch 610/1694 | Loss 11.8625 | 23283s elapsed
+  Batch 620/1694 | Loss 11.8530 | 23523s elapsed
+  Batch 630/1694 | Loss 11.8441 | 23745s elapsed
+  Batch 640/1694 | Loss 11.8359 | 23966s elapsed
+  Batch 650/1694 | Loss 11.8275 | 24188s elapsed
+  Batch 660/1694 | Loss 11.8191 | 24416s elapsed
+  Batch 670/1694 | Loss 11.8104 | 24645s elapsed
+  Batch 680/1694 | Loss 11.8017 | 24874s elapsed
+  Batch 690/1694 | Loss 11.7934 | 25093s elapsed
+  Batch 700/1694 | Loss 11.7855 | 25327s elapsed
+  Batch 710/1694 | Loss 11.7781 | 25557s elapsed
+  Batch 720/1694 | Loss 11.7705 | 25781s elapsed
+  Batch 730/1694 | Loss 11.7632 | 26004s elapsed
+  Batch 740/1694 | Loss 11.7566 | 26237s elapsed
+  Batch 750/1694 | Loss 11.7492 | 26467s elapsed
+  Batch 760/1694 | Loss 11.7430 | 26706s elapsed
+  Batch 770/1694 | Loss 11.7363 | 26945s elapsed
+  Batch 780/1694 | Loss 11.7294 | 27179s elapsed
+  Batch 790/1694 | Loss 11.7226 | 27420s elapsed
+  Batch 800/1694 | Loss 11.7155 | 27650s elapsed
+  Batch 810/1694 | Loss 11.7086 | 27882s elapsed
+  Batch 820/1694 | Loss 11.7025 | 28107s elapsed
+  Batch 830/1694 | Loss 11.6961 | 28315s elapsed
+  Batch 840/1694 | Loss 11.6900 | 29522s elapsed
+  Batch 850/1694 | Loss 11.6834 | 30371s elapsed
+  Batch 860/1694 | Loss 11.6775 | 31546s elapsed
+  Batch 870/1694 | Loss 11.6713 | 31985s elapsed
+  Batch 880/1694 | Loss 11.6648 | 32188s elapsed
+  Batch 890/1694 | Loss 11.6593 | 32387s elapsed
+  Batch 900/1694 | Loss 11.6537 | 32590s elapsed
+  Batch 910/1694 | Loss 11.6484 | 32782s elapsed
+  Batch 920/1694 | Loss 11.6430 | 32982s elapsed
+  Batch 930/1694 | Loss 11.6375 | 33181s elapsed
+  Batch 940/1694 | Loss 11.6321 | 33384s elapsed
+  Batch 950/1694 | Loss 11.6266 | 33590s elapsed
+  Batch 960/1694 | Loss 11.6217 | 33799s elapsed
+  Batch 970/1694 | Loss 11.6165 | 33995s elapsed
+  Batch 980/1694 | Loss 11.6115 | 34196s elapsed
+  Batch 990/1694 | Loss 11.6057 | 34384s elapsed
+  Batch 1000/1694 | Loss 11.6010 | 34577s elapsed
+  Batch 1010/1694 | Loss 11.5955 | 34764s elapsed
+  Batch 1020/1694 | Loss 11.5905 | 34963s elapsed
+  Batch 1030/1694 | Loss 11.5852 | 35160s elapsed
+  Batch 1040/1694 | Loss 11.5808 | 35363s elapsed
+  Batch 1050/1694 | Loss 11.5761 | 35562s elapsed
+  Batch 1060/1694 | Loss 11.5713 | 35767s elapsed
+  Batch 1070/1694 | Loss 11.5667 | 35973s elapsed
+  Batch 1080/1694 | Loss 11.5622 | 36184s elapsed
+  Batch 1090/1694 | Loss 11.5578 | 36390s elapsed
+  Batch 1100/1694 | Loss 11.5535 | 36593s elapsed
+  Batch 1110/1694 | Loss 11.5484 | 36798s elapsed
+  Batch 1120/1694 | Loss 11.5440 | 36994s elapsed
+  Batch 1130/1694 | Loss 11.5399 | 37198s elapsed
+  Batch 1140/1694 | Loss 11.5353 | 37399s elapsed
+  Batch 1150/1694 | Loss 11.5309 | 37601s elapsed
+  Batch 1160/1694 | Loss 11.5265 | 37801s elapsed
+  Batch 1170/1694 | Loss 11.5220 | 38002s elapsed
+  Batch 1180/1694 | Loss 11.5175 | 38203s elapsed
+  Batch 1190/1694 | Loss 11.5140 | 38404s elapsed
+  Batch 1200/1694 | Loss 11.5104 | 38610s elapsed
+  Batch 1210/1694 | Loss 11.5068 | 38816s elapsed
+  Batch 1220/1694 | Loss 11.5033 | 39020s elapsed
+  Batch 1230/1694 | Loss 11.4994 | 39230s elapsed
+  Batch 1240/1694 | Loss 11.4960 | 39429s elapsed
+  Batch 1250/1694 | Loss 11.4924 | 39641s elapsed
+  Batch 1260/1694 | Loss 11.4882 | 39849s elapsed
+  Batch 1270/1694 | Loss 11.4844 | 40054s elapsed
+  Batch 1280/1694 | Loss 11.4805 | 40267s elapsed
+  Batch 1290/1694 | Loss 11.4770 | 40481s elapsed
+  Batch 1300/1694 | Loss 11.4725 | 40686s elapsed
+  Batch 1310/1694 | Loss 11.4686 | 40900s elapsed
+  Batch 1320/1694 | Loss 11.4651 | 41090s elapsed
+  Batch 1330/1694 | Loss 11.4613 | 45172s elapsed
+  Batch 1340/1694 | Loss 11.4576 | 46971s elapsed
+  Batch 1350/1694 | Loss 11.4543 | 47175s elapsed
+  Batch 1360/1694 | Loss 11.4510 | 47379s elapsed
+  Batch 1370/1694 | Loss 11.4478 | 47593s elapsed
+  Batch 1380/1694 | Loss 11.4441 | 47798s elapsed
+  Batch 1390/1694 | Loss 11.4408 | 48007s elapsed
+  Batch 1400/1694 | Loss 11.4377 | 48218s elapsed
+  Batch 1410/1694 | Loss 11.4341 | 49267s elapsed
+  Batch 1420/1694 | Loss 11.4307 | 49476s elapsed
+  Batch 1430/1694 | Loss 11.4274 | 49680s elapsed
+  Batch 1440/1694 | Loss 11.4239 | 49885s elapsed
+  Batch 1450/1694 | Loss 11.4202 | 50093s elapsed
+  Batch 1460/1694 | Loss 11.4172 | 50312s elapsed
+  Batch 1470/1694 | Loss 11.4140 | 50519s elapsed
+  Batch 1480/1694 | Loss 11.4108 | 50731s elapsed
+  Batch 1490/1694 | Loss 11.4080 | 50938s elapsed
+  Batch 1500/1694 | Loss 11.4052 | 51146s elapsed
+  Batch 1510/1694 | Loss 11.4023 | 51345s elapsed
+  Batch 1520/1694 | Loss 11.3995 | 51544s elapsed
+  Batch 1530/1694 | Loss 11.3967 | 51750s elapsed
+  Batch 1540/1694 | Loss 11.3938 | 51961s elapsed
+  Batch 1550/1694 | Loss 11.3911 | 52171s elapsed
+  Batch 1560/1694 | Loss 11.3883 | 52396s elapsed
+  Batch 1570/1694 | Loss 11.3852 | 52619s elapsed
+  Batch 1580/1694 | Loss 11.3823 | 52841s elapsed
+  Batch 1590/1694 | Loss 11.3795 | 53060s elapsed
+  Batch 1600/1694 | Loss 11.3767 | 53290s elapsed
+  Batch 1610/1694 | Loss 11.3741 | 53518s elapsed
+  Batch 1620/1694 | Loss 11.3714 | 53748s elapsed
+  Batch 1630/1694 | Loss 11.3688 | 53980s elapsed
+  Batch 1640/1694 | Loss 11.3662 | 54201s elapsed
+  Batch 1650/1694 | Loss 11.3635 | 54425s elapsed
+  Batch 1660/1694 | Loss 11.3608 | 54642s elapsed
+  Batch 1670/1694 | Loss 11.3585 | 54876s elapsed
+  Batch 1680/1694 | Loss 11.3560 | 55106s elapsed
+  Batch 1690/1694 | Loss 11.3535 | 55337s elapsed
+Epoch 001/5 | Loss 11.3524 | Time 55424.2s
+  ↳ Valid  MRR: 0.1734 | H@1: 0.1120 | H@3: 0.1780 | H@10: 0.2900
+  ✓ Best model saved (MRR=0.1734)
+  Batch 10/1694 | Loss 10.9527 | 242s elapsed
+  Batch 20/1694 | Loss 10.8730 | 480s elapsed
+  Batch 30/1694 | Loss 10.8735 | 708s elapsed
+  Batch 40/1694 | Loss 10.8691 | 943s elapsed
+  Batch 50/1694 | Loss 10.8756 | 1167s elapsed
+  Batch 60/1694 | Loss 10.8621 | 1368s elapsed
+  Batch 70/1694 | Loss 10.8589 | 1588s elapsed
+  Batch 80/1694 | Loss 10.8610 | 1794s elapsed
+  Batch 90/1694 | Loss 10.8567 | 2001s elapsed
+  Batch 100/1694 | Loss 10.8575 | 2197s elapsed
+  Batch 110/1694 | Loss 10.8528 | 2390s elapsed
+  Batch 120/1694 | Loss 10.8487 | 2592s elapsed
+  Batch 130/1694 | Loss 10.8441 | 2792s elapsed
+  Batch 140/1694 | Loss 10.8438 | 2997s elapsed
+  Batch 150/1694 | Loss 10.8429 | 3202s elapsed
+  Batch 160/1694 | Loss 10.8386 | 3401s elapsed
+  Batch 170/1694 | Loss 10.8375 | 3609s elapsed
+  Batch 180/1694 | Loss 10.8385 | 3816s elapsed
+  Batch 190/1694 | Loss 10.8400 | 4020s elapsed
+  Batch 200/1694 | Loss 10.8393 | 4222s elapsed
+  Batch 210/1694 | Loss 10.8397 | 4423s elapsed
+  Batch 220/1694 | Loss 10.8415 | 4632s elapsed
+  Batch 230/1694 | Loss 10.8388 | 4865s elapsed
+  Batch 240/1694 | Loss 10.8374 | 5085s elapsed
+  Batch 250/1694 | Loss 10.8349 | 6270s elapsed
+  Batch 260/1694 | Loss 10.8319 | 6493s elapsed
+  Batch 270/1694 | Loss 10.8294 | 6719s elapsed
+  Batch 280/1694 | Loss 10.8268 | 6938s elapsed
+  Batch 290/1694 | Loss 10.8253 | 7146s elapsed
+  Batch 300/1694 | Loss 10.8227 | 7350s elapsed
+  Batch 310/1694 | Loss 10.8210 | 7561s elapsed
+  Batch 320/1694 | Loss 10.8204 | 7767s elapsed
+  Batch 330/1694 | Loss 10.8201 | 7972s elapsed
+  Batch 340/1694 | Loss 10.8185 | 8170s elapsed
+  Batch 350/1694 | Loss 10.8173 | 8369s elapsed
+  Batch 360/1694 | Loss 10.8160 | 8571s elapsed
+  Batch 370/1694 | Loss 10.8153 | 8768s elapsed
+  Batch 380/1694 | Loss 10.8147 | 8968s elapsed
+  Batch 390/1694 | Loss 10.8145 | 9172s elapsed
+  Batch 400/1694 | Loss 10.8121 | 9369s elapsed
+  Batch 410/1694 | Loss 10.8117 | 9569s elapsed
+  Batch 420/1694 | Loss 10.8107 | 9771s elapsed
+  Batch 430/1694 | Loss 10.8101 | 9967s elapsed
+  Batch 440/1694 | Loss 10.8094 | 10166s elapsed
+  Batch 450/1694 | Loss 10.8091 | 10363s elapsed
+  Batch 460/1694 | Loss 10.8091 | 10566s elapsed
+  Batch 470/1694 | Loss 10.8078 | 10772s elapsed
+  Batch 480/1694 | Loss 10.8070 | 10971s elapsed
+  Batch 490/1694 | Loss 10.8059 | 11172s elapsed
+  Batch 500/1694 | Loss 10.8041 | 11374s elapsed
+  Batch 510/1694 | Loss 10.8039 | 11596s elapsed
+  Batch 520/1694 | Loss 10.8033 | 11815s elapsed
+  Batch 530/1694 | Loss 10.8025 | 12029s elapsed
+  Batch 540/1694 | Loss 10.8021 | 12244s elapsed
+  Batch 550/1694 | Loss 10.8023 | 12458s elapsed
+  Batch 560/1694 | Loss 10.8013 | 12671s elapsed
+  Batch 570/1694 | Loss 10.8007 | 12886s elapsed
+  Batch 580/1694 | Loss 10.7993 | 13098s elapsed
+  Batch 590/1694 | Loss 10.7975 | 13309s elapsed
+  Batch 600/1694 | Loss 10.7960 | 13519s elapsed
+  Batch 610/1694 | Loss 10.7952 | 13723s elapsed
+  Batch 620/1694 | Loss 10.7952 | 13930s elapsed
+  Batch 630/1694 | Loss 10.7946 | 14129s elapsed
+  Batch 640/1694 | Loss 10.7935 | 14330s elapsed
+  Batch 650/1694 | Loss 10.7912 | 14539s elapsed
+  Batch 660/1694 | Loss 10.7909 | 14733s elapsed
+  Batch 670/1694 | Loss 10.7901 | 14935s elapsed
+  Batch 680/1694 | Loss 10.7890 | 15137s elapsed
+  Batch 690/1694 | Loss 10.7884 | 15338s elapsed
+  Batch 700/1694 | Loss 10.7878 | 15540s elapsed
+  Batch 710/1694 | Loss 10.7869 | 15741s elapsed
+  Batch 720/1694 | Loss 10.7862 | 15945s elapsed
+  Batch 730/1694 | Loss 10.7856 | 16154s elapsed
+  Batch 740/1694 | Loss 10.7848 | 16358s elapsed
+  Batch 750/1694 | Loss 10.7835 | 16557s elapsed
+  Batch 760/1694 | Loss 10.7824 | 16763s elapsed
+  Batch 770/1694 | Loss 10.7822 | 16965s elapsed
+  Batch 780/1694 | Loss 10.7811 | 17175s elapsed
+  Batch 790/1694 | Loss 10.7801 | 17381s elapsed
+  Batch 800/1694 | Loss 10.7791 | 17581s elapsed
+  Batch 810/1694 | Loss 10.7784 | 17781s elapsed
+  Batch 820/1694 | Loss 10.7785 | 17983s elapsed
+  Batch 830/1694 | Loss 10.7784 | 18186s elapsed
+  Batch 840/1694 | Loss 10.7776 | 18389s elapsed
+  Batch 850/1694 | Loss 10.7778 | 18597s elapsed
+  Batch 860/1694 | Loss 10.7764 | 18801s elapsed
+  Batch 870/1694 | Loss 10.7756 | 19007s elapsed
+  Batch 880/1694 | Loss 10.7745 | 19207s elapsed
+  Batch 890/1694 | Loss 10.7734 | 19414s elapsed
+  Batch 900/1694 | Loss 10.7728 | 19618s elapsed
+  Batch 910/1694 | Loss 10.7717 | 19817s elapsed
+  Batch 920/1694 | Loss 10.7707 | 20019s elapsed
+  Batch 930/1694 | Loss 10.7698 | 20222s elapsed
+  Batch 940/1694 | Loss 10.7693 | 20426s elapsed
+  Batch 950/1694 | Loss 10.7688 | 20636s elapsed
+  Batch 960/1694 | Loss 10.7681 | 20845s elapsed
+  Batch 970/1694 | Loss 10.7676 | 21047s elapsed
+  Batch 980/1694 | Loss 10.7668 | 21251s elapsed
+  Batch 990/1694 | Loss 10.7662 | 21454s elapsed
+  Batch 1000/1694 | Loss 10.7656 | 21657s elapsed
+  Batch 1010/1694 | Loss 10.7648 | 21865s elapsed
+  Batch 1020/1694 | Loss 10.7632 | 22067s elapsed
+  Batch 1030/1694 | Loss 10.7627 | 22274s elapsed
+  Batch 1040/1694 | Loss 10.7622 | 22488s elapsed
+  Batch 1050/1694 | Loss 10.7616 | 22689s elapsed
+  Batch 1060/1694 | Loss 10.7608 | 22886s elapsed
+  Batch 1070/1694 | Loss 10.7603 | 23093s elapsed
+  Batch 1080/1694 | Loss 10.7597 | 23296s elapsed
+  Batch 1090/1694 | Loss 10.7587 | 23498s elapsed
+  Batch 1100/1694 | Loss 10.7582 | 23708s elapsed
+  Batch 1110/1694 | Loss 10.7577 | 23916s elapsed
+  Batch 1120/1694 | Loss 10.7571 | 24120s elapsed
+  Batch 1130/1694 | Loss 10.7565 | 24329s elapsed
+  Batch 1140/1694 | Loss 10.7557 | 24533s elapsed
+  Batch 1150/1694 | Loss 10.7549 | 24744s elapsed
+  Batch 1160/1694 | Loss 10.7544 | 24950s elapsed
+  Batch 1170/1694 | Loss 10.7537 | 25152s elapsed
+  Batch 1180/1694 | Loss 10.7533 | 25356s elapsed
+  Batch 1190/1694 | Loss 10.7526 | 25555s elapsed
+  Batch 1200/1694 | Loss 10.7523 | 25759s elapsed
+  Batch 1210/1694 | Loss 10.7517 | 25966s elapsed
+  Batch 1220/1694 | Loss 10.7509 | 26170s elapsed
+  Batch 1230/1694 | Loss 10.7501 | 26375s elapsed
+  Batch 1240/1694 | Loss 10.7497 | 26577s elapsed
+  Batch 1250/1694 | Loss 10.7490 | 26783s elapsed
+  Batch 1260/1694 | Loss 10.7489 | 26988s elapsed
+  Batch 1270/1694 | Loss 10.7484 | 27189s elapsed
+  Batch 1280/1694 | Loss 10.7474 | 27390s elapsed
+  Batch 1290/1694 | Loss 10.7467 | 28375s elapsed
+  Batch 1300/1694 | Loss 10.7462 | 29387s elapsed
+  Batch 1310/1694 | Loss 10.7460 | 30414s elapsed
+  Batch 1320/1694 | Loss 10.7456 | 31393s elapsed
+  Batch 1330/1694 | Loss 10.7453 | 41513s elapsed
+  Batch 1340/1694 | Loss 10.7442 | 41706s elapsed
+  Batch 1350/1694 | Loss 10.7434 | 41895s elapsed
+  Batch 1360/1694 | Loss 10.7429 | 42077s elapsed
+  Batch 1370/1694 | Loss 10.7424 | 42264s elapsed
+  Batch 1380/1694 | Loss 10.7418 | 42454s elapsed
+  Batch 1390/1694 | Loss 10.7406 | 42646s elapsed
+  Batch 1400/1694 | Loss 10.7400 | 42836s elapsed
+  Batch 1410/1694 | Loss 10.7393 | 43031s elapsed
+  Batch 1420/1694 | Loss 10.7388 | 43226s elapsed
+  Batch 1430/1694 | Loss 10.7383 | 43419s elapsed
+  Batch 1440/1694 | Loss 10.7380 | 43612s elapsed
+  Batch 1450/1694 | Loss 10.7377 | 43818s elapsed
+  Batch 1460/1694 | Loss 10.7372 | 44024s elapsed
+  Batch 1470/1694 | Loss 10.7370 | 44236s elapsed
+  Batch 1480/1694 | Loss 10.7367 | 44453s elapsed
+  Batch 1490/1694 | Loss 10.7361 | 44667s elapsed
+  Batch 1500/1694 | Loss 10.7358 | 44884s elapsed
+  Batch 1510/1694 | Loss 10.7351 | 45091s elapsed
+  Batch 1520/1694 | Loss 10.7342 | 45299s elapsed
+  Batch 1530/1694 | Loss 10.7335 | 45511s elapsed
+  Batch 1540/1694 | Loss 10.7329 | 45725s elapsed
+  Batch 1550/1694 | Loss 10.7321 | 45942s elapsed
+  Batch 1560/1694 | Loss 10.7319 | 46407s elapsed
+  Batch 1570/1694 | Loss 10.7311 | 46620s elapsed
+  Batch 1580/1694 | Loss 10.7306 | 46835s elapsed
+  Batch 1590/1694 | Loss 10.7301 | 47052s elapsed
+  Batch 1600/1694 | Loss 10.7297 | 47261s elapsed
+  Batch 1610/1694 | Loss 10.7291 | 47474s elapsed
+  Batch 1620/1694 | Loss 10.7284 | 47691s elapsed
+  Batch 1630/1694 | Loss 10.7279 | 47899s elapsed
+  Batch 1640/1694 | Loss 10.7275 | 48117s elapsed
+  Batch 1650/1694 | Loss 10.7268 | 48310s elapsed
+  Batch 1660/1694 | Loss 10.7264 | 48503s elapsed
+  Batch 1670/1694 | Loss 10.7258 | 48699s elapsed
+  Batch 1680/1694 | Loss 10.7255 | 48893s elapsed
+  Batch 1690/1694 | Loss 10.7247 | 49091s elapsed
+Epoch 002/5 | Loss 10.7246 | Time 49168.0s
+  ↳ Valid  MRR: 0.1578 | H@1: 0.0990 | H@3: 0.1590 | H@10: 0.2770
+  Batch 10/1694 | Loss 10.5616 | 185s elapsed
+  Batch 20/1694 | Loss 10.5369 | 382s elapsed
+  Batch 30/1694 | Loss 10.5426 | 580s elapsed
+  Batch 40/1694 | Loss 10.5451 | 778s elapsed
+  Batch 50/1694 | Loss 10.5464 | 970s elapsed
+  Batch 60/1694 | Loss 10.5464 | 1167s elapsed
+  Batch 70/1694 | Loss 10.5410 | 1364s elapsed
+  Batch 80/1694 | Loss 10.5375 | 1557s elapsed
+  Batch 90/1694 | Loss 10.5340 | 1742s elapsed
+  Batch 100/1694 | Loss 10.5385 | 1936s elapsed
+  Batch 110/1694 | Loss 10.5395 | 2127s elapsed
+  Batch 120/1694 | Loss 10.5411 | 2312s elapsed
+  Batch 130/1694 | Loss 10.5429 | 2512s elapsed
+  Batch 140/1694 | Loss 10.5409 | 2710s elapsed
+  Batch 150/1694 | Loss 10.5429 | 2910s elapsed
+  Batch 160/1694 | Loss 10.5444 | 3120s elapsed
+  Batch 170/1694 | Loss 10.5434 | 3332s elapsed
+  Batch 180/1694 | Loss 10.5441 | 3545s elapsed
+  Batch 190/1694 | Loss 10.5466 | 3755s elapsed
+  Batch 200/1694 | Loss 10.5452 | 3954s elapsed
+  Batch 210/1694 | Loss 10.5468 | 4148s elapsed
+  Batch 220/1694 | Loss 10.5477 | 4349s elapsed
+  Batch 230/1694 | Loss 10.5490 | 4551s elapsed
+  Batch 240/1694 | Loss 10.5470 | 4752s elapsed
+  Batch 250/1694 | Loss 10.5479 | 4951s elapsed
+  Batch 260/1694 | Loss 10.5474 | 5154s elapsed
+  Batch 270/1694 | Loss 10.5475 | 5357s elapsed
+  Batch 280/1694 | Loss 10.5484 | 5553s elapsed
+  Batch 290/1694 | Loss 10.5495 | 5743s elapsed
+  Batch 300/1694 | Loss 10.5487 | 5942s elapsed
+  Batch 310/1694 | Loss 10.5481 | 6142s elapsed
+  Batch 320/1694 | Loss 10.5464 | 6345s elapsed
+  Batch 330/1694 | Loss 10.5436 | 6543s elapsed
+  Batch 340/1694 | Loss 10.5434 | 6745s elapsed
+  Batch 350/1694 | Loss 10.5444 | 6947s elapsed
+  Batch 360/1694 | Loss 10.5445 | 7144s elapsed
+  Batch 370/1694 | Loss 10.5454 | 7341s elapsed
+  Batch 380/1694 | Loss 10.5451 | 7540s elapsed
+  Batch 390/1694 | Loss 10.5451 | 7735s elapsed
+  Batch 400/1694 | Loss 10.5453 | 7940s elapsed
+  Batch 410/1694 | Loss 10.5462 | 8129s elapsed
+  Batch 420/1694 | Loss 10.5457 | 8323s elapsed
+  Batch 430/1694 | Loss 10.5473 | 8525s elapsed
+  Batch 440/1694 | Loss 10.5469 | 8734s elapsed
+  Batch 450/1694 | Loss 10.5465 | 8944s elapsed
+  Batch 460/1694 | Loss 10.5463 | 9143s elapsed
+  Batch 470/1694 | Loss 10.5459 | 9339s elapsed
+  Batch 480/1694 | Loss 10.5460 | 9535s elapsed
+  Batch 490/1694 | Loss 10.5447 | 9730s elapsed
+  Batch 500/1694 | Loss 10.5457 | 9929s elapsed
+  Batch 510/1694 | Loss 10.5459 | 10130s elapsed
+  Batch 520/1694 | Loss 10.5445 | 10322s elapsed
+  Batch 530/1694 | Loss 10.5454 | 10522s elapsed
+  Batch 540/1694 | Loss 10.5463 | 10729s elapsed
+  Batch 550/1694 | Loss 10.5453 | 10937s elapsed
+  Batch 560/1694 | Loss 10.5454 | 11136s elapsed
+  Batch 570/1694 | Loss 10.5454 | 11338s elapsed
+  Batch 580/1694 | Loss 10.5458 | 11535s elapsed
+  Batch 590/1694 | Loss 10.5459 | 11735s elapsed
+  Batch 600/1694 | Loss 10.5459 | 11922s elapsed
+  Batch 610/1694 | Loss 10.5463 | 12107s elapsed
+  Batch 620/1694 | Loss 10.5463 | 12302s elapsed
+  Batch 630/1694 | Loss 10.5460 | 12496s elapsed
+  Batch 640/1694 | Loss 10.5469 | 12691s elapsed
+  Batch 650/1694 | Loss 10.5464 | 12891s elapsed
+  Batch 660/1694 | Loss 10.5460 | 13083s elapsed
+  Batch 670/1694 | Loss 10.5458 | 13287s elapsed
+  Batch 680/1694 | Loss 10.5456 | 13482s elapsed
+  Batch 690/1694 | Loss 10.5452 | 13679s elapsed
+  Batch 700/1694 | Loss 10.5452 | 13880s elapsed
+  Batch 710/1694 | Loss 10.5448 | 14086s elapsed
+  Batch 720/1694 | Loss 10.5450 | 14285s elapsed
+  Batch 730/1694 | Loss 10.5448 | 14481s elapsed
+  Batch 740/1694 | Loss 10.5441 | 14675s elapsed
+  Batch 750/1694 | Loss 10.5442 | 14874s elapsed
+  Batch 760/1694 | Loss 10.5443 | 15071s elapsed
+  Batch 770/1694 | Loss 10.5440 | 15269s elapsed
+  Batch 780/1694 | Loss 10.5438 | 15482s elapsed
+  Batch 790/1694 | Loss 10.5441 | 15688s elapsed
+  Batch 800/1694 | Loss 10.5441 | 15882s elapsed
+  Batch 810/1694 | Loss 10.5445 | 16081s elapsed
+  Batch 820/1694 | Loss 10.5441 | 16278s elapsed
+  Batch 830/1694 | Loss 10.5442 | 16468s elapsed
+  Batch 840/1694 | Loss 10.5444 | 16661s elapsed
+  Batch 850/1694 | Loss 10.5439 | 16862s elapsed
+  Batch 860/1694 | Loss 10.5440 | 17067s elapsed
+  Batch 870/1694 | Loss 10.5441 | 17269s elapsed
+  Batch 880/1694 | Loss 10.5439 | 17478s elapsed
+  Batch 890/1694 | Loss 10.5435 | 17675s elapsed
+  Batch 900/1694 | Loss 10.5439 | 17885s elapsed
+  Batch 910/1694 | Loss 10.5434 | 18084s elapsed
+  Batch 920/1694 | Loss 10.5432 | 18291s elapsed
+  Batch 930/1694 | Loss 10.5430 | 18494s elapsed
+  Batch 940/1694 | Loss 10.5431 | 18692s elapsed
+  Batch 950/1694 | Loss 10.5430 | 18893s elapsed
+  Batch 960/1694 | Loss 10.5425 | 19095s elapsed
+  Batch 970/1694 | Loss 10.5424 | 19302s elapsed
+  Batch 980/1694 | Loss 10.5423 | 19515s elapsed
+  Batch 990/1694 | Loss 10.5422 | 19714s elapsed
+  Batch 1000/1694 | Loss 10.5422 | 19904s elapsed
+  Batch 1010/1694 | Loss 10.5419 | 20097s elapsed
+  Batch 1020/1694 | Loss 10.5415 | 20287s elapsed
+  Batch 1030/1694 | Loss 10.5411 | 20483s elapsed
+  Batch 1040/1694 | Loss 10.5407 | 20684s elapsed
+  Batch 1050/1694 | Loss 10.5403 | 20877s elapsed
+  Batch 1060/1694 | Loss 10.5398 | 21069s elapsed
+  Batch 1070/1694 | Loss 10.5398 | 21253s elapsed
+  Batch 1080/1694 | Loss 10.5394 | 21439s elapsed
+  Batch 1090/1694 | Loss 10.5393 | 21633s elapsed
+  Batch 1100/1694 | Loss 10.5393 | 21825s elapsed
+  Batch 1110/1694 | Loss 10.5390 | 22020s elapsed
+  Batch 1120/1694 | Loss 10.5391 | 22207s elapsed
+  Batch 1130/1694 | Loss 10.5392 | 22407s elapsed
+  Batch 1140/1694 | Loss 10.5393 | 22606s elapsed
+  Batch 1150/1694 | Loss 10.5389 | 22805s elapsed
+  Batch 1160/1694 | Loss 10.5387 | 22993s elapsed
+  Batch 1170/1694 | Loss 10.5387 | 23186s elapsed
+  Batch 1180/1694 | Loss 10.5383 | 23378s elapsed
+  Batch 1190/1694 | Loss 10.5383 | 27903s elapsed
+  Batch 1200/1694 | Loss 10.5378 | 28099s elapsed
+  Batch 1210/1694 | Loss 10.5374 | 28292s elapsed
+  Batch 1220/1694 | Loss 10.5369 | 28484s elapsed
+  Batch 1230/1694 | Loss 10.5368 | 28681s elapsed
+  Batch 1240/1694 | Loss 10.5368 | 28893s elapsed
+  Batch 1250/1694 | Loss 10.5370 | 29110s elapsed
+  Batch 1260/1694 | Loss 10.5370 | 29324s elapsed
+  Batch 1270/1694 | Loss 10.5372 | 29545s elapsed
+  Batch 1280/1694 | Loss 10.5365 | 29766s elapsed
+  Batch 1290/1694 | Loss 10.5369 | 29994s elapsed
+  Batch 1300/1694 | Loss 10.5364 | 30220s elapsed
+  Batch 1310/1694 | Loss 10.5362 | 30437s elapsed
+  Batch 1320/1694 | Loss 10.5367 | 30654s elapsed
+  Batch 1330/1694 | Loss 10.5367 | 30868s elapsed
+  Batch 1340/1694 | Loss 10.5364 | 31091s elapsed
+  Batch 1350/1694 | Loss 10.5363 | 31311s elapsed
+  Batch 1360/1694 | Loss 10.5363 | 31539s elapsed
+  Batch 1370/1694 | Loss 10.5360 | 31772s elapsed
+  Batch 1380/1694 | Loss 10.5356 | 31997s elapsed
+  Batch 1390/1694 | Loss 10.5351 | 32226s elapsed
+  Batch 1400/1694 | Loss 10.5349 | 32455s elapsed
+  Batch 1410/1694 | Loss 10.5346 | 32679s elapsed
+  Batch 1420/1694 | Loss 10.5344 | 32904s elapsed
+  Batch 1430/1694 | Loss 10.5338 | 33124s elapsed
+  Batch 1440/1694 | Loss 10.5340 | 33352s elapsed
+  Batch 1450/1694 | Loss 10.5339 | 33580s elapsed
+  Batch 1460/1694 | Loss 10.5337 | 35637s elapsed
+  Batch 1470/1694 | Loss 10.5336 | 35862s elapsed
+  Batch 1480/1694 | Loss 10.5337 | 36084s elapsed
+  Batch 1490/1694 | Loss 10.5335 | 36873s elapsed
+  Batch 1500/1694 | Loss 10.5336 | 37098s elapsed
+  Batch 1510/1694 | Loss 10.5332 | 37322s elapsed
+  Batch 1520/1694 | Loss 10.5334 | 37545s elapsed
+  Batch 1530/1694 | Loss 10.5334 | 37765s elapsed
+  Batch 1540/1694 | Loss 10.5333 | 37984s elapsed
+  Batch 1550/1694 | Loss 10.5334 | 38209s elapsed
+  Batch 1560/1694 | Loss 10.5335 | 38447s elapsed
+  Batch 1570/1694 | Loss 10.5338 | 38670s elapsed
+  Batch 1580/1694 | Loss 10.5337 | 38887s elapsed
+  Batch 1590/1694 | Loss 10.5335 | 39109s elapsed
+  Batch 1600/1694 | Loss 10.5334 | 40060s elapsed
+  Batch 1610/1694 | Loss 10.5335 | 49416s elapsed
+  Batch 1620/1694 | Loss 10.5334 | 60710s elapsed
+  Batch 1630/1694 | Loss 10.5332 | 60927s elapsed
+  Batch 1640/1694 | Loss 10.5332 | 61157s elapsed
+  Batch 1650/1694 | Loss 10.5330 | 61378s elapsed
+  Batch 1660/1694 | Loss 10.5330 | 61597s elapsed
+  Batch 1670/1694 | Loss 10.5327 | 61789s elapsed
+  Batch 1680/1694 | Loss 10.5323 | 61982s elapsed
+  Batch 1690/1694 | Loss 10.5323 | 62174s elapsed
+Epoch 003/5 | Loss 10.5324 | Time 62244.0s
+  ↳ Valid  MRR: 0.1192 | H@1: 0.0625 | H@3: 0.1285 | H@10: 0.2180
+  Batch 10/1694 | Loss 10.4531 | 191s elapsed
+  Batch 20/1694 | Loss 10.4604 | 392s elapsed
+  Batch 30/1694 | Loss 10.4653 | 616s elapsed
+  Batch 40/1694 | Loss 10.4608 | 851s elapsed
+  Batch 50/1694 | Loss 10.4595 | 1068s elapsed
+  Batch 60/1694 | Loss 10.4613 | 1297s elapsed
+  Batch 70/1694 | Loss 10.4493 | 1518s elapsed
+  Batch 80/1694 | Loss 10.4426 | 1735s elapsed
+  Batch 90/1694 | Loss 10.4458 | 1956s elapsed
+  Batch 100/1694 | Loss 10.4412 | 2181s elapsed
+  Batch 110/1694 | Loss 10.4399 | 2408s elapsed
+  Batch 120/1694 | Loss 10.4364 | 2632s elapsed
+  Batch 130/1694 | Loss 10.4329 | 2853s elapsed
+  Batch 140/1694 | Loss 10.4305 | 3070s elapsed
+  Batch 150/1694 | Loss 10.4304 | 3291s elapsed
+  Batch 160/1694 | Loss 10.4287 | 3514s elapsed
+  Batch 170/1694 | Loss 10.4315 | 3735s elapsed
+  Batch 180/1694 | Loss 10.4326 | 3960s elapsed
+  Batch 190/1694 | Loss 10.4347 | 4190s elapsed
+  Batch 200/1694 | Loss 10.4333 | 4413s elapsed
+  Batch 210/1694 | Loss 10.4300 | 4637s elapsed
+  Batch 220/1694 | Loss 10.4297 | 4861s elapsed
+  Batch 230/1694 | Loss 10.4317 | 5084s elapsed
+  Batch 240/1694 | Loss 10.4326 | 5311s elapsed
+  Batch 250/1694 | Loss 10.4339 | 5540s elapsed
+  Batch 260/1694 | Loss 10.4318 | 5772s elapsed
+  Batch 270/1694 | Loss 10.4320 | 6003s elapsed
+  Batch 280/1694 | Loss 10.4330 | 6237s elapsed
+  Batch 290/1694 | Loss 10.4317 | 6465s elapsed
+  Batch 300/1694 | Loss 10.4308 | 7023s elapsed
+  Batch 310/1694 | Loss 10.4303 | 8266s elapsed
+  Batch 320/1694 | Loss 10.4300 | 15297s elapsed
+  Batch 330/1694 | Loss 10.4298 | 15546s elapsed
+  Batch 340/1694 | Loss 10.4314 | 15769s elapsed
+  Batch 350/1694 | Loss 10.4328 | 15996s elapsed
+  Batch 360/1694 | Loss 10.4334 | 16225s elapsed
+  Batch 370/1694 | Loss 10.4340 | 16450s elapsed
+  Batch 380/1694 | Loss 10.4349 | 16672s elapsed
+  Batch 390/1694 | Loss 10.4340 | 16887s elapsed
+  Batch 400/1694 | Loss 10.4354 | 17119s elapsed
+  Batch 410/1694 | Loss 10.4357 | 17352s elapsed
+  Batch 420/1694 | Loss 10.4342 | 17579s elapsed
+  Batch 430/1694 | Loss 10.4343 | 17804s elapsed
+  Batch 440/1694 | Loss 10.4356 | 18031s elapsed
+  Batch 450/1694 | Loss 10.4345 | 18240s elapsed
+  Batch 460/1694 | Loss 10.4345 | 18461s elapsed
+  Batch 470/1694 | Loss 10.4336 | 18679s elapsed
+  Batch 480/1694 | Loss 10.4330 | 18900s elapsed
+  Batch 490/1694 | Loss 10.4320 | 19109s elapsed
+  Batch 500/1694 | Loss 10.4315 | 19333s elapsed
+  Batch 510/1694 | Loss 10.4314 | 19561s elapsed
+  Batch 520/1694 | Loss 10.4310 | 19786s elapsed
+  Batch 530/1694 | Loss 10.4314 | 20012s elapsed
+  Batch 540/1694 | Loss 10.4323 | 20241s elapsed
+  Batch 550/1694 | Loss 10.4322 | 20472s elapsed
+  Batch 560/1694 | Loss 10.4316 | 20702s elapsed
+  Batch 570/1694 | Loss 10.4314 | 20929s elapsed
+  Batch 580/1694 | Loss 10.4302 | 21163s elapsed
+  Batch 590/1694 | Loss 10.4303 | 21407s elapsed
+  Batch 600/1694 | Loss 10.4307 | 21638s elapsed
+  Batch 610/1694 | Loss 10.4295 | 21865s elapsed
+  Batch 620/1694 | Loss 10.4297 | 22091s elapsed
+  Batch 630/1694 | Loss 10.4293 | 22317s elapsed
+  Batch 640/1694 | Loss 10.4292 | 22549s elapsed
+  Batch 650/1694 | Loss 10.4301 | 22774s elapsed
+  Batch 660/1694 | Loss 10.4299 | 22996s elapsed
+  Batch 670/1694 | Loss 10.4295 | 23235s elapsed
+  Batch 680/1694 | Loss 10.4291 | 23463s elapsed
+  Batch 690/1694 | Loss 10.4294 | 23692s elapsed
+  Batch 700/1694 | Loss 10.4288 | 23926s elapsed
+  Batch 710/1694 | Loss 10.4285 | 24146s elapsed
+  Batch 720/1694 | Loss 10.4285 | 24371s elapsed
+  Batch 730/1694 | Loss 10.4282 | 24608s elapsed
+  Batch 740/1694 | Loss 10.4275 | 24850s elapsed
+  Batch 750/1694 | Loss 10.4277 | 25104s elapsed
+  Batch 760/1694 | Loss 10.4281 | 25357s elapsed
+  Batch 770/1694 | Loss 10.4276 | 25616s elapsed
+  Batch 780/1694 | Loss 10.4270 | 25856s elapsed
+  Batch 790/1694 | Loss 10.4269 | 26089s elapsed
+  Batch 800/1694 | Loss 10.4274 | 26315s elapsed
+  Batch 810/1694 | Loss 10.4274 | 26551s elapsed
+  Batch 820/1694 | Loss 10.4267 | 26787s elapsed
+  Batch 830/1694 | Loss 10.4271 | 27008s elapsed
+  Batch 840/1694 | Loss 10.4269 | 27231s elapsed
+  Batch 850/1694 | Loss 10.4262 | 27458s elapsed
+  Batch 860/1694 | Loss 10.4258 | 27682s elapsed
+  Batch 870/1694 | Loss 10.4258 | 27899s elapsed
+  Batch 880/1694 | Loss 10.4258 | 28122s elapsed
+  Batch 890/1694 | Loss 10.4262 | 28343s elapsed
+  Batch 900/1694 | Loss 10.4254 | 28572s elapsed
+  Batch 910/1694 | Loss 10.4253 | 28798s elapsed
+  Batch 920/1694 | Loss 10.4256 | 29022s elapsed
+  Batch 930/1694 | Loss 10.4254 | 29249s elapsed
+  Batch 940/1694 | Loss 10.4261 | 29471s elapsed
+  Batch 950/1694 | Loss 10.4264 | 29702s elapsed
+  Batch 960/1694 | Loss 10.4266 | 29924s elapsed
+  Batch 970/1694 | Loss 10.4267 | 30153s elapsed
+  Batch 980/1694 | Loss 10.4267 | 30406s elapsed
+  Batch 990/1694 | Loss 10.4269 | 30663s elapsed
+  Batch 1000/1694 | Loss 10.4274 | 30930s elapsed
+  Batch 1010/1694 | Loss 10.4273 | 31196s elapsed
+  Batch 1020/1694 | Loss 10.4277 | 31458s elapsed
+  Batch 1030/1694 | Loss 10.4282 | 31725s elapsed
+  Batch 1040/1694 | Loss 10.4281 | 31971s elapsed
+  Batch 1050/1694 | Loss 10.4282 | 32201s elapsed
+  Batch 1060/1694 | Loss 10.4287 | 32434s elapsed
+  Batch 1070/1694 | Loss 10.4286 | 32667s elapsed
+  Batch 1080/1694 | Loss 10.4289 | 32902s elapsed
+  Batch 1090/1694 | Loss 10.4296 | 33126s elapsed
+  Batch 1100/1694 | Loss 10.4292 | 33360s elapsed
+  Batch 1110/1694 | Loss 10.4292 | 33590s elapsed
+  Batch 1120/1694 | Loss 10.4287 | 33818s elapsed
+  Batch 1130/1694 | Loss 10.4290 | 34046s elapsed
+  Batch 1140/1694 | Loss 10.4289 | 34285s elapsed
+  Batch 1150/1694 | Loss 10.4288 | 34512s elapsed
+  Batch 1160/1694 | Loss 10.4292 | 34728s elapsed
+  Batch 1170/1694 | Loss 10.4291 | 34951s elapsed
+  Batch 1180/1694 | Loss 10.4293 | 35177s elapsed
+  Batch 1190/1694 | Loss 10.4291 | 35405s elapsed
+  Batch 1200/1694 | Loss 10.4293 | 35629s elapsed
+  Batch 1210/1694 | Loss 10.4289 | 35844s elapsed
+  Batch 1220/1694 | Loss 10.4290 | 36066s elapsed
+  Batch 1230/1694 | Loss 10.4291 | 36289s elapsed
+  Batch 1240/1694 | Loss 10.4291 | 36509s elapsed
+  Batch 1250/1694 | Loss 10.4291 | 36736s elapsed
+  Batch 1260/1694 | Loss 10.4293 | 36961s elapsed
+  Batch 1270/1694 | Loss 10.4296 | 37191s elapsed
+  Batch 1280/1694 | Loss 10.4295 | 37422s elapsed
+  Batch 1290/1694 | Loss 10.4291 | 37653s elapsed
+  Batch 1300/1694 | Loss 10.4288 | 37882s elapsed
+  Batch 1310/1694 | Loss 10.4291 | 38105s elapsed
+  Batch 1320/1694 | Loss 10.4288 | 38330s elapsed
+  Batch 1330/1694 | Loss 10.4288 | 38562s elapsed
+  Batch 1340/1694 | Loss 10.4289 | 38789s elapsed
+  Batch 1350/1694 | Loss 10.4296 | 39016s elapsed
+  Batch 1360/1694 | Loss 10.4295 | 39241s elapsed
+  Batch 1370/1694 | Loss 10.4300 | 39469s elapsed
+  Batch 1380/1694 | Loss 10.4301 | 39697s elapsed
+  Batch 1390/1694 | Loss 10.4299 | 39920s elapsed
+  Batch 1400/1694 | Loss 10.4300 | 40136s elapsed
+  Batch 1410/1694 | Loss 10.4296 | 40362s elapsed
+  Batch 1420/1694 | Loss 10.4295 | 40583s elapsed
+  Batch 1430/1694 | Loss 10.4295 | 40810s elapsed
+  Batch 1440/1694 | Loss 10.4299 | 41037s elapsed
+  Batch 1450/1694 | Loss 10.4296 | 41243s elapsed
+  Batch 1460/1694 | Loss 10.4297 | 41446s elapsed
+  Batch 1470/1694 | Loss 10.4294 | 41642s elapsed
+  Batch 1480/1694 | Loss 10.4296 | 41851s elapsed
+  Batch 1490/1694 | Loss 10.4299 | 42054s elapsed
+  Batch 1500/1694 | Loss 10.4297 | 42258s elapsed
+  Batch 1510/1694 | Loss 10.4296 | 42460s elapsed
+  Batch 1520/1694 | Loss 10.4295 | 42664s elapsed
+  Batch 1530/1694 | Loss 10.4294 | 42854s elapsed
+  Batch 1540/1694 | Loss 10.4290 | 43053s elapsed
+  Batch 1550/1694 | Loss 10.4287 | 43253s elapsed
+  Batch 1560/1694 | Loss 10.4287 | 43476s elapsed
+  Batch 1570/1694 | Loss 10.4284 | 43698s elapsed
+  Batch 1580/1694 | Loss 10.4283 | 43929s elapsed
+  Batch 1590/1694 | Loss 10.4281 | 44151s elapsed
+  Batch 1600/1694 | Loss 10.4280 | 44367s elapsed
+  Batch 1610/1694 | Loss 10.4280 | 44587s elapsed
+  Batch 1620/1694 | Loss 10.4281 | 44806s elapsed
+  Batch 1630/1694 | Loss 10.4280 | 45041s elapsed
+  Batch 1640/1694 | Loss 10.4281 | 45276s elapsed
+  Batch 1650/1694 | Loss 10.4280 | 45501s elapsed
+  Batch 1660/1694 | Loss 10.4280 | 45733s elapsed
+  Batch 1670/1694 | Loss 10.4280 | 45964s elapsed
+  Batch 1680/1694 | Loss 10.4280 | 46189s elapsed
+  Batch 1690/1694 | Loss 10.4277 | 46421s elapsed
+Epoch 004/5 | Loss 10.4279 | Time 46510.8s
+  ↳ Valid  MRR: 0.1169 | H@1: 0.0630 | H@3: 0.1180 | H@10: 0.2280
+  Batch 10/1694 | Loss 10.4450 | 229s elapsed
+  Batch 20/1694 | Loss 10.3976 | 453s elapsed
+  Batch 30/1694 | Loss 10.4032 | 685s elapsed
+  Batch 40/1694 | Loss 10.4022 | 899s elapsed
+  Batch 50/1694 | Loss 10.3987 | 1110s elapsed
+  Batch 60/1694 | Loss 10.4001 | 1315s elapsed
+  Batch 70/1694 | Loss 10.4014 | 1608s elapsed
+  Batch 80/1694 | Loss 10.3946 | 1864s elapsed
+  Batch 90/1694 | Loss 10.3909 | 7690s elapsed
+  Batch 100/1694 | Loss 10.3916 | 7901s elapsed
+  Batch 110/1694 | Loss 10.3912 | 8099s elapsed
+  Batch 120/1694 | Loss 10.3882 | 8290s elapsed
+  Batch 130/1694 | Loss 10.3859 | 8482s elapsed
+  Batch 140/1694 | Loss 10.3872 | 8685s elapsed
+  Batch 150/1694 | Loss 10.3846 | 8888s elapsed
+  Batch 160/1694 | Loss 10.3862 | 9097s elapsed
+  Batch 170/1694 | Loss 10.3869 | 9318s elapsed
+  Batch 180/1694 | Loss 10.3846 | 9537s elapsed
+  Batch 190/1694 | Loss 10.3852 | 9756s elapsed
+  Batch 200/1694 | Loss 10.3817 | 10214s elapsed
+  Batch 210/1694 | Loss 10.3812 | 10440s elapsed
+  Batch 220/1694 | Loss 10.3818 | 10669s elapsed
+  Batch 230/1694 | Loss 10.3800 | 10892s elapsed
+  Batch 240/1694 | Loss 10.3782 | 11113s elapsed
+  Batch 250/1694 | Loss 10.3761 | 11347s elapsed
+  Batch 260/1694 | Loss 10.3768 | 11986s elapsed
+  Batch 270/1694 | Loss 10.3746 | 12216s elapsed
+  Batch 280/1694 | Loss 10.3752 | 12444s elapsed
+  Batch 290/1694 | Loss 10.3737 | 12677s elapsed
+  Batch 300/1694 | Loss 10.3730 | 12894s elapsed
+  Batch 310/1694 | Loss 10.3723 | 13112s elapsed
+  Batch 320/1694 | Loss 10.3736 | 13335s elapsed
+  Batch 330/1694 | Loss 10.3721 | 13562s elapsed
+  Batch 340/1694 | Loss 10.3708 | 13783s elapsed
+  Batch 350/1694 | Loss 10.3712 | 14002s elapsed
+  Batch 360/1694 | Loss 10.3717 | 14218s elapsed
+  Batch 370/1694 | Loss 10.3715 | 14439s elapsed
+  Batch 380/1694 | Loss 10.3701 | 14659s elapsed
+  Batch 390/1694 | Loss 10.3715 | 14873s elapsed
+  Batch 400/1694 | Loss 10.3716 | 15086s elapsed
+  Batch 410/1694 | Loss 10.3719 | 15303s elapsed
+  Batch 420/1694 | Loss 10.3701 | 15520s elapsed
+  Batch 430/1694 | Loss 10.3693 | 15743s elapsed
+  Batch 440/1694 | Loss 10.3692 | 15952s elapsed
+  Batch 450/1694 | Loss 10.3687 | 26872s elapsed
+  Batch 460/1694 | Loss 10.3685 | 37860s elapsed
+  Batch 470/1694 | Loss 10.3684 | 48328s elapsed
+  Batch 480/1694 | Loss 10.3690 | 48556s elapsed
+  Batch 490/1694 | Loss 10.3696 | 48770s elapsed
+  Batch 500/1694 | Loss 10.3699 | 48986s elapsed
+  Batch 510/1694 | Loss 10.3678 | 49215s elapsed
+  Batch 520/1694 | Loss 10.3672 | 49444s elapsed
+  Batch 530/1694 | Loss 10.3679 | 49665s elapsed
+  Batch 540/1694 | Loss 10.3672 | 49894s elapsed
+  Batch 550/1694 | Loss 10.3670 | 50329s elapsed
+  Batch 560/1694 | Loss 10.3663 | 55927s elapsed
+  Batch 570/1694 | Loss 10.3661 | 56149s elapsed
+  Batch 580/1694 | Loss 10.3674 | 56366s elapsed
+  Batch 590/1694 | Loss 10.3672 | 56580s elapsed
+  Batch 600/1694 | Loss 10.3670 | 56793s elapsed
+  Batch 610/1694 | Loss 10.3666 | 57016s elapsed
+  Batch 620/1694 | Loss 10.3660 | 57238s elapsed
+  Batch 630/1694 | Loss 10.3672 | 57461s elapsed
+  Batch 640/1694 | Loss 10.3660 | 57679s elapsed
+  Batch 650/1694 | Loss 10.3669 | 57906s elapsed
+  Batch 660/1694 | Loss 10.3667 | 58124s elapsed
+  Batch 670/1694 | Loss 10.3672 | 58345s elapsed
+  Batch 680/1694 | Loss 10.3670 | 58574s elapsed
+  Batch 690/1694 | Loss 10.3664 | 58798s elapsed
+  Batch 700/1694 | Loss 10.3667 | 59024s elapsed
+  Batch 710/1694 | Loss 10.3669 | 59250s elapsed
+  Batch 720/1694 | Loss 10.3669 | 59478s elapsed
+  Batch 730/1694 | Loss 10.3676 | 59715s elapsed
+  Batch 740/1694 | Loss 10.3676 | 59935s elapsed
+  Batch 750/1694 | Loss 10.3679 | 60158s elapsed
+  Batch 760/1694 | Loss 10.3682 | 60392s elapsed
+  Batch 770/1694 | Loss 10.3678 | 60653s elapsed
+  Batch 780/1694 | Loss 10.3675 | 60911s elapsed
+  Batch 790/1694 | Loss 10.3676 | 61146s elapsed
+  Batch 800/1694 | Loss 10.3683 | 61366s elapsed
+  Batch 810/1694 | Loss 10.3684 | 61595s elapsed
+  Batch 820/1694 | Loss 10.3679 | 61825s elapsed
+  Batch 830/1694 | Loss 10.3679 | 62062s elapsed
+  Batch 840/1694 | Loss 10.3687 | 62299s elapsed
+  Batch 850/1694 | Loss 10.3690 | 62528s elapsed
+  Batch 860/1694 | Loss 10.3692 | 62747s elapsed
+  Batch 870/1694 | Loss 10.3689 | 62970s elapsed
+  Batch 880/1694 | Loss 10.3683 | 63208s elapsed
+  Batch 890/1694 | Loss 10.3688 | 63457s elapsed
+  Batch 900/1694 | Loss 10.3693 | 63716s elapsed
+  Batch 910/1694 | Loss 10.3694 | 63970s elapsed
+  Batch 920/1694 | Loss 10.3700 | 64222s elapsed
+  Batch 930/1694 | Loss 10.3694 | 64453s elapsed
+  Batch 940/1694 | Loss 10.3696 | 64688s elapsed
+  Batch 950/1694 | Loss 10.3695 | 64925s elapsed
+  Batch 960/1694 | Loss 10.3698 | 65162s elapsed
+  Batch 970/1694 | Loss 10.3697 | 65396s elapsed
+  Batch 980/1694 | Loss 10.3696 | 65628s elapsed
+  Batch 990/1694 | Loss 10.3694 | 65872s elapsed
+  Batch 1000/1694 | Loss 10.3687 | 66112s elapsed
+  Batch 1010/1694 | Loss 10.3687 | 66339s elapsed
+  Batch 1020/1694 | Loss 10.3683 | 66575s elapsed
+  Batch 1030/1694 | Loss 10.3681 | 66807s elapsed
+  Batch 1040/1694 | Loss 10.3679 | 67029s elapsed
+  Batch 1050/1694 | Loss 10.3678 | 67262s elapsed
+  Batch 1060/1694 | Loss 10.3679 | 67486s elapsed
+  Batch 1070/1694 | Loss 10.3673 | 67711s elapsed
+  Batch 1080/1694 | Loss 10.3679 | 67950s elapsed
+  Batch 1090/1694 | Loss 10.3675 | 68183s elapsed
+  Batch 1100/1694 | Loss 10.3674 | 68413s elapsed
+  Batch 1110/1694 | Loss 10.3674 | 68646s elapsed
+  Batch 1120/1694 | Loss 10.3674 | 68871s elapsed
+  Batch 1130/1694 | Loss 10.3672 | 69088s elapsed
+  Batch 1140/1694 | Loss 10.3673 | 69313s elapsed
+  Batch 1150/1694 | Loss 10.3672 | 69557s elapsed
+  Batch 1160/1694 | Loss 10.3674 | 69782s elapsed
+  Batch 1170/1694 | Loss 10.3677 | 70012s elapsed
+  Batch 1180/1694 | Loss 10.3673 | 70245s elapsed
+  Batch 1190/1694 | Loss 10.3671 | 70469s elapsed
+  Batch 1200/1694 | Loss 10.3671 | 70694s elapsed
+  Batch 1210/1694 | Loss 10.3676 | 70920s elapsed
+  Batch 1220/1694 | Loss 10.3673 | 71148s elapsed
+  Batch 1230/1694 | Loss 10.3675 | 71372s elapsed
+  Batch 1240/1694 | Loss 10.3678 | 71599s elapsed
+  Batch 1250/1694 | Loss 10.3675 | 71831s elapsed
+  Batch 1260/1694 | Loss 10.3678 | 72051s elapsed
+  Batch 1270/1694 | Loss 10.3676 | 72267s elapsed
+  Batch 1280/1694 | Loss 10.3676 | 72487s elapsed
+  Batch 1290/1694 | Loss 10.3672 | 72713s elapsed
+  Batch 1300/1694 | Loss 10.3671 | 72942s elapsed
+  Batch 1310/1694 | Loss 10.3673 | 73185s elapsed
+  Batch 1320/1694 | Loss 10.3674 | 73424s elapsed
+  Batch 1330/1694 | Loss 10.3670 | 73643s elapsed
+  Batch 1340/1694 | Loss 10.3668 | 73864s elapsed
+  Batch 1350/1694 | Loss 10.3669 | 74108s elapsed
+  Batch 1360/1694 | Loss 10.3666 | 74358s elapsed
+  Batch 1370/1694 | Loss 10.3665 | 74601s elapsed
+  Batch 1380/1694 | Loss 10.3666 | 74842s elapsed
+  Batch 1390/1694 | Loss 10.3667 | 75098s elapsed
+  Batch 1400/1694 | Loss 10.3668 | 75344s elapsed
+  Batch 1410/1694 | Loss 10.3665 | 75592s elapsed
+  Batch 1420/1694 | Loss 10.3664 | 75836s elapsed
+  Batch 1430/1694 | Loss 10.3663 | 76089s elapsed
+  Batch 1440/1694 | Loss 10.3662 | 76330s elapsed
+  Batch 1450/1694 | Loss 10.3662 | 76567s elapsed
+  Batch 1460/1694 | Loss 10.3664 | 76793s elapsed
+  Batch 1470/1694 | Loss 10.3663 | 77029s elapsed
+  Batch 1480/1694 | Loss 10.3669 | 77265s elapsed
+  Batch 1490/1694 | Loss 10.3668 | 77484s elapsed
+  Batch 1500/1694 | Loss 10.3667 | 77725s elapsed
+  Batch 1510/1694 | Loss 10.3670 | 77975s elapsed
+  Batch 1520/1694 | Loss 10.3670 | 78224s elapsed
+  Batch 1530/1694 | Loss 10.3669 | 78467s elapsed
+  Batch 1540/1694 | Loss 10.3668 | 78715s elapsed
+  Batch 1550/1694 | Loss 10.3667 | 78964s elapsed
+  Batch 1560/1694 | Loss 10.3666 | 79214s elapsed
+  Batch 1570/1694 | Loss 10.3662 | 79458s elapsed
+  Batch 1580/1694 | Loss 10.3656 | 79689s elapsed
+  Batch 1590/1694 | Loss 10.3658 | 79919s elapsed
+  Batch 1600/1694 | Loss 10.3656 | 80150s elapsed
+  Batch 1610/1694 | Loss 10.3657 | 80379s elapsed
+  Batch 1620/1694 | Loss 10.3652 | 80595s elapsed
+  Batch 1630/1694 | Loss 10.3652 | 80813s elapsed
+  Batch 1640/1694 | Loss 10.3652 | 81037s elapsed
+  Batch 1650/1694 | Loss 10.3654 | 81263s elapsed
+  Batch 1660/1694 | Loss 10.3652 | 81490s elapsed
+  Batch 1670/1694 | Loss 10.3652 | 81714s elapsed
+  Batch 1680/1694 | Loss 10.3652 | 81936s elapsed
+  Batch 1690/1694 | Loss 10.3651 | 82162s elapsed
+Epoch 005/5 | Loss 10.3649 | Time 82247.6s
+  ↳ Valid  MRR: 0.1148 | H@1: 0.0620 | H@3: 0.1145 | H@10: 0.2125
+
+Training done. Best valid MRR: 0.1734
+Results saved to results/GDELT/
+[2/3] Evaluating GDELT...
+
+============================================================
+  HEAT Evaluation — GDELT
+  Checkpoint epoch: 1
+============================================================
+
+Evaluating on 305241 test quadruples...
+  Processed 500/305241
+  Processed 1000/305241
+  Processed 1500/305241
+  Processed 2000/305241
+  Processed 2500/305241
+  Processed 3000/305241
+  Processed 3500/305241
+  Processed 4000/305241
+  Processed 4500/305241
+  Processed 5000/305241
+  Processed 5500/305241
+  Processed 6000/305241
+  Processed 6500/305241
+  Processed 7000/305241
+  Processed 7500/305241
+  Processed 8000/305241
+  Processed 8500/305241
+  Processed 9000/305241
+  Processed 9500/305241
+  Processed 10000/305241
+  Processed 10500/305241
+  Processed 11000/305241
+  Processed 11500/305241
+  Processed 12000/305241
+  Processed 12500/305241
+  Processed 13000/305241
+  Processed 13500/305241
+  Processed 14000/305241
+  Processed 14500/305241
+  Processed 15000/305241
+  Processed 15500/305241
+  Processed 16000/305241
+  Processed 16500/305241
+  Processed 17000/305241
+  Processed 17500/305241
+  Processed 18000/305241
+  Processed 18500/305241
+  Processed 19000/305241
+  Processed 19500/305241
+  Processed 20000/305241
+  Processed 20500/305241
+  Processed 21000/305241
+  Processed 21500/305241
+  Processed 22000/305241
+  Processed 22500/305241
+  Processed 23000/305241
+  Processed 23500/305241
+  Processed 24000/305241
+  Processed 24500/305241
+  Processed 25000/305241
+  Processed 25500/305241
+  Processed 26000/305241
+  Processed 26500/305241
+  Processed 27000/305241
+  Processed 27500/305241
+  Processed 28000/305241
+  Processed 28500/305241
+  Processed 29000/305241
+  Processed 29500/305241
+  Processed 30000/305241
+  Processed 30500/305241
+  Processed 31000/305241
+  Processed 31500/305241
+  Processed 32000/305241
+  Processed 32500/305241
+  Processed 33000/305241
+  Processed 33500/305241
+  Processed 34000/305241
+  Processed 34500/305241
+  Processed 35000/305241
+  Processed 35500/305241
+  Processed 36000/305241
+  Processed 36500/305241
+  Processed 37000/305241
+  Processed 37500/305241
+  Processed 38000/305241
+  Processed 38500/305241
+  Processed 39000/305241
+  Processed 39500/305241
+  Processed 40000/305241
+  Processed 40500/305241
+  Processed 41000/305241
+  Processed 41500/305241
+  Processed 42000/305241
+  Processed 42500/305241
+  Processed 43000/305241
+  Processed 43500/305241
+  Processed 44000/305241
+  Processed 44500/305241
+  Processed 45000/305241
+  Processed 45500/305241
+  Processed 46000/305241
+  Processed 46500/305241
+  Processed 47000/305241
+  Processed 47500/305241
+  Processed 48000/305241
+  Processed 48500/305241
+  Processed 49000/305241
+  Processed 49500/305241
+  Processed 50000/305241
+  Processed 50500/305241
+  Processed 51000/305241
+  Processed 51500/305241
+  Processed 52000/305241
+  Processed 52500/305241
+  Processed 53000/305241
+  Processed 53500/305241
+  Processed 54000/305241
+  Processed 54500/305241
+  Processed 55000/305241
+  Processed 55500/305241
+  Processed 56000/305241
+  Processed 56500/305241
+  Processed 57000/305241
+  Processed 57500/305241
+  Processed 58000/305241
+  Processed 58500/305241
+  Processed 59000/305241
+  Processed 59500/305241
+  Processed 60000/305241
+  Processed 60500/305241
+  Processed 61000/305241
+  Processed 61500/305241
+  Processed 62000/305241
+  Processed 62500/305241
+  Processed 63000/305241
+  Processed 63500/305241
+  Processed 64000/305241
+  Processed 64500/305241
+  Processed 65000/305241
+  Processed 65500/305241
+  Processed 66000/305241
+  Processed 66500/305241
+  Processed 67000/305241
+  Processed 67500/305241
+  Processed 68000/305241
+  Processed 68500/305241
+  Processed 69000/305241
+  Processed 69500/305241
+  Processed 70000/305241
+  Processed 70500/305241
+  Processed 71000/305241
+  Processed 71500/305241
+  Processed 72000/305241
+  Processed 72500/305241
+  Processed 73000/305241
+  Processed 73500/305241
+  Processed 74000/305241
+  Processed 74500/305241
+  Processed 75000/305241
+  Processed 75500/305241
+  Processed 76000/305241
+  Processed 76500/305241
+  Processed 77000/305241
+  Processed 77500/305241
+  Processed 78000/305241
+  Processed 78500/305241
+  Processed 79000/305241
+  Processed 79500/305241
+  Processed 80000/305241
+  Processed 80500/305241
+  Processed 81000/305241
+  Processed 81500/305241
+  Processed 82000/305241
+  Processed 82500/305241
+  Processed 83000/305241
+  Processed 83500/305241
+  Processed 84000/305241
+  Processed 84500/305241
+  Processed 85000/305241
+  Processed 85500/305241
+  Processed 86000/305241
+  Processed 86500/305241
+  Processed 87000/305241
+  Processed 87500/305241
+  Processed 88000/305241
+  Processed 88500/305241
+  Processed 89000/305241
+  Processed 89500/305241
+  Processed 90000/305241
+  Processed 90500/305241
+  Processed 91000/305241
+  Processed 91500/305241
+  Processed 92000/305241
+  Processed 92500/305241
+  Processed 93000/305241
+  Processed 93500/305241
+  Processed 94000/305241
+  Processed 94500/305241
+  Processed 95000/305241
+  Processed 95500/305241
+  Processed 96000/305241
+  Processed 96500/305241
+  Processed 97000/305241
+  Processed 97500/305241
+  Processed 98000/305241
+  Processed 98500/305241
+  Processed 99000/305241
+  Processed 99500/305241
+  Processed 100000/305241
+  Processed 100500/305241
+  Processed 101000/305241
+  Processed 101500/305241
+  Processed 102000/305241
+  Processed 102500/305241
+  Processed 103000/305241
+  Processed 103500/305241
+  Processed 104000/305241
+  Processed 104500/305241
+  Processed 105000/305241
+  Processed 105500/305241
+  Processed 106000/305241
+  Processed 106500/305241
+  Processed 107000/305241
+  Processed 107500/305241
+  Processed 108000/305241
+  Processed 108500/305241
+  Processed 109000/305241
+  Processed 109500/305241
+  Processed 110000/305241
+  Processed 110500/305241
+  Processed 111000/305241
+  Processed 111500/305241
+  Processed 112000/305241
+  Processed 112500/305241
+  Processed 113000/305241
+  Processed 113500/305241
+  Processed 114000/305241
+  Processed 114500/305241
+  Processed 115000/305241
+  Processed 115500/305241
+  Processed 116000/305241
+  Processed 116500/305241
+  Processed 117000/305241
+  Processed 117500/305241
+  Processed 118000/305241
+  Processed 118500/305241
+  Processed 119000/305241
+  Processed 119500/305241
+  Processed 120000/305241
+  Processed 120500/305241
+  Processed 121000/305241
+  Processed 121500/305241
+  Processed 122000/305241
+  Processed 122500/305241
+  Processed 123000/305241
+  Processed 123500/305241
+  Processed 124000/305241
+  Processed 124500/305241
+  Processed 125000/305241
+  Processed 125500/305241
+  Processed 126000/305241
+  Processed 126500/305241
+  Processed 127000/305241
+  Processed 127500/305241
+  Processed 128000/305241
+  Processed 128500/305241
+  Processed 129000/305241
+  Processed 129500/305241
+  Processed 130000/305241
+  Processed 130500/305241
+  Processed 131000/305241
+  Processed 131500/305241
+  Processed 132000/305241
+  Processed 132500/305241
+  Processed 133000/305241
+  Processed 133500/305241
+  Processed 134000/305241
+  Processed 134500/305241
+  Processed 135000/305241
+  Processed 135500/305241
+  Processed 136000/305241
+  Processed 136500/305241
+  Processed 137000/305241
+  Processed 137500/305241
+  Processed 138000/305241
+  Processed 138500/305241
+  Processed 139000/305241
+  Processed 139500/305241
+  Processed 140000/305241
+  Processed 140500/305241
+  Processed 141000/305241
+  Processed 141500/305241
+  Processed 142000/305241
+  Processed 142500/305241
+  Processed 143000/305241
+  Processed 143500/305241
+  Processed 144000/305241
+  Processed 144500/305241
+  Processed 145000/305241
+  Processed 145500/305241
+  Processed 146000/305241
+  Processed 146500/305241
+  Processed 147000/305241
+  Processed 147500/305241
+  Processed 148000/305241
+  Processed 148500/305241
+  Processed 149000/305241
+  Processed 149500/305241
+  Processed 150000/305241
+  Processed 150500/305241
+  Processed 151000/305241
+  Processed 151500/305241
+  Processed 152000/305241
+  Processed 152500/305241
+  Processed 153000/305241
+  Processed 153500/305241
+  Processed 154000/305241
+  Processed 154500/305241
+  Processed 155000/305241
+  Processed 155500/305241
+  Processed 156000/305241
+  Processed 156500/305241
+  Processed 157000/305241
+  Processed 157500/305241
+  Processed 158000/305241
+  Processed 158500/305241
+  Processed 159000/305241
+  Processed 159500/305241
+  Processed 160000/305241
+  Processed 160500/305241
+  Processed 161000/305241
+  Processed 161500/305241
+  Processed 162000/305241
+  Processed 162500/305241
+  Processed 163000/305241
+  Processed 163500/305241
+  Processed 164000/305241
+  Processed 164500/305241
+  Processed 165000/305241
+  Processed 165500/305241
+  Processed 166000/305241
+  Processed 166500/305241
+  Processed 167000/305241
+  Processed 167500/305241
+  Processed 168000/305241
+  Processed 168500/305241
+  Processed 169000/305241
+  Processed 169500/305241
+  Processed 170000/305241
+  Processed 170500/305241
+  Processed 171000/305241
+  Processed 171500/305241
+  Processed 172000/305241
+  Processed 172500/305241
+  Processed 173000/305241
+  Processed 173500/305241
+  Processed 174000/305241
+  Processed 174500/305241
+  Processed 175000/305241
+  Processed 175500/305241
+  Processed 176000/305241
+  Processed 176500/305241
+  Processed 177000/305241
+  Processed 177500/305241
+  Processed 178000/305241
+  Processed 178500/305241
+  Processed 179000/305241
+  Processed 179500/305241
+  Processed 180000/305241
+  Processed 180500/305241
+  Processed 181000/305241
+  Processed 181500/305241
+  Processed 182000/305241
+  Processed 182500/305241
+  Processed 183000/305241
+  Processed 183500/305241
+  Processed 184000/305241
+  Processed 184500/305241
+  Processed 185000/305241
+  Processed 185500/305241
+  Processed 186000/305241
+  Processed 186500/305241
+  Processed 187000/305241
+  Processed 187500/305241
+  Processed 188000/305241
+  Processed 188500/305241
+  Processed 189000/305241
+  Processed 189500/305241
+  Processed 190000/305241
+  Processed 190500/305241
+  Processed 191000/305241
+  Processed 191500/305241
+  Processed 192000/305241
+  Processed 192500/305241
+  Processed 193000/305241
+  Processed 193500/305241
+  Processed 194000/305241
+  Processed 194500/305241
+  Processed 195000/305241
+  Processed 195500/305241
+  Processed 196000/305241
+  Processed 196500/305241
+  Processed 197000/305241
+  Processed 197500/305241
+  Processed 198000/305241
+  Processed 198500/305241
+  Processed 199000/305241
+  Processed 199500/305241
+  Processed 200000/305241
+  Processed 200500/305241
+  Processed 201000/305241
+  Processed 201500/305241
+  Processed 202000/305241
+  Processed 202500/305241
+  Processed 203000/305241
+  Processed 203500/305241
+  Processed 204000/305241
+  Processed 204500/305241
+  Processed 205000/305241
+  Processed 205500/305241
+  Processed 206000/305241
+  Processed 206500/305241
+  Processed 207000/305241
+  Processed 207500/305241
+  Processed 208000/305241
+  Processed 208500/305241
+  Processed 209000/305241
+  Processed 209500/305241
+  Processed 210000/305241
+  Processed 210500/305241
+  Processed 211000/305241
+  Processed 211500/305241
+  Processed 212000/305241
+  Processed 212500/305241
+  Processed 213000/305241
+  Processed 213500/305241
+  Processed 214000/305241
+  Processed 214500/305241
+  Processed 215000/305241
+  Processed 215500/305241
+  Processed 216000/305241
+  Processed 216500/305241
+  Processed 217000/305241
+  Processed 217500/305241
+  Processed 218000/305241
+  Processed 218500/305241
+  Processed 219000/305241
+  Processed 219500/305241
+  Processed 220000/305241
+  Processed 220500/305241
+  Processed 221000/305241
+  Processed 221500/305241
+  Processed 222000/305241
+  Processed 222500/305241
+  Processed 223000/305241
+  Processed 223500/305241
+  Processed 224000/305241
+  Processed 224500/305241
+  Processed 225000/305241
+  Processed 225500/305241
+  Processed 226000/305241
+  Processed 226500/305241
+  Processed 227000/305241
+  Processed 227500/305241
+  Processed 228000/305241
+  Processed 228500/305241
+  Processed 229000/305241
+  Processed 229500/305241
+  Processed 230000/305241
+  Processed 230500/305241
+  Processed 231000/305241
+  Processed 231500/305241
+  Processed 232000/305241
+  Processed 232500/305241
+  Processed 233000/305241
+  Processed 233500/305241
+  Processed 234000/305241
+  Processed 234500/305241
+  Processed 235000/305241
+  Processed 235500/305241
+  Processed 236000/305241
+  Processed 236500/305241
+  Processed 237000/305241
+  Processed 237500/305241
+  Processed 238000/305241
+  Processed 238500/305241
+  Processed 239000/305241
+  Processed 239500/305241
+  Processed 240000/305241
+  Processed 240500/305241
+  Processed 241000/305241
+  Processed 241500/305241
+  Processed 242000/305241
+  Processed 242500/305241
+  Processed 243000/305241
+  Processed 243500/305241
+  Processed 244000/305241
+  Processed 244500/305241
+  Processed 245000/305241
+  Processed 245500/305241
+  Processed 246000/305241
+  Processed 246500/305241
+  Processed 247000/305241
+  Processed 247500/305241
+  Processed 248000/305241
+  Processed 248500/305241
+  Processed 249000/305241
+  Processed 249500/305241
+  Processed 250000/305241
+  Processed 250500/305241
+  Processed 251000/305241
+  Processed 251500/305241
+  Processed 252000/305241
+  Processed 252500/305241
+  Processed 253000/305241
+  Processed 253500/305241
+  Processed 254000/305241
+  Processed 254500/305241
+  Processed 255000/305241
+  Processed 255500/305241
+  Processed 256000/305241
+  Processed 256500/305241
+  Processed 257000/305241
+  Processed 257500/305241
+  Processed 258000/305241
+  Processed 258500/305241
+  Processed 259000/305241
+  Processed 259500/305241
+  Processed 260000/305241
+  Processed 260500/305241
+  Processed 261000/305241
+  Processed 261500/305241
+  Processed 262000/305241
+  Processed 262500/305241
+  Processed 263000/305241
+  Processed 263500/305241
+  Processed 264000/305241
+  Processed 264500/305241
+  Processed 265000/305241
+  Processed 265500/305241
+  Processed 266000/305241
+  Processed 266500/305241
+  Processed 267000/305241
+  Processed 267500/305241
+  Processed 268000/305241
+  Processed 268500/305241
+  Processed 269000/305241
+  Processed 269500/305241
+  Processed 270000/305241
+  Processed 270500/305241
+  Processed 271000/305241
+  Processed 271500/305241
+  Processed 272000/305241
+  Processed 272500/305241
+  Processed 273000/305241
+  Processed 273500/305241
+  Processed 274000/305241
+  Processed 274500/305241
+  Processed 275000/305241
+  Processed 275500/305241
+  Processed 276000/305241
+  Processed 276500/305241
+  Processed 277000/305241
+  Processed 277500/305241
+  Processed 278000/305241
+  Processed 278500/305241
+  Processed 279000/305241
+  Processed 279500/305241
+  Processed 280000/305241
+  Processed 280500/305241
+  Processed 281000/305241
+  Processed 281500/305241
+  Processed 282000/305241
+  Processed 282500/305241
+  Processed 283000/305241
+  Processed 283500/305241
+  Processed 284000/305241
+  Processed 284500/305241
+  Processed 285000/305241
+  Processed 285500/305241
+  Processed 286000/305241
+  Processed 286500/305241
+  Processed 287000/305241
+  Processed 287500/305241
+  Processed 288000/305241
+  Processed 288500/305241
+  Processed 289000/305241
+  Processed 289500/305241
+  Processed 290000/305241
+  Processed 290500/305241
+  Processed 291000/305241
+  Processed 291500/305241
+  Processed 292000/305241
+  Processed 292500/305241
+  Processed 293000/305241
+  Processed 293500/305241
+  Processed 294000/305241
+  Processed 294500/305241
+  Processed 295000/305241
+  Processed 295500/305241
+  Processed 296000/305241
+  Processed 296500/305241
+  Processed 297000/305241
+  Processed 297500/305241
+  Processed 298000/305241
+  Processed 298500/305241
+  Processed 299000/305241
+  Processed 299500/305241
+  Processed 300000/305241
+  Processed 300500/305241
+  Processed 301000/305241
+  Processed 301500/305241
+  Processed 302000/305241
+  Processed 302500/305241
+  Processed 303000/305241
+  Processed 303500/305241
+  Processed 304000/305241
+  Processed 304500/305241
+  Processed 305000/305241
+
+────────────────────────────────────────
+  Test Results — HEAT / GDELT
+────────────────────────────────────────
+  MRR   : 0.1597
+  MR    : 227.8
+  Hits@1: 0.0981
+  Hits@3: 0.1657
+  Hits@10:0.2771
+────────────────────────────────────────
+
+Results saved to results/GDELT/
+[3/3] Visualizing GDELT...
+
+============================================================
+  HEAT Visualisation Suite
+  Dataset: GDELT
+============================================================
+
+Generating plots...
+  ✓ Saved 01_training_loss.png / 01_training_loss.pdf
+  ✓ Saved 02_mrr_progression.png / 02_mrr_progression.pdf
+  ✓ Saved 03_rank_distribution.png / 03_rank_distribution.pdf
+  ✓ Saved 04_confusion_matrix.png / 04_confusion_matrix.pdf
+  ✓ Saved 05_roc_curve.png / 05_roc_curve.pdf
+  ✓ Saved 08_calibration.png / 08_calibration.pdf
+  ✓ Saved 06_model_comparison.png / 06_model_comparison.pdf
+  ✓ Saved 10_ablation_study.png / 10_ablation_study.pdf
+  ✓ Saved 07_mrr_heatmap.png / 07_mrr_heatmap.pdf
+  ✓ Saved 11_summary_comparison.png / 11_summary_comparison.pdf
+  Running t-SNE on 500 entity embeddings...
+  ✓ Saved 09_tsne_embeddings.png / 09_tsne_embeddings.pdf
+
+✅ All figures saved to: results/GDELT/figures/
+   (PNG + PDF in publication quality 300 DPI)
+
+✅ GDELT done!
+
+========================================
+  HEAT Pipeline — Dataset: WIKI
+========================================
+[1/3] Training WIKI...
+
+============================================================
+  HEAT Training — Dataset: WIKI
+  Device: cpu
+============================================================
+
+  [data] WIKI: 12,554 entities, 24 relations
+  [data] Loading quadruples...
+  [data] Train: 539,286  Valid: 67,538  Test: 63,110
+  [data] Building train history...
+  [data] Train history done.
+  [data] Building test history...
+  [data] Test history done. Dataset ready.
+
+  Entities: 12,554  |  Relations: 24  |  Train: 539,286
+
+  Batch 10/527 | Loss 17.4807 | 221s elapsed
+  Batch 20/527 | Loss 15.7952 | 438s elapsed
+  Batch 30/527 | Loss 14.6708 | 648s elapsed
+  Batch 40/527 | Loss 13.8513 | 866s elapsed
+  Batch 50/527 | Loss 13.2022 | 1088s elapsed
+  Batch 60/527 | Loss 12.6622 | 1310s elapsed
+  Batch 70/527 | Loss 12.2031 | 1531s elapsed
+  Batch 80/527 | Loss 11.7983 | 1754s elapsed
+  Batch 90/527 | Loss 11.4325 | 1977s elapsed
+  Batch 100/527 | Loss 11.1059 | 2199s elapsed
+  Batch 110/527 | Loss 10.8019 | 2421s elapsed
+  Batch 120/527 | Loss 10.5171 | 2641s elapsed
+  Batch 130/527 | Loss 10.2461 | 2860s elapsed
+  Batch 140/527 | Loss 9.9863 | 3080s elapsed
+  Batch 150/527 | Loss 9.7408 | 3301s elapsed
+  Batch 160/527 | Loss 9.5025 | 3523s elapsed
+  Batch 170/527 | Loss 9.2802 | 3745s elapsed
+  Batch 180/527 | Loss 9.0692 | 3968s elapsed
+  Batch 190/527 | Loss 8.8739 | 4187s elapsed
+  Batch 200/527 | Loss 8.6905 | 4406s elapsed
+  Batch 210/527 | Loss 8.5208 | 4620s elapsed
+  Batch 220/527 | Loss 8.3608 | 4838s elapsed
+  Batch 230/527 | Loss 8.2105 | 5053s elapsed
+  Batch 240/527 | Loss 8.0700 | 5271s elapsed
+  Batch 250/527 | Loss 7.9406 | 5490s elapsed
+  Batch 260/527 | Loss 7.8174 | 5707s elapsed
+  Batch 270/527 | Loss 7.6990 | 5925s elapsed
+  Batch 280/527 | Loss 7.5894 | 6143s elapsed
+  Batch 290/527 | Loss 7.4837 | 6362s elapsed
+  Batch 300/527 | Loss 7.3855 | 6578s elapsed
+  Batch 310/527 | Loss 7.2923 | 6793s elapsed
+  Batch 320/527 | Loss 7.2052 | 7011s elapsed
+  Batch 330/527 | Loss 7.1239 | 7231s elapsed
+  Batch 340/527 | Loss 7.0457 | 7447s elapsed
+  Batch 350/527 | Loss 6.9696 | 7664s elapsed
+  Batch 360/527 | Loss 6.8987 | 7884s elapsed
+  Batch 370/527 | Loss 6.8314 | 8102s elapsed
+  Batch 380/527 | Loss 6.7670 | 8323s elapsed
+  Batch 390/527 | Loss 6.7042 | 8542s elapsed
+  Batch 400/527 | Loss 6.6456 | 8757s elapsed
+  Batch 410/527 | Loss 6.5892 | 8974s elapsed
+  Batch 420/527 | Loss 6.5341 | 9193s elapsed
+  Batch 430/527 | Loss 6.4818 | 9414s elapsed
+  Batch 440/527 | Loss 6.4317 | 9634s elapsed
+  Batch 450/527 | Loss 6.3836 | 9859s elapsed
+  Batch 460/527 | Loss 6.3355 | 10079s elapsed
+  Batch 470/527 | Loss 6.2904 | 10301s elapsed
+  Batch 480/527 | Loss 6.2481 | 10518s elapsed
+  Batch 490/527 | Loss 6.2063 | 10736s elapsed
+  Batch 500/527 | Loss 6.1659 | 10957s elapsed
+  Batch 510/527 | Loss 6.1265 | 11176s elapsed
+  Batch 520/527 | Loss 6.0885 | 11395s elapsed
+Epoch 001/5 | Loss 6.0619 | Time 11538.4s
+  ↳ Valid  MRR: 0.4646 | H@1: 0.4175 | H@3: 0.5015 | H@10: 0.5410
+  ✓ Best model saved (MRR=0.4646)
+  Batch 10/527 | Loss 4.0354 | 216s elapsed
+  Batch 20/527 | Loss 4.0455 | 431s elapsed
+  Batch 30/527 | Loss 4.0589 | 643s elapsed
+  Batch 40/527 | Loss 4.0530 | 863s elapsed
+  Batch 50/527 | Loss 4.0452 | 1080s elapsed
+  Batch 60/527 | Loss 4.0445 | 1298s elapsed
+  Batch 70/527 | Loss 4.0389 | 1519s elapsed
+  Batch 80/527 | Loss 4.0382 | 1739s elapsed
+  Batch 90/527 | Loss 4.0270 | 1953s elapsed
+  Batch 100/527 | Loss 4.0255 | 2173s elapsed
+  Batch 110/527 | Loss 4.0237 | 2392s elapsed
+  Batch 120/527 | Loss 4.0232 | 2613s elapsed
+  Batch 130/527 | Loss 4.0184 | 2835s elapsed
+  Batch 140/527 | Loss 4.0174 | 3056s elapsed
+  Batch 150/527 | Loss 4.0158 | 3274s elapsed
+  Batch 160/527 | Loss 4.0126 | 3494s elapsed
+  Batch 170/527 | Loss 4.0132 | 3863s elapsed
+  Batch 180/527 | Loss 4.0108 | 4090s elapsed
+  Batch 190/527 | Loss 4.0075 | 4319s elapsed
+  Batch 200/527 | Loss 4.0037 | 4537s elapsed
+  Batch 210/527 | Loss 4.0023 | 4756s elapsed
+  Batch 220/527 | Loss 4.0010 | 4975s elapsed
+  Batch 230/527 | Loss 3.9982 | 5194s elapsed
+  Batch 240/527 | Loss 3.9949 | 5414s elapsed
+  Batch 250/527 | Loss 3.9942 | 5636s elapsed
+  Batch 260/527 | Loss 3.9914 | 5858s elapsed
+  Batch 270/527 | Loss 3.9898 | 6081s elapsed
+  Batch 280/527 | Loss 3.9873 | 6304s elapsed
+  Batch 290/527 | Loss 3.9853 | 6526s elapsed
+  Batch 300/527 | Loss 3.9835 | 6735s elapsed
+  Batch 310/527 | Loss 3.9800 | 6943s elapsed
+  Batch 320/527 | Loss 3.9769 | 7166s elapsed
+  Batch 330/527 | Loss 3.9756 | 7388s elapsed
+  Batch 340/527 | Loss 3.9741 | 7610s elapsed
+  Batch 350/527 | Loss 3.9718 | 7833s elapsed
+  Batch 360/527 | Loss 3.9698 | 8053s elapsed
+  Batch 370/527 | Loss 3.9670 | 8543s elapsed
+  Batch 380/527 | Loss 3.9636 | 8761s elapsed
+  Batch 390/527 | Loss 3.9627 | 8983s elapsed
+  Batch 400/527 | Loss 3.9599 | 9202s elapsed
+  Batch 410/527 | Loss 3.9575 | 9420s elapsed
+  Batch 420/527 | Loss 3.9557 | 9638s elapsed
+  Batch 430/527 | Loss 3.9542 | 10928s elapsed
+  Batch 440/527 | Loss 3.9506 | 11149s elapsed
+  Batch 450/527 | Loss 3.9476 | 11369s elapsed
+  Batch 460/527 | Loss 3.9455 | 11590s elapsed
+  Batch 470/527 | Loss 3.9431 | 11811s elapsed
+  Batch 480/527 | Loss 3.9413 | 12028s elapsed
+  Batch 490/527 | Loss 3.9395 | 12260s elapsed
+  Batch 500/527 | Loss 3.9379 | 12781s elapsed
+  Batch 510/527 | Loss 3.9358 | 13003s elapsed
+  Batch 520/527 | Loss 3.9343 | 13225s elapsed
+Epoch 002/5 | Loss 3.9331 | Time 13371.1s
+  ↳ Valid  MRR: 0.5217 | H@1: 0.4730 | H@3: 0.5575 | H@10: 0.6025
+  ✓ Best model saved (MRR=0.5217)
+  Batch 10/527 | Loss 3.7584 | 363s elapsed
+  Batch 20/527 | Loss 3.7624 | 584s elapsed
+  Batch 30/527 | Loss 3.7682 | 807s elapsed
+  Batch 40/527 | Loss 3.7676 | 1030s elapsed
+  Batch 50/527 | Loss 3.7640 | 1251s elapsed
+  Batch 60/527 | Loss 3.7616 | 1470s elapsed
+  Batch 70/527 | Loss 3.7575 | 1692s elapsed
+  Batch 80/527 | Loss 3.7538 | 1910s elapsed
+  Batch 90/527 | Loss 3.7498 | 2131s elapsed
+  Batch 100/527 | Loss 3.7493 | 2353s elapsed
+  Batch 110/527 | Loss 3.7510 | 2575s elapsed
+  Batch 120/527 | Loss 3.7487 | 2796s elapsed
+  Batch 130/527 | Loss 3.7447 | 3018s elapsed
+  Batch 140/527 | Loss 3.7457 | 3237s elapsed
+  Batch 150/527 | Loss 3.7433 | 3458s elapsed
+  Batch 160/527 | Loss 3.7417 | 3678s elapsed
+  Batch 170/527 | Loss 3.7413 | 3898s elapsed
+  Batch 180/527 | Loss 3.7392 | 4118s elapsed
+  Batch 190/527 | Loss 3.7392 | 4340s elapsed
+  Batch 200/527 | Loss 3.7398 | 4563s elapsed
+  Batch 210/527 | Loss 3.7399 | 4782s elapsed
+  Batch 220/527 | Loss 3.7405 | 5070s elapsed
+  Batch 230/527 | Loss 3.7400 | 5292s elapsed
+  Batch 240/527 | Loss 3.7398 | 5512s elapsed
+  Batch 250/527 | Loss 3.7396 | 5736s elapsed
+  Batch 260/527 | Loss 3.7388 | 5957s elapsed
+  Batch 270/527 | Loss 3.7372 | 6174s elapsed
+  Batch 280/527 | Loss 3.7361 | 6390s elapsed
+  Batch 290/527 | Loss 3.7360 | 6604s elapsed
+  Batch 300/527 | Loss 3.7343 | 6820s elapsed
+  Batch 310/527 | Loss 3.7350 | 7038s elapsed
+  Batch 320/527 | Loss 3.7333 | 7254s elapsed
+  Batch 330/527 | Loss 3.7334 | 7470s elapsed
+  Batch 340/527 | Loss 3.7327 | 7686s elapsed
+  Batch 350/527 | Loss 3.7321 | 7901s elapsed
+  Batch 360/527 | Loss 3.7312 | 8117s elapsed
+  Batch 370/527 | Loss 3.7310 | 8333s elapsed
+  Batch 380/527 | Loss 3.7307 | 8551s elapsed
+  Batch 390/527 | Loss 3.7312 | 8767s elapsed
+  Batch 400/527 | Loss 3.7304 | 8983s elapsed
+  Batch 410/527 | Loss 3.7302 | 9201s elapsed
+  Batch 420/527 | Loss 3.7295 | 9415s elapsed
+  Batch 430/527 | Loss 3.7282 | 9630s elapsed
+  Batch 440/527 | Loss 3.7279 | 9846s elapsed
+  Batch 450/527 | Loss 3.7273 | 10062s elapsed
+  Batch 460/527 | Loss 3.7270 | 10278s elapsed
+  Batch 470/527 | Loss 3.7255 | 10494s elapsed
+  Batch 480/527 | Loss 3.7247 | 10711s elapsed
+  Batch 490/527 | Loss 3.7239 | 10926s elapsed
+  Batch 500/527 | Loss 3.7231 | 11142s elapsed
+  Batch 510/527 | Loss 3.7218 | 11365s elapsed
+  Batch 520/527 | Loss 3.7212 | 11588s elapsed
+Epoch 003/5 | Loss 3.7213 | Time 11736.7s
+  ↳ Valid  MRR: 0.4865 | H@1: 0.4335 | H@3: 0.5270 | H@10: 0.5835
+  Batch 10/527 | Loss 3.6279 | 223s elapsed
+  Batch 20/527 | Loss 3.6202 | 446s elapsed
+  Batch 30/527 | Loss 3.6187 | 668s elapsed
+  Batch 40/527 | Loss 3.6197 | 892s elapsed
+  Batch 50/527 | Loss 3.6224 | 1117s elapsed
+  Batch 60/527 | Loss 3.6238 | 1339s elapsed
+  Batch 70/527 | Loss 3.6219 | 1561s elapsed
+  Batch 80/527 | Loss 3.6208 | 1784s elapsed
+  Batch 90/527 | Loss 3.6177 | 2008s elapsed
+  Batch 100/527 | Loss 3.6180 | 2230s elapsed
+  Batch 110/527 | Loss 3.6184 | 2456s elapsed
+  Batch 120/527 | Loss 3.6197 | 2687s elapsed
+  Batch 130/527 | Loss 3.6202 | 2911s elapsed
+  Batch 140/527 | Loss 3.6206 | 3134s elapsed
+  Batch 150/527 | Loss 3.6227 | 3355s elapsed
+  Batch 160/527 | Loss 3.6219 | 3578s elapsed
+  Batch 170/527 | Loss 3.6226 | 3801s elapsed
+  Batch 180/527 | Loss 3.6209 | 4022s elapsed
+  Batch 190/527 | Loss 3.6200 | 4242s elapsed
+  Batch 200/527 | Loss 3.6208 | 4465s elapsed
+  Batch 210/527 | Loss 3.6193 | 4687s elapsed
+  Batch 220/527 | Loss 3.6200 | 4910s elapsed
+  Batch 230/527 | Loss 3.6199 | 5130s elapsed
+  Batch 240/527 | Loss 3.6197 | 5351s elapsed
+  Batch 250/527 | Loss 3.6196 | 5569s elapsed
+  Batch 260/527 | Loss 3.6190 | 5789s elapsed
+  Batch 270/527 | Loss 3.6193 | 6010s elapsed
+  Batch 280/527 | Loss 3.6196 | 6232s elapsed
+  Batch 290/527 | Loss 3.6192 | 6452s elapsed
+  Batch 300/527 | Loss 3.6193 | 6673s elapsed
+  Batch 310/527 | Loss 3.6186 | 6894s elapsed
+  Batch 320/527 | Loss 3.6183 | 7115s elapsed
+  Batch 330/527 | Loss 3.6189 | 7337s elapsed
+  Batch 340/527 | Loss 3.6197 | 7559s elapsed
+  Batch 350/527 | Loss 3.6190 | 7781s elapsed
+  Batch 360/527 | Loss 3.6187 | 8004s elapsed
+  Batch 370/527 | Loss 3.6189 | 8225s elapsed
+  Batch 380/527 | Loss 3.6187 | 8448s elapsed
+  Batch 390/527 | Loss 3.6177 | 8670s elapsed
+  Batch 400/527 | Loss 3.6167 | 8891s elapsed
+  Batch 410/527 | Loss 3.6164 | 9114s elapsed
+  Batch 420/527 | Loss 3.6155 | 9336s elapsed
+  Batch 430/527 | Loss 3.6149 | 9557s elapsed
+  Batch 440/527 | Loss 3.6154 | 9778s elapsed
+  Batch 450/527 | Loss 3.6160 | 9999s elapsed
+  Batch 460/527 | Loss 3.6165 | 10218s elapsed
+  Batch 470/527 | Loss 3.6160 | 10440s elapsed
+  Batch 480/527 | Loss 3.6158 | 10663s elapsed
+  Batch 490/527 | Loss 3.6153 | 10885s elapsed
+  Batch 500/527 | Loss 3.6153 | 11106s elapsed
+  Batch 510/527 | Loss 3.6156 | 11328s elapsed
+  Batch 520/527 | Loss 3.6156 | 11551s elapsed
+Epoch 004/5 | Loss 3.6155 | Time 11699.0s
+  ↳ Valid  MRR: 0.4718 | H@1: 0.4190 | H@3: 0.5095 | H@10: 0.5640
+  Batch 10/527 | Loss 3.5542 | 222s elapsed
+  Batch 20/527 | Loss 3.5520 | 444s elapsed
+  Batch 30/527 | Loss 3.5620 | 667s elapsed
+  Batch 40/527 | Loss 3.5682 | 891s elapsed
+  Batch 50/527 | Loss 3.5705 | 1113s elapsed
+  Batch 60/527 | Loss 3.5698 | 1335s elapsed
+  Batch 70/527 | Loss 3.5708 | 1557s elapsed
+  Batch 80/527 | Loss 3.5737 | 1779s elapsed
+  Batch 90/527 | Loss 3.5731 | 2001s elapsed
+  Batch 100/527 | Loss 3.5663 | 2223s elapsed
+  Batch 110/527 | Loss 3.5666 | 2445s elapsed
+  Batch 120/527 | Loss 3.5647 | 2666s elapsed
+  Batch 130/527 | Loss 3.5690 | 2888s elapsed
+  Batch 140/527 | Loss 3.5673 | 3111s elapsed
+  Batch 150/527 | Loss 3.5648 | 3332s elapsed
+  Batch 160/527 | Loss 3.5618 | 3553s elapsed
+  Batch 170/527 | Loss 3.5622 | 3775s elapsed
+  Batch 180/527 | Loss 3.5608 | 3997s elapsed
+  Batch 190/527 | Loss 3.5596 | 4218s elapsed
+  Batch 200/527 | Loss 3.5597 | 4440s elapsed
+  Batch 210/527 | Loss 3.5608 | 4662s elapsed
+  Batch 220/527 | Loss 3.5602 | 4884s elapsed
+  Batch 230/527 | Loss 3.5610 | 5103s elapsed
+  Batch 240/527 | Loss 3.5621 | 5321s elapsed
+  Batch 250/527 | Loss 3.5610 | 5539s elapsed
+  Batch 260/527 | Loss 3.5610 | 5757s elapsed
+  Batch 270/527 | Loss 3.5606 | 5977s elapsed
+  Batch 280/527 | Loss 3.5601 | 6198s elapsed
+  Batch 290/527 | Loss 3.5601 | 6416s elapsed
+  Batch 300/527 | Loss 3.5600 | 6637s elapsed
+  Batch 310/527 | Loss 3.5606 | 6857s elapsed
+  Batch 320/527 | Loss 3.5607 | 7076s elapsed
+  Batch 330/527 | Loss 3.5608 | 7293s elapsed
+  Batch 340/527 | Loss 3.5607 | 7513s elapsed
+  Batch 350/527 | Loss 3.5603 | 7734s elapsed
+  Batch 360/527 | Loss 3.5593 | 7956s elapsed
+  Batch 370/527 | Loss 3.5588 | 8178s elapsed
+  Batch 380/527 | Loss 3.5597 | 8399s elapsed
+  Batch 390/527 | Loss 3.5593 | 8619s elapsed
+  Batch 400/527 | Loss 3.5587 | 8836s elapsed
+  Batch 410/527 | Loss 3.5578 | 9062s elapsed
+  Batch 420/527 | Loss 3.5571 | 9285s elapsed
+  Batch 430/527 | Loss 3.5571 | 9507s elapsed
+  Batch 440/527 | Loss 3.5573 | 9728s elapsed
+  Batch 450/527 | Loss 3.5569 | 9952s elapsed
+  Batch 460/527 | Loss 3.5568 | 10174s elapsed
+  Batch 470/527 | Loss 3.5561 | 10396s elapsed
+  Batch 480/527 | Loss 3.5555 | 10616s elapsed
+  Batch 490/527 | Loss 3.5559 | 10836s elapsed
+  Batch 500/527 | Loss 3.5562 | 11056s elapsed
+  Batch 510/527 | Loss 3.5562 | 11276s elapsed
+  Batch 520/527 | Loss 3.5564 | 11493s elapsed
+Epoch 005/5 | Loss 3.5564 | Time 13796.5s
+  ↳ Valid  MRR: 0.4542 | H@1: 0.3975 | H@3: 0.4930 | H@10: 0.5535
+
+Training done. Best valid MRR: 0.5217
+Results saved to results/WIKI/
+[2/3] Evaluating WIKI...
+
+============================================================
+  HEAT Evaluation — WIKI
+  Checkpoint epoch: 2
+============================================================
+
+Evaluating on 63110 test quadruples...
+  Processed 500/63110
+  Processed 1000/63110
+  Processed 1500/63110
+  Processed 2000/63110
+  Processed 2500/63110
+  Processed 3000/63110
+  Processed 3500/63110
+  Processed 4000/63110
+  Processed 4500/63110
+  Processed 5000/63110
+  Processed 5500/63110
+  Processed 6000/63110
+  Processed 6500/63110
+  Processed 7000/63110
+  Processed 7500/63110
+  Processed 8000/63110
+  Processed 8500/63110
+  Processed 9000/63110
+  Processed 9500/63110
+  Processed 10000/63110
+  Processed 10500/63110
+  Processed 11000/63110
+  Processed 11500/63110
+  Processed 12000/63110
+  Processed 12500/63110
+  Processed 13000/63110
+  Processed 13500/63110
+  Processed 14000/63110
+  Processed 14500/63110
+  Processed 15000/63110
+  Processed 15500/63110
+  Processed 16000/63110
+  Processed 16500/63110
+  Processed 17000/63110
+  Processed 17500/63110
+  Processed 18000/63110
+  Processed 18500/63110
+  Processed 19000/63110
+  Processed 19500/63110
+  Processed 20000/63110
+  Processed 20500/63110
+  Processed 21000/63110
+  Processed 21500/63110
+  Processed 22000/63110
+  Processed 22500/63110
+  Processed 23000/63110
+  Processed 23500/63110
+  Processed 24000/63110
+  Processed 24500/63110
+  Processed 25000/63110
+  Processed 25500/63110
+  Processed 26000/63110
+  Processed 26500/63110
+  Processed 27000/63110
+  Processed 27500/63110
+  Processed 28000/63110
+  Processed 28500/63110
+  Processed 29000/63110
+  Processed 29500/63110
+  Processed 30000/63110
+  Processed 30500/63110
+  Processed 31000/63110
+  Processed 31500/63110
+  Processed 32000/63110
+  Processed 32500/63110
+  Processed 33000/63110
+  Processed 33500/63110
+  Processed 34000/63110
+  Processed 34500/63110
+  Processed 35000/63110
+  Processed 35500/63110
+  Processed 36000/63110
+  Processed 36500/63110
+  Processed 37000/63110
+  Processed 37500/63110
+  Processed 38000/63110
+  Processed 38500/63110
+  Processed 39000/63110
+  Processed 39500/63110
+  Processed 40000/63110
+  Processed 40500/63110
+  Processed 41000/63110
+  Processed 41500/63110
+  Processed 42000/63110
+  Processed 42500/63110
+  Processed 43000/63110
+  Processed 43500/63110
+  Processed 44000/63110
+  Processed 44500/63110
+  Processed 45000/63110
+  Processed 45500/63110
+  Processed 46000/63110
+  Processed 46500/63110
+  Processed 47000/63110
+  Processed 47500/63110
+  Processed 48000/63110
+  Processed 48500/63110
+  Processed 49000/63110
+  Processed 49500/63110
+  Processed 50000/63110
+  Processed 50500/63110
+  Processed 51000/63110
+  Processed 51500/63110
+  Processed 52000/63110
+  Processed 52500/63110
+  Processed 53000/63110
+  Processed 53500/63110
+  Processed 54000/63110
+  Processed 54500/63110
+  Processed 55000/63110
+  Processed 55500/63110
+  Processed 56000/63110
+  Processed 56500/63110
+  Processed 57000/63110
+  Processed 57500/63110
+  Processed 58000/63110
+  Processed 58500/63110
+  Processed 59000/63110
+  Processed 59500/63110
+  Processed 60000/63110
+  Processed 60500/63110
+  Processed 61000/63110
+  Processed 61500/63110
+  Processed 62000/63110
+  Processed 62500/63110
+  Processed 63000/63110
+
+────────────────────────────────────────
+  Test Results — HEAT / WIKI
+────────────────────────────────────────
+  MRR   : 0.4383
+  MR    : 2753.7
+  Hits@1: 0.3961
+  Hits@3: 0.4625
+  Hits@10:0.5166
+────────────────────────────────────────
+
+Results saved to results/WIKI/
+[3/3] Visualizing WIKI...
+
+============================================================
+  HEAT Visualisation Suite
+  Dataset: WIKI
+============================================================
+
+Generating plots...
+  ✓ Saved 01_training_loss.png / 01_training_loss.pdf
+  ✓ Saved 02_mrr_progression.png / 02_mrr_progression.pdf
+  ✓ Saved 03_rank_distribution.png / 03_rank_distribution.pdf
+  ✓ Saved 04_confusion_matrix.png / 04_confusion_matrix.pdf
+  ✓ Saved 05_roc_curve.png / 05_roc_curve.pdf
+  ✓ Saved 08_calibration.png / 08_calibration.pdf
+  ✓ Saved 06_model_comparison.png / 06_model_comparison.pdf
+  ✓ Saved 10_ablation_study.png / 10_ablation_study.pdf
+  ✓ Saved 07_mrr_heatmap.png / 07_mrr_heatmap.pdf
+  ✓ Saved 11_summary_comparison.png / 11_summary_comparison.pdf
+  Running t-SNE on 500 entity embeddings...
+  ✓ Saved 09_tsne_embeddings.png / 09_tsne_embeddings.pdf
+
+✅ All figures saved to: results/WIKI/figures/
+   (PNG + PDF in publication quality 300 DPI)
+
+✅ WIKI done!

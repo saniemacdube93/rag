@@ -1,0 +1,118 @@
+
+============================================================
+  HEAT Evaluation — ICEWS18
+  Checkpoint epoch: 3
+============================================================
+
+Evaluating on 49545 test quadruples...
+  Processed 500/49545
+  Processed 1000/49545
+  Processed 1500/49545
+  Processed 2000/49545
+  Processed 2500/49545
+  Processed 3000/49545
+  Processed 3500/49545
+  Processed 4000/49545
+  Processed 4500/49545
+  Processed 5000/49545
+  Processed 5500/49545
+  Processed 6000/49545
+  Processed 6500/49545
+  Processed 7000/49545
+  Processed 7500/49545
+  Processed 8000/49545
+  Processed 8500/49545
+  Processed 9000/49545
+  Processed 9500/49545
+  Processed 10000/49545
+  Processed 10500/49545
+  Processed 11000/49545
+  Processed 11500/49545
+  Processed 12000/49545
+  Processed 12500/49545
+  Processed 13000/49545
+  Processed 13500/49545
+  Processed 14000/49545
+  Processed 14500/49545
+  Processed 15000/49545
+  Processed 15500/49545
+  Processed 16000/49545
+  Processed 16500/49545
+  Processed 17000/49545
+  Processed 17500/49545
+  Processed 18000/49545
+  Processed 18500/49545
+  Processed 19000/49545
+  Processed 19500/49545
+  Processed 20000/49545
+  Processed 20500/49545
+  Processed 21000/49545
+  Processed 21500/49545
+  Processed 22000/49545
+  Processed 22500/49545
+  Processed 23000/49545
+  Processed 23500/49545
+  Processed 24000/49545
+  Processed 24500/49545
+  Processed 25000/49545
+  Processed 25500/49545
+  Processed 26000/49545
+  Processed 26500/49545
+  Processed 27000/49545
+  Processed 27500/49545
+  Processed 28000/49545
+  Processed 28500/49545
+  Processed 29000/49545
+  Processed 29500/49545
+  Processed 30000/49545
+  Processed 30500/49545
+  Processed 31000/49545
+  Processed 31500/49545
+  Processed 32000/49545
+  Processed 32500/49545
+  Processed 33000/49545
+  Processed 33500/49545
+  Processed 34000/49545
+  Processed 34500/49545
+  Processed 35000/49545
+  Processed 35500/49545
+  Processed 36000/49545
+  Processed 36500/49545
+  Processed 37000/49545
+  Processed 37500/49545
+  Processed 38000/49545
+  Processed 38500/49545
+  Processed 39000/49545
+  Processed 39500/49545
+  Processed 40000/49545
+  Processed 40500/49545
+  Processed 41000/49545
+  Processed 41500/49545
+  Processed 42000/49545
+  Processed 42500/49545
+  Processed 43000/49545
+  Processed 43500/49545
+  Processed 44000/49545
+  Processed 44500/49545
+  Processed 45000/49545
+  Processed 45500/49545
+  Processed 46000/49545
+  Processed 46500/49545
+  Processed 47000/49545
+  Processed 47500/49545
+  Processed 48000/49545
+  Processed 48500/49545
+  Processed 49000/49545
+  Processed 49500/49545
+
+────────────────────────────────────────
+  Test Results — HEAT / ICEWS18
+────────────────────────────────────────
+  MRR   : 0.2048
+  MR    : 1129.3
+  Hits@1: 0.1282
+  Hits@3: 0.2260
+  Hits@10:0.3570
+────────────────────────────────────────
+
+Results saved to results/ICEWS18/

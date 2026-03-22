@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HEAT Architecture — Hierarchical Evolution-Aware Transformer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --surface2: #1f2937;
+      --border: #30363d;
+      --accent-blue: #58a6ff;
+      --accent-purple: #bc8cff;
+      --accent-green: #3fb950;
+      --accent-orange: #ff8c42;
+      --accent-pink: #ff6eb4;
+      --accent-teal: #39c5cf;
+      --accent-yellow: #e3b341;
+      --text: #c9d1d9;
+      --text-dim: #8b949e;
+      --text-bright: #f0f6fc;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      min-height: 100vh;
+      padding: 32px 24px;
+    }
+
+    /* ── Title ────────────────────────────────────────────────────── */
+    .title-block {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .title-block h1 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: var(--text-bright);
+      letter-spacing: -0.5px;
+    }
+    .title-block h1 span.heat { color: var(--accent-blue); }
+    .title-block .subtitle {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      margin-top: 6px;
+    }
+    .title-block .tag {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      background: rgba(88,166,255,0.12);
+      border: 1px solid rgba(88,166,255,0.3);
+      color: var(--accent-blue);
+    }
+
+    /* ── Main layout ──────────────────────────────────────────────── */
+    .diagram-wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* ── Input query box ──────────────────────────────────────────── */
+    .query-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin-bottom: 20px;
+    }
+    .query-pill {
+      padding: 8px 20px;
+      border-radius: 8px;
+      border: 1.5px solid var(--border);
+      background: var(--surface2);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--text-bright);
+      font-weight: 500;
+    }
+    .query-pill .q-label {
+      color: var(--text-dim);
+      font-size: 0.7rem;
+      display: block;
+      margin-bottom: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .query-pill .q-val { color: var(--accent-yellow); }
+    .query-pill .q-sep { color: var(--text-dim); margin: 0 4px; }
+    .query-pill .q-q   { color: var(--accent-pink); font-weight: 700; }
+    .query-pill .q-t   { color: var(--accent-teal); }
+
+    /* ── 3-column layout ──────────────────────────────────────────── */
+    .cols {
+      display: grid;
+      grid-template-columns: 1fr 1.8fr 1fr;
+      gap: 16px;
+      align-items: start;
+      margin-bottom: 16px;
+    }
+
+    /* ── Shared card ──────────────────────────────────────────────── */
+    .card {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      position: relative;
+    }
+    .card-title {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .card-title .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── Embedding side panels ────────────────────────────────────── */
+    .embed-stack { display: flex; flex-direction: column; gap: 8px; }
+    .embed-item {
+      padding: 9px 12px;
+      border-radius: 8px;
+      border: 1px solid;
+      font-size: 0.78rem;
+      font-weight: 500;
+    }
+    .embed-item .label { font-size: 0.65rem; color: var(--text-dim); margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .embed-item .formula { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; }
+
+    .ent-color  { background: rgba(88,166,255,0.08);  border-color: rgba(88,166,255,0.35);  color: var(--accent-blue); }
+    .rel-color  { background: rgba(188,140,255,0.08); border-color: rgba(188,140,255,0.35); color: var(--accent-purple); }
+    .t2v-color  { background: rgba(57,197,207,0.08);  border-color: rgba(57,197,207,0.35);  color: var(--accent-teal); }
+    .rsf-color  { background: rgba(255,140,66,0.08);  border-color: rgba(255,140,66,0.35);  color: var(--accent-orange); }
+
+    /* ── Center HTSA block ────────────────────────────────────────── */
+    .htsa-card {
+      border-color: rgba(88,166,255,0.5);
+      background: var(--surface);
+    }
+    .event-proj {
+      background: rgba(88,166,255,0.06);
+      border: 1px dashed rgba(88,166,255,0.3);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-bottom: 10px;
+      font-size: 0.78rem;
+    }
+    .event-proj .ep-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim); margin-bottom: 4px; }
+    .event-proj .ep-formula { font-family: 'JetBrains Mono', monospace; color: var(--accent-blue); }
+    .event-proj .ep-sub { font-size: 0.68rem; color: var(--text-dim); margin-top: 3px; }
+
+    /* Attn layers */
+    .attn-layers { display: flex; flex-direction: column; gap: 8px; margin-bottom: 10px; }
+    .attn-block {
+      border-radius: 8px;
+      padding: 10px 14px;
+      border: 1px solid;
+      font-size: 0.78rem;
+    }
+    .attn-block .a-header { display: flex; align-items: center; gap: 6px; margin-bottom: 5px; font-weight: 600; }
+    .attn-block .a-badge {
+      font-size: 0.6rem; padding: 2px 6px; border-radius: 10px; font-weight: 600;
+    }
+    .attn-block .a-formula { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--text-dim); }
+    .attn-block .a-bias { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; margin-top: 4px; }
+
+    .local-attn  { background: rgba(63,185,80,0.07);  border-color: rgba(63,185,80,0.35); }
+    .global-attn { background: rgba(255,110,180,0.07); border-color: rgba(255,110,180,0.35); }
+    .local-attn  .a-header { color: var(--accent-green); }
+    .global-attn .a-header { color: var(--accent-pink); }
+    .local-attn  .a-badge  { background: rgba(63,185,80,0.2);  color: var(--accent-green); }
+    .global-attn .a-badge  { background: rgba(255,110,180,0.2); color: var(--accent-pink); }
+    .local-attn  .a-bias   { color: var(--accent-green); }
+    .global-attn .a-bias   { color: var(--accent-pink); }
+
+    .gate-block {
+      background: rgba(227,179,65,0.07);
+      border: 1px solid rgba(227,179,65,0.35);
+      border-radius: 8px;
+      padding: 9px 14px;
+      font-size: 0.78rem;
+      margin-bottom: 8px;
+    }
+    .gate-block .g-title { font-weight: 600; color: var(--accent-yellow); margin-bottom: 4px; font-size: 0.78rem; }
+    .gate-block .g-formula { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--text-dim); }
+
+    .ffn-block {
+      background: rgba(57,197,207,0.06);
+      border: 1px solid rgba(57,197,207,0.25);
+      border-radius: 8px;
+      padding: 9px 14px;
+      font-size: 0.78rem;
+      margin-bottom: 0;
+    }
+    .ffn-block .f-title { font-weight: 600; color: var(--accent-teal); margin-bottom: 3px; font-size: 0.78rem; }
+    .ffn-block .f-detail { font-size: 0.68rem; font-family: 'JetBrains Mono', monospace; color: var(--text-dim); }
+
+    /* ── Connector arrows (vertical) ──────────────────────────────── */
+    .arrow-down {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 0;
+      color: var(--text-dim);
+      font-size: 0.72rem;
+    }
+    .arrow-down svg { flex-shrink: 0; }
+
+    /* ── Concat concat bar ────────────────────────────────────────── */
+    .concat-bar {
+      background: linear-gradient(90deg, rgba(88,166,255,0.15) 0%, rgba(188,140,255,0.15) 100%);
+      border: 1.5px solid rgba(88,166,255,0.35);
+      border-radius: 10px;
+      padding: 12px 20px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .concat-part {
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    .concat-op { color: var(--text-dim); font-size: 1.1rem; }
+
+    /* ── Prediction head ──────────────────────────────────────────── */
+    .pred-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .pred-card {
+      background: var(--surface);
+      border: 1.5px solid rgba(188,140,255,0.4);
+      border-radius: 12px;
+      padding: 14px;
+    }
+    .pred-card .p-title { font-weight: 600; color: var(--accent-purple); font-size: 0.78rem; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+    .pred-card .p-layers { display: flex; flex-direction: column; gap: 5px; }
+    .pred-layer {
+      display: flex; align-items: center; gap: 8px;
+      padding: 5px 10px; border-radius: 6px;
+      font-size: 0.72rem; font-family: 'JetBrains Mono', monospace;
+    }
+    .pred-layer .pl-arrow { color: var(--text-dim); font-size: 0.8rem; }
+
+    /* ── Loss block ───────────────────────────────────────────────── */
+    .loss-block {
+      background: var(--surface);
+      border: 1.5px solid rgba(255,140,66,0.4);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+    .loss-title { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-orange); margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
+    .loss-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .loss-term {
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid;
+      font-size: 0.75rem;
+    }
+    .loss-term .lt-name { font-weight: 600; margin-bottom: 4px; font-size: 0.78rem; }
+    .loss-term .lt-formula { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--text-dim); line-height: 1.5; }
+    .loss-pred     { background: rgba(63,185,80,0.07);   border-color: rgba(63,185,80,0.3);   }
+    .loss-contrast { background: rgba(88,166,255,0.07);  border-color: rgba(88,166,255,0.3);  }
+    .loss-time     { background: rgba(57,197,207,0.07);  border-color: rgba(57,197,207,0.3);  }
+    .loss-total    { font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--accent-orange); margin-top: 10px; padding: 9px 14px; background: rgba(255,140,66,0.07); border: 1px solid rgba(255,140,66,0.3); border-radius: 8px; }
+
+    /* ── MC Dropout block ─────────────────────────────────────────── */
+    .mc-block {
+      background: var(--surface);
+      border: 1.5px solid rgba(227,179,65,0.4);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .mc-icon { font-size: 1.6rem; }
+    .mc-content .mc-title { font-weight: 600; color: var(--accent-yellow); font-size: 0.85rem; margin-bottom: 4px; }
+    .mc-content .mc-desc { font-size: 0.75rem; color: var(--text-dim); line-height: 1.5; }
+    .mc-content .mc-formula { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--accent-yellow); margin-top: 4px; }
+
+    /* ── Output ───────────────────────────────────────────────────── */
+    .output-block {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+    }
+    .output-pill {
+      padding: 10px 22px;
+      border-radius: 24px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* ── Legend ───────────────────────────────────────────────────── */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.72rem;
+      color: var(--text-dim);
+    }
+    .legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+
+    /* ── Horizontal connector lines ───────────────────────────────── */
+    .h-flow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin: 10px 0;
+    }
+    .h-line {
+      flex: 1;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="diagram-wrapper">
+
+  <!-- Title -->
+  <div class="title-block">
+    <h1><span class="heat">HEAT</span>: Hierarchical Evolution-Aware Transformer</h1>
+    <div class="subtitle">Temporal Knowledge Graph Reasoning — Architecture Overview</div>
+    <div class="tag">Temporal Link Prediction  ·  TKG Reasoning  ·  MC Dropout Uncertainty</div>
+  </div>
+
+  <!-- Input Query -->
+  <div class="arrow-down" style="margin-bottom:10px;">
+    <span style="color:var(--text-dim); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em;">Input Query</span>
+  </div>
+  <div class="query-bar">
+    <div class="query-pill">
+      <span class="q-label">Temporal Link Prediction Query</span>
+      <span>
+        <span class="q-val">s</span>
+        <span class="q-sep">,</span>
+        <span class="q-val">r</span>
+        <span class="q-sep">,</span>
+        <span class="q-q">?</span>
+        <span class="q-sep">,</span>
+        <span class="q-t">t<sub>q</sub></span>
+        <span class="q-sep"> → </span>
+        <span style="color:var(--text-dim); font-size:0.75rem;">Predict object entity</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- Down arrow -->
+  <div class="arrow-down">
+    <svg width="16" height="28" viewBox="0 0 16 28"><path d="M8 0 L8 22 M2 16 L8 24 L14 16" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Entity History H<sub>s</sub> = {(o<sub>i</sub>, r<sub>i</sub>, t<sub>i</sub>)}</span>
+  </div>
+
+  <!-- 3-column input embedding section -->
+  <div class="cols">
+
+    <!-- LEFT: Entity Embeddings -->
+    <div class="card">
+      <div class="card-title">
+        <div class="dot" style="background:var(--accent-blue)"></div>
+        <span style="color:var(--accent-blue)">Entity Embeddings</span>
+      </div>
+      <div class="embed-stack">
+        <div class="embed-item ent-color">
+          <div class="label">Subject</div>
+          <div class="formula">e<sub>s</sub> ∈ ℝ<sup>h</sup></div>
+        </div>
+        <div class="embed-item ent-color">
+          <div class="label">Object (per event)</div>
+          <div class="formula">ē<sub>o</sub> = mean(e<sub>o<sub>i</sub></sub>)</div>
+        </div>
+        <div class="embed-item ent-color" style="font-size:0.68rem; opacity:0.8;">
+          <div class="label">Init</div>
+          <div class="formula">Xavier Uniform</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CENTER: Core HTSA block -->
+    <div class="card htsa-card">
+      <div class="card-title">
+        <div class="dot" style="background:var(--accent-blue)"></div>
+        <span style="color:var(--text-bright); font-size:0.8rem; text-transform:none; letter-spacing:0;">Event Sequence Construction &amp; HTSA Encoder</span>
+      </div>
+
+      <!-- Event projection -->
+      <div class="event-proj">
+        <div class="ep-label">Step 1 — Per-Event Embedding Projection</div>
+        <div class="ep-formula">
+          h<sub>i</sub> = W · [e<sub>s</sub> ‖ ē<sub>o</sub> ‖ e<sub>r</sub> ‖ T2V(Δt<sub>i</sub>)]
+        </div>
+        <div class="ep-sub">Linear(3h + t<sub>d</sub> → h) → GELU → Dropout → ℝ<sup>h</sup></div>
+      </div>
+
+      <!-- Sequence: (h_1, ..., h_L) -->
+      <div class="arrow-down" style="font-size:0.7rem;">
+        <svg width="12" height="20" viewBox="0 0 12 20"><path d="M6 0 L6 14 M1 10 L6 16 L11 10" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Event Sequence (h<sub>1</sub>, … , h<sub>L</sub>) ∈ ℝ<sup>L×h</sup></span>
+      </div>
+
+      <!-- Attention layers -->
+      <div class="attn-layers">
+        <div class="attn-block local-attn">
+          <div class="a-header">
+            🔍 Local Temporal Attention
+            <span class="a-badge">4 heads</span>
+          </div>
+          <div class="a-formula">A = softmax(QKᵀ/√d<sub>k</sub> + M<sub>time</sub>) · V</div>
+          <div class="a-bias">M<sub>time</sub>[i,j] = −λ · |t<sub>i</sub> − t<sub>j</sub>|</div>
+        </div>
+        <div class="attn-block global-attn">
+          <div class="a-header">
+            🌐 Global Temporal Attention
+            <span class="a-badge">4 heads</span>
+          </div>
+          <div class="a-formula">A = softmax(QKᵀ/√d<sub>k</sub> + M<sub>time</sub>) · V</div>
+          <div class="a-bias">Graph-level context aggregation</div>
+        </div>
+      </div>
+
+      <!-- Gated Fusion -->
+      <div class="gate-block" style="margin-top:8px;">
+        <div class="g-title">⊕ Gated Local–Global Fusion</div>
+        <div class="g-formula">
+          g = σ(W<sub>g</sub> · [h<sub>local</sub> ‖ h<sub>global</sub>])<br>
+          out = g ⊙ h<sub>local</sub> + (1−g) ⊙ h<sub>global</sub>
+        </div>
+      </div>
+
+      <!-- FFN -->
+      <div class="ffn-block" style="margin-top:8px;">
+        <div class="f-title">FFN + LayerNorm + Masked Mean Pool → e<sub>repr</sub></div>
+        <div class="f-detail">Linear(h→4h) → GELU → Dropout → Linear(4h→h) → LayerNorm</div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Time2Vec + RSF -->
+    <div style="display:flex; flex-direction:column; gap:12px;">
+
+      <div class="card">
+        <div class="card-title">
+          <div class="dot" style="background:var(--accent-teal)"></div>
+          <span style="color:var(--accent-teal)">Time2Vec</span>
+        </div>
+        <div class="embed-stack">
+          <div class="embed-item t2v-color">
+            <div class="label">Linear (trend)</div>
+            <div class="formula">ω<sub>0</sub>·Δt + φ<sub>0</sub></div>
+          </div>
+          <div class="embed-item t2v-color">
+            <div class="label">Periodic (k−1 dims)</div>
+            <div class="formula">sin(ω<sub>i</sub>·Δt + φ<sub>i</sub>)</div>
+          </div>
+          <div class="embed-item t2v-color" style="font-size:0.68rem;">
+            <div class="label">Output</div>
+            <div class="formula">t<sub>enc</sub> ∈ ℝ<sup>t<sub>d</sub></sup>, log-scale freq</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <div class="dot" style="background:var(--accent-orange)"></div>
+          <span style="color:var(--accent-orange)">Relation-Semantic Fusion</span>
+        </div>
+        <div class="embed-stack">
+          <div class="embed-item rsf-color">
+            <div class="label">Structural</div>
+            <div class="formula">e<sub>struct</sub> (learned)</div>
+          </div>
+          <div class="embed-item rsf-color">
+            <div class="label">Semantic</div>
+            <div class="formula">e<sub>sem</sub> (orthogonal)</div>
+          </div>
+          <div class="embed-item rsf-color">
+            <div class="label">Gated Fusion</div>
+            <div class="formula">g⊙e<sub>struct</sub>+(1−g)⊙e<sub>sem</sub></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Arrow down to concat -->
+  <div class="arrow-down">
+    <svg width="16" height="28" viewBox="0 0 16 28"><path d="M8 0 L8 22 M2 16 L8 24 L14 16" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Concatenate entity representation with relation embedding</span>
+  </div>
+
+  <!-- Concat bar -->
+  <div class="concat-bar">
+    <div class="concat-part" style="background:rgba(88,166,255,0.15); color:var(--accent-blue); border:1px solid rgba(88,166,255,0.3);">
+      e<sub>repr</sub> ∈ ℝ<sup>h</sup>
+    </div>
+    <span class="concat-op">‖</span>
+    <div class="concat-part" style="background:rgba(188,140,255,0.15); color:var(--accent-purple); border:1px solid rgba(188,140,255,0.3);">
+      e<sub>r</sub> ∈ ℝ<sup>h</sup>
+    </div>
+    <span class="concat-op">→</span>
+    <div class="concat-part" style="background:rgba(255,255,255,0.05); color:var(--text-bright); border:1px solid var(--border);">
+      combined ∈ ℝ<sup>2h</sup>
+    </div>
+  </div>
+
+  <!-- Arrow down to pred head -->
+  <div class="arrow-down">
+    <svg width="16" height="28" viewBox="0 0 16 28"><path d="M8 0 L8 22 M2 16 L8 24 L14 16" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+
+  <!-- Prediction Head -->
+  <div class="pred-row">
+    <div class="pred-card">
+      <div class="p-title">
+        🎯 Prediction Head
+      </div>
+      <div class="p-layers">
+        <div class="pred-layer" style="background:rgba(188,140,255,0.08);">
+          <span style="color:var(--accent-purple);">Linear(2h → h)</span>
+        </div>
+        <div class="pred-layer" style="background:rgba(188,140,255,0.05);">
+          <span class="pl-arrow">↓</span>
+          <span style="color:var(--text-dim);">GELU + Dropout</span>
+        </div>
+        <div class="pred-layer" style="background:rgba(188,140,255,0.08);">
+          <span class="pl-arrow">↓</span>
+          <span style="color:var(--accent-purple);">Linear(h → |E|)</span>
+        </div>
+        <div class="pred-layer" style="background:rgba(63,185,80,0.08);">
+          <span class="pl-arrow">↓</span>
+          <span style="color:var(--accent-green);">softmax → P(o|s,r,t)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MC Dropout -->
+    <div class="pred-card" style="border-color: rgba(227,179,65,0.4);">
+      <div class="mc-block" style="border:none; padding:0; margin:0; background:none;">
+        <div class="mc-icon">🎲</div>
+        <div class="mc-content">
+          <div class="mc-title">MC Dropout Uncertainty</div>
+          <div class="mc-desc">At inference, dropout remains <em>active</em> for T=20 forward passes. Variance across samples = predictive uncertainty.</div>
+          <div class="mc-formula">
+            μ = (1/T)Σ p̂<sub>t</sub> &nbsp;|&nbsp; σ² = Var[p̂<sub>t</sub>]
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loss -->
+  <div class="loss-block">
+    <div class="loss-title">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      Joint Training Loss
+    </div>
+    <div class="loss-grid">
+      <div class="loss-term loss-pred">
+        <div class="lt-name" style="color:var(--accent-green);">ℒ<sub>pred</sub></div>
+        <div class="lt-formula">Cross-entropy<br>link prediction</div>
+      </div>
+      <div class="loss-term loss-contrast">
+        <div class="lt-name" style="color:var(--accent-blue);">ℒ<sub>contrast</sub></div>
+        <div class="lt-formula">InfoNCE temporal<br>contrastive loss</div>
+      </div>
+      <div class="loss-term loss-time">
+        <div class="lt-name" style="color:var(--accent-teal);">ℒ<sub>time</sub></div>
+        <div class="lt-formula">Temporal consistency<br>hinge regularisation</div>
+      </div>
+    </div>
+    <div class="loss-total">
+      ℒ<sub>total</sub> = ℒ<sub>pred</sub> + α · ℒ<sub>contrast</sub> + β · ℒ<sub>time</sub>
+      &nbsp;&nbsp;&nbsp;(α = 0.1, β = 0.05)
+    </div>
+  </div>
+
+  <!-- Output -->
+  <div class="arrow-down">
+    <svg width="16" height="28" viewBox="0 0 16 28"><path d="M8 0 L8 22 M2 16 L8 24 L14 16" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Output</span>
+  </div>
+
+  <div class="output-block">
+    <div class="output-pill" style="background:rgba(63,185,80,0.15); border:1.5px solid rgba(63,185,80,0.5); color:var(--accent-green);">
+      🏆&nbsp; Ranked entity predictions<br>
+      <span style="font-size:0.7rem; font-weight:400; color:var(--text-dim);">MRR · H@1 · H@3 · H@10</span>
+    </div>
+    <div class="output-pill" style="background:rgba(227,179,65,0.15); border:1.5px solid rgba(227,179,65,0.5); color:var(--accent-yellow);">
+      🎲&nbsp; Predictive uncertainty<br>
+      <span style="font-size:0.7rem; font-weight:400; color:var(--text-dim);">σ² via MC Dropout</span>
+    </div>
+  </div>
+
+  <!-- Legend -->
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent-blue)"></div>Entity Embeddings (h=200)</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent-teal)"></div>Time2Vec (t<sub>d</sub>=32)</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent-orange)"></div>Relation-Semantic Fusion (RSF)</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent-green)"></div>Local Attention (4 heads)</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent-pink)"></div>Global Attention (4 heads)</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent-purple)"></div>Prediction Head → |E| scores</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--accent-yellow)"></div>MC Dropout (T=20 samples)</div>
+  </div>
+
+</div>
+</body>
+</html>

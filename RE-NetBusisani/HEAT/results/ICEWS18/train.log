@@ -1,0 +1,212 @@
+
+============================================================
+  HEAT Training — Dataset: ICEWS18
+  Device: cpu
+============================================================
+
+  [data] ICEWS18: 23,033 entities, 256 relations
+  [data] Loading quadruples...
+  [data] Train: 373,018  Valid: 45,995  Test: 49,545
+  [data] Building train history...
+  [data] Train history done.
+  [data] Building test history...
+  [data] Test history done. Dataset ready.
+
+  Entities: 23,033  |  Relations: 256  |  Train: 373,018
+
+  Batch 10/365 | Loss 19.3091 | 323s elapsed
+  Batch 20/365 | Loss 17.6978 | 670s elapsed
+  Batch 30/365 | Loss 16.8767 | 1613s elapsed
+  Batch 40/365 | Loss 16.3964 | 1937s elapsed
+  Batch 50/365 | Loss 16.0443 | 2261s elapsed
+  Batch 60/365 | Loss 15.7457 | 2586s elapsed
+  Batch 70/365 | Loss 15.4930 | 2910s elapsed
+  Batch 80/365 | Loss 15.2620 | 3235s elapsed
+  Batch 90/365 | Loss 15.0674 | 3561s elapsed
+  Batch 100/365 | Loss 14.8818 | 3890s elapsed
+  Batch 110/365 | Loss 14.7182 | 4218s elapsed
+  Batch 120/365 | Loss 14.5788 | 4546s elapsed
+  Batch 130/365 | Loss 14.4550 | 4873s elapsed
+  Batch 140/365 | Loss 14.3337 | 5200s elapsed
+  Batch 150/365 | Loss 14.2243 | 5528s elapsed
+  Batch 160/365 | Loss 14.1255 | 5855s elapsed
+  Batch 170/365 | Loss 14.0331 | 6183s elapsed
+  Batch 180/365 | Loss 13.9441 | 6511s elapsed
+  Batch 190/365 | Loss 13.8601 | 6835s elapsed
+  Batch 200/365 | Loss 13.7845 | 7162s elapsed
+  Batch 210/365 | Loss 13.7094 | 7489s elapsed
+  Batch 220/365 | Loss 13.6322 | 7815s elapsed
+  Batch 230/365 | Loss 13.5631 | 8140s elapsed
+  Batch 240/365 | Loss 13.4929 | 8467s elapsed
+  Batch 250/365 | Loss 13.4269 | 8794s elapsed
+  Batch 260/365 | Loss 13.3642 | 9120s elapsed
+  Batch 270/365 | Loss 13.3014 | 9449s elapsed
+  Batch 280/365 | Loss 13.2437 | 9778s elapsed
+  Batch 290/365 | Loss 13.1884 | 10102s elapsed
+  Batch 300/365 | Loss 13.1359 | 10428s elapsed
+  Batch 310/365 | Loss 13.0844 | 10755s elapsed
+  Batch 320/365 | Loss 13.0326 | 11081s elapsed
+  Batch 330/365 | Loss 12.9825 | 11409s elapsed
+  Batch 340/365 | Loss 12.9366 | 11734s elapsed
+  Batch 350/365 | Loss 12.8897 | 12061s elapsed
+  Batch 360/365 | Loss 12.8427 | 12390s elapsed
+Epoch 001/5 | Loss 12.8195 | Time 12528.6s
+  ↳ Valid  MRR: 0.2076 | H@1: 0.1280 | H@3: 0.2295 | H@10: 0.3715
+  ✓ Best model saved (MRR=0.2076)
+  Batch 10/365 | Loss 10.9541 | 323s elapsed
+  Batch 20/365 | Loss 10.9638 | 646s elapsed
+  Batch 30/365 | Loss 10.9110 | 969s elapsed
+  Batch 40/365 | Loss 10.8893 | 1293s elapsed
+  Batch 50/365 | Loss 10.8725 | 1617s elapsed
+  Batch 60/365 | Loss 10.8569 | 1940s elapsed
+  Batch 70/365 | Loss 10.8338 | 2264s elapsed
+  Batch 80/365 | Loss 10.8129 | 2586s elapsed
+  Batch 90/365 | Loss 10.7977 | 2909s elapsed
+  Batch 100/365 | Loss 10.7823 | 3230s elapsed
+  Batch 110/365 | Loss 10.7652 | 3556s elapsed
+  Batch 120/365 | Loss 10.7446 | 3880s elapsed
+  Batch 130/365 | Loss 10.7287 | 4203s elapsed
+  Batch 140/365 | Loss 10.7134 | 4526s elapsed
+  Batch 150/365 | Loss 10.6954 | 4849s elapsed
+  Batch 160/365 | Loss 10.6768 | 5172s elapsed
+  Batch 170/365 | Loss 10.6577 | 5495s elapsed
+  Batch 180/365 | Loss 10.6425 | 5818s elapsed
+  Batch 190/365 | Loss 10.6291 | 6142s elapsed
+  Batch 200/365 | Loss 10.6140 | 6465s elapsed
+  Batch 210/365 | Loss 10.5972 | 6790s elapsed
+  Batch 220/365 | Loss 10.5808 | 7113s elapsed
+  Batch 230/365 | Loss 10.5653 | 7435s elapsed
+  Batch 240/365 | Loss 10.5502 | 7757s elapsed
+  Batch 250/365 | Loss 10.5381 | 8078s elapsed
+  Batch 260/365 | Loss 10.5218 | 8403s elapsed
+  Batch 270/365 | Loss 10.5070 | 8727s elapsed
+  Batch 280/365 | Loss 10.4938 | 9045s elapsed
+  Batch 290/365 | Loss 10.4804 | 9357s elapsed
+  Batch 300/365 | Loss 10.4671 | 9672s elapsed
+  Batch 310/365 | Loss 10.4537 | 9988s elapsed
+  Batch 320/365 | Loss 10.4408 | 10299s elapsed
+  Batch 330/365 | Loss 10.4296 | 10608s elapsed
+  Batch 340/365 | Loss 10.4166 | 10918s elapsed
+  Batch 350/365 | Loss 10.4028 | 11230s elapsed
+  Batch 360/365 | Loss 10.3876 | 11544s elapsed
+Epoch 002/5 | Loss 10.3810 | Time 11678.0s
+  ↳ Valid  MRR: 0.2304 | H@1: 0.1525 | H@3: 0.2520 | H@10: 0.3890
+  ✓ Best model saved (MRR=0.2304)
+  Batch 10/365 | Loss 9.6787 | 315s elapsed
+  Batch 20/365 | Loss 9.6507 | 630s elapsed
+  Batch 30/365 | Loss 9.6443 | 948s elapsed
+  Batch 40/365 | Loss 9.6302 | 1274s elapsed
+  Batch 50/365 | Loss 9.6212 | 1600s elapsed
+  Batch 60/365 | Loss 9.6058 | 1925s elapsed
+  Batch 70/365 | Loss 9.5998 | 2254s elapsed
+  Batch 80/365 | Loss 9.5940 | 2582s elapsed
+  Batch 90/365 | Loss 9.5937 | 2911s elapsed
+  Batch 100/365 | Loss 9.5950 | 3239s elapsed
+  Batch 110/365 | Loss 9.5949 | 3563s elapsed
+  Batch 120/365 | Loss 9.5893 | 3892s elapsed
+  Batch 130/365 | Loss 9.5791 | 4219s elapsed
+  Batch 140/365 | Loss 9.5740 | 4547s elapsed
+  Batch 150/365 | Loss 9.5680 | 4875s elapsed
+  Batch 160/365 | Loss 9.5630 | 5201s elapsed
+  Batch 170/365 | Loss 9.5563 | 5530s elapsed
+  Batch 180/365 | Loss 9.5512 | 5858s elapsed
+  Batch 190/365 | Loss 9.5441 | 6188s elapsed
+  Batch 200/365 | Loss 9.5388 | 6522s elapsed
+  Batch 210/365 | Loss 9.5347 | 6858s elapsed
+  Batch 220/365 | Loss 9.5344 | 7194s elapsed
+  Batch 230/365 | Loss 9.5317 | 7527s elapsed
+  Batch 240/365 | Loss 9.5277 | 7864s elapsed
+  Batch 250/365 | Loss 9.5212 | 8202s elapsed
+  Batch 260/365 | Loss 9.5171 | 8539s elapsed
+  Batch 270/365 | Loss 9.5119 | 9273s elapsed
+  Batch 280/365 | Loss 9.5083 | 9616s elapsed
+  Batch 290/365 | Loss 9.5059 | 9955s elapsed
+  Batch 300/365 | Loss 9.5043 | 10295s elapsed
+  Batch 310/365 | Loss 9.5008 | 10634s elapsed
+  Batch 320/365 | Loss 9.4951 | 10977s elapsed
+  Batch 330/365 | Loss 9.4933 | 11319s elapsed
+  Batch 340/365 | Loss 9.4906 | 11657s elapsed
+  Batch 350/365 | Loss 9.4875 | 11994s elapsed
+  Batch 360/365 | Loss 9.4849 | 12318s elapsed
+Epoch 003/5 | Loss 9.4840 | Time 12455.1s
+  ↳ Valid  MRR: 0.2392 | H@1: 0.1610 | H@3: 0.2630 | H@10: 0.3970
+  ✓ Best model saved (MRR=0.2392)
+  Batch 10/365 | Loss 9.1289 | 333s elapsed
+  Batch 20/365 | Loss 9.0835 | 670s elapsed
+  Batch 30/365 | Loss 9.1054 | 1002s elapsed
+  Batch 40/365 | Loss 9.0856 | 1339s elapsed
+  Batch 50/365 | Loss 9.0776 | 1682s elapsed
+  Batch 60/365 | Loss 9.0870 | 2034s elapsed
+  Batch 70/365 | Loss 9.0839 | 2388s elapsed
+  Batch 80/365 | Loss 9.0876 | 2739s elapsed
+  Batch 90/365 | Loss 9.0874 | 3095s elapsed
+  Batch 100/365 | Loss 9.0842 | 3449s elapsed
+  Batch 110/365 | Loss 9.0848 | 3802s elapsed
+  Batch 120/365 | Loss 9.0874 | 4149s elapsed
+  Batch 130/365 | Loss 9.0842 | 4495s elapsed
+  Batch 140/365 | Loss 9.0798 | 4844s elapsed
+  Batch 150/365 | Loss 9.0747 | 5305s elapsed
+  Batch 160/365 | Loss 9.0762 | 6160s elapsed
+  Batch 170/365 | Loss 9.0765 | 6500s elapsed
+  Batch 180/365 | Loss 9.0721 | 6852s elapsed
+  Batch 190/365 | Loss 9.0716 | 7217s elapsed
+  Batch 200/365 | Loss 9.0649 | 7582s elapsed
+  Batch 210/365 | Loss 9.0635 | 7944s elapsed
+  Batch 220/365 | Loss 9.0603 | 8310s elapsed
+  Batch 230/365 | Loss 9.0609 | 8671s elapsed
+  Batch 240/365 | Loss 9.0558 | 9027s elapsed
+  Batch 250/365 | Loss 9.0569 | 9381s elapsed
+  Batch 260/365 | Loss 9.0508 | 9735s elapsed
+  Batch 270/365 | Loss 9.0492 | 10084s elapsed
+  Batch 280/365 | Loss 9.0473 | 10432s elapsed
+  Batch 290/365 | Loss 9.0478 | 10773s elapsed
+  Batch 300/365 | Loss 9.0461 | 11136s elapsed
+  Batch 310/365 | Loss 9.0437 | 11499s elapsed
+  Batch 320/365 | Loss 9.0431 | 11854s elapsed
+  Batch 330/365 | Loss 9.0418 | 12210s elapsed
+  Batch 340/365 | Loss 9.0403 | 12569s elapsed
+  Batch 350/365 | Loss 9.0382 | 12931s elapsed
+  Batch 360/365 | Loss 9.0373 | 13281s elapsed
+Epoch 004/5 | Loss 9.0372 | Time 13434.9s
+  ↳ Valid  MRR: 0.2070 | H@1: 0.1295 | H@3: 0.2235 | H@10: 0.3650
+  Batch 10/365 | Loss 8.8286 | 356s elapsed
+  Batch 20/365 | Loss 8.8127 | 715s elapsed
+  Batch 30/365 | Loss 8.7969 | 1068s elapsed
+  Batch 40/365 | Loss 8.8076 | 1424s elapsed
+  Batch 50/365 | Loss 8.8226 | 1786s elapsed
+  Batch 60/365 | Loss 8.8075 | 2150s elapsed
+  Batch 70/365 | Loss 8.8045 | 2506s elapsed
+  Batch 80/365 | Loss 8.8037 | 2859s elapsed
+  Batch 90/365 | Loss 8.8036 | 3214s elapsed
+  Batch 100/365 | Loss 8.8043 | 3571s elapsed
+  Batch 110/365 | Loss 8.8080 | 3928s elapsed
+  Batch 120/365 | Loss 8.8035 | 4280s elapsed
+  Batch 130/365 | Loss 8.8051 | 4630s elapsed
+  Batch 140/365 | Loss 8.8086 | 4983s elapsed
+  Batch 150/365 | Loss 8.8074 | 5342s elapsed
+  Batch 160/365 | Loss 8.8083 | 5700s elapsed
+  Batch 170/365 | Loss 8.8057 | 6058s elapsed
+  Batch 180/365 | Loss 8.8047 | 6414s elapsed
+  Batch 190/365 | Loss 8.8009 | 6772s elapsed
+  Batch 200/365 | Loss 8.8009 | 7135s elapsed
+  Batch 210/365 | Loss 8.8022 | 7489s elapsed
+  Batch 220/365 | Loss 8.8014 | 7845s elapsed
+  Batch 230/365 | Loss 8.7998 | 8203s elapsed
+  Batch 240/365 | Loss 8.7996 | 8552s elapsed
+  Batch 250/365 | Loss 8.8024 | 8913s elapsed
+  Batch 260/365 | Loss 8.8020 | 9272s elapsed
+  Batch 270/365 | Loss 8.8011 | 9629s elapsed
+  Batch 280/365 | Loss 8.8008 | 9984s elapsed
+  Batch 290/365 | Loss 8.8017 | 10343s elapsed
+  Batch 300/365 | Loss 8.8003 | 10699s elapsed
+  Batch 310/365 | Loss 8.7993 | 11065s elapsed
+  Batch 320/365 | Loss 8.7999 | 11424s elapsed
+  Batch 330/365 | Loss 8.8006 | 11780s elapsed
+  Batch 340/365 | Loss 8.8024 | 12138s elapsed
+  Batch 350/365 | Loss 8.8008 | 12492s elapsed
+  Batch 360/365 | Loss 8.8008 | 12848s elapsed
+Epoch 005/5 | Loss 8.8010 | Time 13001.4s
+  ↳ Valid  MRR: 0.2103 | H@1: 0.1350 | H@3: 0.2270 | H@10: 0.3615
+
+Training done. Best valid MRR: 0.2392
+Results saved to results/ICEWS18/

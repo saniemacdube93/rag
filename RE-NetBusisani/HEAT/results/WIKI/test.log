@@ -1,0 +1,145 @@
+
+============================================================
+  HEAT Evaluation — WIKI
+  Checkpoint epoch: 2
+============================================================
+
+Evaluating on 63110 test quadruples...
+  Processed 500/63110
+  Processed 1000/63110
+  Processed 1500/63110
+  Processed 2000/63110
+  Processed 2500/63110
+  Processed 3000/63110
+  Processed 3500/63110
+  Processed 4000/63110
+  Processed 4500/63110
+  Processed 5000/63110
+  Processed 5500/63110
+  Processed 6000/63110
+  Processed 6500/63110
+  Processed 7000/63110
+  Processed 7500/63110
+  Processed 8000/63110
+  Processed 8500/63110
+  Processed 9000/63110
+  Processed 9500/63110
+  Processed 10000/63110
+  Processed 10500/63110
+  Processed 11000/63110
+  Processed 11500/63110
+  Processed 12000/63110
+  Processed 12500/63110
+  Processed 13000/63110
+  Processed 13500/63110
+  Processed 14000/63110
+  Processed 14500/63110
+  Processed 15000/63110
+  Processed 15500/63110
+  Processed 16000/63110
+  Processed 16500/63110
+  Processed 17000/63110
+  Processed 17500/63110
+  Processed 18000/63110
+  Processed 18500/63110
+  Processed 19000/63110
+  Processed 19500/63110
+  Processed 20000/63110
+  Processed 20500/63110
+  Processed 21000/63110
+  Processed 21500/63110
+  Processed 22000/63110
+  Processed 22500/63110
+  Processed 23000/63110
+  Processed 23500/63110
+  Processed 24000/63110
+  Processed 24500/63110
+  Processed 25000/63110
+  Processed 25500/63110
+  Processed 26000/63110
+  Processed 26500/63110
+  Processed 27000/63110
+  Processed 27500/63110
+  Processed 28000/63110
+  Processed 28500/63110
+  Processed 29000/63110
+  Processed 29500/63110
+  Processed 30000/63110
+  Processed 30500/63110
+  Processed 31000/63110
+  Processed 31500/63110
+  Processed 32000/63110
+  Processed 32500/63110
+  Processed 33000/63110
+  Processed 33500/63110
+  Processed 34000/63110
+  Processed 34500/63110
+  Processed 35000/63110
+  Processed 35500/63110
+  Processed 36000/63110
+  Processed 36500/63110
+  Processed 37000/63110
+  Processed 37500/63110
+  Processed 38000/63110
+  Processed 38500/63110
+  Processed 39000/63110
+  Processed 39500/63110
+  Processed 40000/63110
+  Processed 40500/63110
+  Processed 41000/63110
+  Processed 41500/63110
+  Processed 42000/63110
+  Processed 42500/63110
+  Processed 43000/63110
+  Processed 43500/63110
+  Processed 44000/63110
+  Processed 44500/63110
+  Processed 45000/63110
+  Processed 45500/63110
+  Processed 46000/63110
+  Processed 46500/63110
+  Processed 47000/63110
+  Processed 47500/63110
+  Processed 48000/63110
+  Processed 48500/63110
+  Processed 49000/63110
+  Processed 49500/63110
+  Processed 50000/63110
+  Processed 50500/63110
+  Processed 51000/63110
+  Processed 51500/63110
+  Processed 52000/63110
+  Processed 52500/63110
+  Processed 53000/63110
+  Processed 53500/63110
+  Processed 54000/63110
+  Processed 54500/63110
+  Processed 55000/63110
+  Processed 55500/63110
+  Processed 56000/63110
+  Processed 56500/63110
+  Processed 57000/63110
+  Processed 57500/63110
+  Processed 58000/63110
+  Processed 58500/63110
+  Processed 59000/63110
+  Processed 59500/63110
+  Processed 60000/63110
+  Processed 60500/63110
+  Processed 61000/63110
+  Processed 61500/63110
+  Processed 62000/63110
+  Processed 62500/63110
+  Processed 63000/63110
+
+────────────────────────────────────────
+  Test Results — HEAT / WIKI
+────────────────────────────────────────
+  MRR   : 0.4383
+  MR    : 2753.7
+  Hits@1: 0.3961
+  Hits@3: 0.4625
+  Hits@10:0.5166
+────────────────────────────────────────
+
+Results saved to results/WIKI/

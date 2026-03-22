@@ -1,0 +1,23 @@
+
+============================================================
+  HEAT Visualisation Suite
+  Dataset: WIKI
+============================================================
+
+Generating plots...
+  ✓ Saved 01_training_loss.png / 01_training_loss.pdf
+  ✓ Saved 02_mrr_progression.png / 02_mrr_progression.pdf
+  ✓ Saved 03_rank_distribution.png / 03_rank_distribution.pdf
+  ✓ Saved 04_confusion_matrix.png / 04_confusion_matrix.pdf
+  ✓ Saved 05_roc_curve.png / 05_roc_curve.pdf
+  ✓ Saved 08_calibration.png / 08_calibration.pdf
+  ✓ Saved 06_model_comparison.png / 06_model_comparison.pdf
+  ✓ Saved 10_ablation_study.png / 10_ablation_study.pdf
+  ✓ Saved 07_mrr_heatmap.png / 07_mrr_heatmap.pdf
+  ✓ Saved 11_summary_comparison.png / 11_summary_comparison.pdf
+  Running t-SNE on 500 entity embeddings...
+  ✓ Saved 09_tsne_embeddings.png / 09_tsne_embeddings.pdf
+
+✅ All figures saved to: results/WIKI/figures/
+   (PNG + PDF in publication quality 300 DPI)
+
