@@ -33,7 +33,7 @@ class HEATLoss(nn.Module):
         self.beta = beta
         self.temperature = temperature
         self.n_negatives = n_negatives
-        self.ce = nn.CrossEntropyLoss()
+        self.ce = nn.CrossEntropyLoss(label_smoothing=0.1)
 
     # ── 1. Prediction Loss ────────────────────────────────────────────────
 

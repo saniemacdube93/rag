@@ -151,10 +151,22 @@ def train(args):
             optimizer.zero_grad()
 
             # Forward — subject direction
-            loss_s = model(triplets, s_hist_batch, o_hist_batch, subject=True)
+            logits_s, reprs_s, tgt_s = model(triplets, s_hist_batch, o_hist_batch, subject=True)
             # Forward — object direction (inverse)
-            loss_o = model(triplets, s_hist_batch, o_hist_batch, subject=False)
-            loss = loss_s + loss_o
+            logits_o, reprs_o, tgt_o = model(triplets, s_hist_batch, o_hist_batch, subject=False)
+
+            # Compute combined loss (prediction + contrastive + temporal)
+            obj_embeds = model.ent_embeds(tgt_s)   # positive anchors for subject direction
+            sub_embeds = model.ent_embeds(tgt_o)   # positive anchors for object direction
+            all_embeds = model.ent_embeds.weight
+
+            loss_dict_s = loss_fn(logits_s, tgt_s,
+                                  entity_embeds=reprs_s, pos_embeds=obj_embeds,
+                                  all_embeds=all_embeds)
+            loss_dict_o = loss_fn(logits_o, tgt_o,
+                                  entity_embeds=reprs_o, pos_embeds=sub_embeds,
+                                  all_embeds=all_embeds)
+            loss = loss_dict_s['total'] + loss_dict_o['total']
 
             loss.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), args.grad_norm)

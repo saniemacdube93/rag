@@ -185,8 +185,8 @@ class HierarchicalTemporalAttention(nn.Module):
         global_out, global_attn = self.global_attn(global_x, timestamps, mask)
 
         # Gated fusion of local and global
-        fused = self.gate(torch.cat([local_out, global_out], dim=-1))
-        fused = torch.sigmoid(fused) * local_out + (1 - torch.sigmoid(fused)) * global_out
+        gate_w = torch.sigmoid(self.gate(torch.cat([local_out, global_out], dim=-1)))
+        fused = gate_w * local_out + (1 - gate_w) * global_out
 
         # FFN + residual
         out = self.ffn_norm(fused + self.ffn(fused))

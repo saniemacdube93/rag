@@ -262,8 +262,11 @@ class HEATModel(nn.Module):
             src, history_list, rel_embeds, t_queries)
 
         # ── Single HTSA call for the whole batch ───────────────────────────
+        # Global context: mean of all entities' event sequences in the batch,
+        # broadcast back to each sample so global heads see cross-entity signals.
+        global_ctx = event_batch.mean(dim=0, keepdim=True).expand(B, -1, -1).detach()
         entity_reprs, self._last_attn_local, self._last_attn_global = \
-            self.htsa(event_batch, event_batch, time_batch, mask=pad_mask)
+            self.htsa(event_batch, global_ctx, time_batch, mask=pad_mask)
         # entity_reprs: (B, h_dim)
 
         # Replace entities with no history with the learned empty embedding
@@ -275,7 +278,7 @@ class HEATModel(nn.Module):
         combined = torch.cat([entity_reprs, rel_vecs], dim=-1)  # (B, 2*h_dim)
         logits   = self.pred_head(combined)                   # (B, num_nodes)
 
-        return self.criterion(logits, tgt)
+        return logits, entity_reprs, tgt
 
     # ─────────────────────────────────────────────────────────────────────────
     # Predict: Test/eval mode — single sample, returns scores
